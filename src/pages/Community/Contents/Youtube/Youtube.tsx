@@ -1,20 +1,19 @@
-import { EmptyBox, Line, NoticeBox } from "@/components/community/NoticeBox";
-import { NoticeData } from "../../../../../NoticeDummy";
-import { NoticeTag, NoticeTitle } from "@/components/community/Notice";
+import { Line } from "@/components/community/NoticeBox";
 import { ContentsBox, MovingBox, ProfileBox, YContents, YFooter, YUsername, Ytitle } from "@/components/community/ContentsBox";
 import Image from "next/image";
 import Paging from "../../Paging";
 import { OrderBox, Updated, Recommend, Repl, ClickedOrder } from "@/components/community/OrderBy";
 import { useState } from "react";
 import { MovingSpan } from "@/components/community/TabSpan";
+import Notice from "../Notice";
 
 type Props = {
   post: any,
-  posts: any,
+  yPosts: any,
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function Youtube({ post, posts, setCurrentPage }: Props) {
+export default function Youtube({ post, yPosts, setCurrentPage }: Props) {
   const [clickedOrder, setClickedOrder] = useState<number>(0);
 
   const handleClick = (number: number) => {
@@ -23,20 +22,7 @@ export default function Youtube({ post, posts, setCurrentPage }: Props) {
 
   return (
     <>
-      <NoticeBox>
-        {NoticeData?.map((a, i) => {
-          return (
-            <div key={i}>
-              <NoticeTag>공지</NoticeTag>
-              <NoticeTitle>
-                {a.title}
-                {' - ' + a.date}
-              </NoticeTitle>
-            </div>
-          );
-        })}
-      </NoticeBox>
-      <EmptyBox />
+      <Notice />
       <OrderBox>
           <Updated clickedOrder={clickedOrder === 0} onClick={() => {handleClick(0)}}>
             <ClickedOrder clickedOrder={clickedOrder === 0} onClick={() => {handleClick(0)}} />
@@ -52,7 +38,7 @@ export default function Youtube({ post, posts, setCurrentPage }: Props) {
           </Repl>
       </OrderBox>
       <ContentsBox>
-        {post?.map((a: any, i: any) => {
+        {post?.map((a: any, i: number) => {
           return (
             <div key={i}>
               <ProfileBox>
@@ -89,7 +75,7 @@ export default function Youtube({ post, posts, setCurrentPage }: Props) {
             </div>
           );
         })}
-        <Paging totalPosts={posts?.length} paginate={setCurrentPage}/>
+        <Paging totalPosts={yPosts?.length} paginate={setCurrentPage}/>
       </ContentsBox>
       <MovingBox>
         <MovingSpan>

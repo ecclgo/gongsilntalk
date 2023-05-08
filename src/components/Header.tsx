@@ -18,7 +18,7 @@ export default function Header() {
         bg="#FFFFFF"
         position="absolute"
         width={{ base: '100%', md: '1920px' }}
-        height="70px"
+        height="4.75%"
         left="0px"
         top="0px"
         w="100%"
@@ -31,10 +31,9 @@ export default function Header() {
                 position="absolute"
                 left="2.290%"
                 right="90.99%"
-                top="22.06%"
-                bottom="20.59%"
-                width={'129'}
-                height={'39'}
+                top={'15px'}
+                width='120px'
+                height='39px'
                 cursor={'pointer'}
               ></Image>
             </Link>
@@ -191,7 +190,7 @@ export default function Header() {
               href="/mana-login"
               style={{
                 position: 'absolute',
-                width: '90px',
+                width: '100px',
                 height: '27px',
                 left: '1785px',
                 top: '20px',
@@ -200,13 +199,12 @@ export default function Header() {
                 flex: 'none',
                 flexGrow: '0',
                 border: 'none',
-                padding: '4px 10px',
+                padding: '4px 15px',
                 fontStyle: 'normal',
                 fontFamily: 'Spoqa Han Sans Neo',
                 cursor: 'pointer',
-                fontSize: '15px',
+                fontSize: '14px',
                 display: 'flex',
-                alignItems: 'center',
               }}
             >
               중개사 가입

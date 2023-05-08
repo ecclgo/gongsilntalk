@@ -1,9 +1,9 @@
 import { MagazineTab, YoutubeTab } from '@/components/community/TabBox';
 import { FirstContent } from '@/components/community/TabSpan';
 import { useEffect, useState } from 'react';
-import { Youtubes } from '../../../../NoticeDummy';
+import { Youtubes, community  } from '../../../../NoticeDummy';
 import Youtube from './Youtube/Youtube';
-import Magazine from './Magazine/Magazine';
+import Magazine from './Magazine/Megazine';
 import Image from 'next/image';
 import { SearchContainer, SearchIcon, SearchInput } from '@/components/community/SearchInput';
 
@@ -16,9 +16,11 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
   const [innerTab, setInnerTab] = useState<number>(0);
 
   const [post, setPost] = useState<any>([]);
-  const [posts, setPosts] = useState(Youtubes);
+  const [yPosts, setYposts] = useState<any>(Youtubes);
+  const [mPosts, setMposts] = useState<any>(community);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [postPerPage, setPostPerPage] = useState<number>(5);
+
 
   const indexOfLast = currentPage * postPerPage;
   const indexOfFirst = indexOfLast - postPerPage;
@@ -32,10 +34,14 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
   //  API 생성시 수정
   useEffect(() => {
     const fetchData = () => {
-      setPost(currentPosts(posts));
+      if(innerTab === 0) {
+        setPost(currentPosts(yPosts));
+      }else {
+        setPost(currentPosts(mPosts));
+      };
     };
     fetchData();
-  }, [currentPage]);
+  }, [currentPage, innerTab]);
 
   const [showSearch, setShowSearch] = useState(false);
 
@@ -83,11 +89,11 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
           {
             innerTab === 0 ? 
             (
-              <Youtube post={post} posts={posts} setCurrentPage={setCurrentPage} />
+              <Youtube post={post} yPosts={yPosts} setCurrentPage={setCurrentPage} />
             )
             :
             (
-              <Magazine />
+              <Magazine post={post} mPosts={mPosts} setCurrentPage={setCurrentPage} />
             )
           }
         </>

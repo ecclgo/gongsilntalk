@@ -1,5 +1,5 @@
 export type Megazine = {
-  id: number,
+  id: string,
   title: string,
   content: string,
   date: string,

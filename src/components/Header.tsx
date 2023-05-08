@@ -27,7 +27,8 @@ export default function Header() {
           <SimpleGrid templateColumns="repeat(3, 1fr)">
             <Link href="/">
               <Image
-                src="Logo.png"
+                src="/Logo.png"
+                alt='Logo'
                 position="absolute"
                 left="2.290%"
                 right="90.99%"

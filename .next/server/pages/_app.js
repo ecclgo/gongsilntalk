@@ -48,7 +48,8 @@ function Header() {
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
                                 href: "/",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Image, {
-                                    src: "Logo.png",
+                                    src: "/Logo.png",
+                                    alt: "Logo",
                                     position: "absolute",
                                     left: "2.290%",
                                     right: "90.99%",
@@ -296,7 +297,7 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_com
 
 
 const GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_3__.createGlobalStyle`
-
+  background-color: #F5F5F5;
 `;
 function App({ Component , pageProps  }) {
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__.ChakraProvider, {

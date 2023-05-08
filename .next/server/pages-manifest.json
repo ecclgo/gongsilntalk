@@ -10,15 +10,15 @@
   "/Community/Contents/Youtube/Youtube": "pages/Community/Contents/Youtube/Youtube.html",
   "/Community/Contents": "pages/Community/Contents.html",
   "/Community/Paging": "pages/Community/Paging.html",
-  "/Community": "pages/Community.html",
   "/FindPW": "pages/FindPW.html",
+  "/Community": "pages/Community.html",
   "/Mybuilding": "pages/Mybuilding.html",
   "/Recommend": "pages/Recommend.html",
   "/Sign-in": "pages/Sign-in.html",
-  "/api/SignIn": "pages/api/SignIn.js",
   "/Sign-up": "pages/Sign-up.html",
-  "/": "pages/index.html",
+  "/api/SignIn": "pages/api/SignIn.js",
   "/api/hello": "pages/api/hello.js",
+  "/": "pages/index.html",
   "/_error": "pages/_error.js",
   "/posts/[id]": "pages/posts/[id].js"
 }

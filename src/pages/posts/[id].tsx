@@ -1,4 +1,4 @@
-import { Megazine } from "@/pages/types/Megazine";
+import { Megazine } from "../../types/Megazine";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 
 interface Props {

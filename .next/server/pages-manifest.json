@@ -1,21 +1,6 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/Auth": "pages/Auth.js",
-  "/Buildingmap": "pages/Buildingmap.js",
-  "/Community/Board": "pages/Community/Board.js",
-  "/Community/Contents/Magazine/Magazine": "pages/Community/Contents/Magazine/Magazine.js",
-  "/Community/Contents/Youtube/Youtube": "pages/Community/Contents/Youtube/Youtube.js",
-  "/Community/Contents": "pages/Community/Contents.js",
-  "/Community/Paging": "pages/Community/Paging.js",
-  "/Community": "pages/Community.js",
-  "/FindPW": "pages/FindPW.js",
-  "/Mybuilding": "pages/Mybuilding.js",
-  "/Recommend": "pages/Recommend.js",
-  "/Sign-in": "pages/Sign-in.js",
   "/_error": "pages/_error.js",
-  "/Sign-up": "pages/Sign-up.js",
-  "/api/SignIn": "pages/api/SignIn.js",
-  "/api/hello": "pages/api/hello.js",
-  "/": "pages/index.js"
+  "/_document": "pages/_document.js",
+  "/Community": "pages/Community.js"
 }

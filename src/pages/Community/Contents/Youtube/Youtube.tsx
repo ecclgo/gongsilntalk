@@ -24,7 +24,7 @@ export default function Youtube({ post, posts, setCurrentPage }: Props) {
   return (
     <>
       <NoticeBox>
-        {NoticeData.map((a, i) => {
+        {NoticeData?.map((a, i) => {
           return (
             <div key={i}>
               <NoticeTag>공지</NoticeTag>
@@ -52,7 +52,7 @@ export default function Youtube({ post, posts, setCurrentPage }: Props) {
           </Repl>
       </OrderBox>
       <ContentsBox>
-        {post.map((a: any, i: any) => {
+        {post?.map((a: any, i: any) => {
           return (
             <div key={i}>
               <ProfileBox>

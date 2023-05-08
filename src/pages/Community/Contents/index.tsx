@@ -17,8 +17,8 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
 
   const [post, setPost] = useState<any>([]);
   const [posts, setPosts] = useState(Youtubes);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postPerPage, setPostPerPage] = useState(5);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [postPerPage, setPostPerPage] = useState<number>(5);
 
   const indexOfLast = currentPage * postPerPage;
   const indexOfFirst = indexOfLast - postPerPage;

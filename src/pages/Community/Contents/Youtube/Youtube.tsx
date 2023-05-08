@@ -50,7 +50,6 @@ export default function Youtube({ post, posts, setCurrentPage }: Props) {
             <ClickedOrder clickedOrder={clickedOrder === 2} onClick={() => {handleClick(2)}} />
             댓글순
           </Repl>
-          <EmptyBox />
       </OrderBox>
       <ContentsBox>
         {post.map((a: any, i: any) => {

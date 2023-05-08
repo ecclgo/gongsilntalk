@@ -18,7 +18,7 @@ export const NoticeBox = styled.div`
 export const EmptyBox = styled.div`
   position: absolute;
   width: 778px;
-  height: 10px;
+  height: 1px;
   left: 38px;
   top: 306px;
 

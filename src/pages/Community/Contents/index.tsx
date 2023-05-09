@@ -1,9 +1,9 @@
-import { MagazineTab, YoutubeTab } from '@/components/community/TabBox';
+import { MegazineTab, YoutubeTab } from '@/components/community/TabBox';
 import { FirstContent } from '@/components/community/TabSpan';
 import { useEffect, useState } from 'react';
 import { Youtubes, community  } from '../../../../NoticeDummy';
 import Youtube from './Youtube/Youtube';
-import Magazine from './Magazine/Megazine';
+import Megazine from './Megazine/Megazine';
 import Image from 'next/image';
 import { SearchContainer, SearchIcon, SearchInput } from '@/components/community/SearchInput';
 
@@ -59,9 +59,9 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
           <YoutubeTab innerTab={innerTab} onClick={() => setInnerTab(0)}>
             공톡 유튜브
           </YoutubeTab>
-          <MagazineTab innerTab={innerTab} onClick={() => setInnerTab(1)}>
+          <MegazineTab innerTab={innerTab} onClick={() => setInnerTab(1)}>
             공톡 매거진
-          </MagazineTab>
+          </MegazineTab>
           <SearchContainer>
             <SearchIcon
               className='fa fa-search'
@@ -93,7 +93,7 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
             )
             :
             (
-              <Magazine post={post} mPosts={mPosts} setCurrentPage={setCurrentPage} />
+              <Megazine post={post} mPosts={mPosts} setCurrentPage={setCurrentPage} />
             )
           }
         </>

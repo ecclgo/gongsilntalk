@@ -53,7 +53,7 @@ export const YoutubeTab = styled.span<Props>`
   cursor: pointer;
 `;
 
-export const MagazineTab = styled(YoutubeTab)<Props>`
+export const MegazineTab = styled(YoutubeTab)<Props>`
   left: 153px;
   color: ${(props) => `${props.innerTab === 1 ? '#F16341' : '#9B9B9B'}`};
   background-color: ${(props) =>

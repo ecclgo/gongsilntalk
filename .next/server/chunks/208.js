@@ -7,7 +7,7 @@ exports.modules = {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Id": () => (/* binding */ MagazineTab),
+/* harmony export */   "Dn": () => (/* binding */ MegazineTab),
 /* harmony export */   "_D": () => (/* binding */ TabBox),
 /* harmony export */   "yy": () => (/* binding */ YoutubeTab)
 /* harmony export */ });
@@ -15,7 +15,7 @@ exports.modules = {
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const TabBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-896b4887-0"
+    componentId: "sc-1016b119-0"
 })`
   width: 778px;
   height: 100px;
@@ -27,7 +27,7 @@ const TabBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.with
   background-color: #ffffff;
 `;
 const YoutubeTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-896b4887-1"
+    componentId: "sc-1016b119-1"
 })`
   box-sizing: border-box;
 
@@ -63,8 +63,8 @@ const YoutubeTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span
   color: ${(props)=>`${props.innerTab === 0 ? "#F16341" : "#9B9B9B"}`};
   cursor: pointer;
 `;
-const MagazineTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(YoutubeTab).withConfig({
-    componentId: "sc-896b4887-2"
+const MegazineTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(YoutubeTab).withConfig({
+    componentId: "sc-1016b119-2"
 })`
   left: 153px;
   color: ${(props)=>`${props.innerTab === 1 ? "#F16341" : "#9B9B9B"}`};
@@ -98,8 +98,8 @@ var external_react_ = __webpack_require__(6689);
 var NoticeDummy = __webpack_require__(436);
 // EXTERNAL MODULE: ./src/pages/Community/Contents/Youtube/Youtube.tsx + 1 modules
 var Youtube = __webpack_require__(9650);
-// EXTERNAL MODULE: ./src/pages/Community/Contents/Magazine/Megazine.tsx
-var Megazine = __webpack_require__(9291);
+// EXTERNAL MODULE: ./src/pages/Community/Contents/Megazine/Megazine.tsx
+var Megazine = __webpack_require__(1380);
 // EXTERNAL MODULE: ./node_modules/next/image.js
 var next_image = __webpack_require__(5675);
 var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
@@ -218,7 +218,7 @@ function Contents({ tabClicked , setTabClicked  }) {
                         onClick: ()=>setInnerTab(0),
                         children: "공톡 유튜브"
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(TabBox/* MagazineTab */.Id, {
+                    /*#__PURE__*/ jsx_runtime_.jsx(TabBox/* MegazineTab */.Dn, {
                         innerTab: innerTab,
                         onClick: ()=>setInnerTab(1),
                         children: "공톡 매거진"

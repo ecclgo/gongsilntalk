@@ -1,12 +1,16 @@
-import { DetailBox } from "@/components/community/DetailContents";
+import { DetailBox, DetailContent, DetailLine, DetailProBox, EndLine, ImgBox, Repl, UserInfoBox } from "@/components/community/DetailContents";
 import { Megazine } from "../../types/Megazine";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { BackArrow, GongtalkBox } from "@/components/community/Icon";
 import Image from "next/image";
+import { RegiDate, TitleText, UserName } from "@/components/community/DetailText";
+import moment from 'moment';
+import RenderCarousel from "../Community/Contents/Carousel";
 
 interface Props {
   megazine: Megazine;
-}
+};
+
 
 const MegazineDetail: NextPage<Props> = ({ megazine }) => {
   return (
@@ -23,8 +27,36 @@ const MegazineDetail: NextPage<Props> = ({ megazine }) => {
         <GongtalkBox>
           공톡 매거진
         </GongtalkBox>
-        <p>{megazine.title}</p>
-        <p>{megazine.content}</p>
+        <TitleText>
+          {megazine.title}
+        </TitleText>
+        <UserInfoBox>
+          <DetailProBox>
+            <Image
+              src={'/ProPic.png'}
+              alt="ProPic"
+              width={40}
+              height={40}
+            />
+          </DetailProBox>
+          <UserName>
+            공실앤톡
+          </UserName>
+          <RegiDate>
+            {moment(megazine.date).format('YYYY.MM.DD HH:mm')}
+          </RegiDate>
+        </UserInfoBox>
+        <DetailLine />
+        <DetailContent>
+          {megazine.content}
+        </DetailContent>
+        <ImgBox>
+          <RenderCarousel />
+        </ImgBox>
+        <EndLine />
+        <Repl>
+          댓글을 작성해보세요.
+        </Repl>
       </DetailBox>
     </>
   )

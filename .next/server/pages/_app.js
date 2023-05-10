@@ -2,277 +2,544 @@
 (() => {
 var exports = {};
 exports.id = 888;
-exports.ids = [888,848,821];
+exports.ids = [888,436,848,751,844,821];
 exports.modules = {
 
-/***/ 2119:
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
+/***/ 3239:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (/* binding */ Header)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2210);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1664);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1853);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__]);
-_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "Z": () => (/* binding */ Layout)
+});
+
+// EXTERNAL MODULE: external "react/jsx-runtime"
+var jsx_runtime_ = __webpack_require__(997);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(6689);
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+;// CONCATENATED MODULE: external "next/router"
+const router_namespaceObject = require("next/router");
+// EXTERNAL MODULE: external "styled-components"
+var external_styled_components_ = __webpack_require__(7518);
+var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(external_styled_components_);
+;// CONCATENATED MODULE: ./src/components/header/HeaderBox.tsx
+
+const HeaderBox = external_styled_components_default().header.withConfig({
+    componentId: "sc-27f1c06-0"
+})`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    left: 0px;
+    top: 800px;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
+    color: #333333;
+  }
+
+  position: absolute;
+  width: 1920px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #D5D5D5;
+`;
+const HeaderLogo = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-1"
+})`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  position: absolute;
+  top: 15px;
+  left: 40px;
+`;
+const HeaderHome = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-2"
+})`
+  @media (max-width: 700px) {
+    display: flex;
+    position: absolute;
+    left: 33.5px;
+    top: 9px;
+  }
+  display: none;
+`;
+const FHeaderProduct = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-3"
+})`
+  @media screen and (max-width: 768px) {    
+    display: flex;
+    position: absolute;
+    left: 103px;
+    top: 11px;
+  }
+  display: none;
+`;
+const SHeaderProduct = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-4"
+})`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    left: 110.89px;
+    top: 9.11px;
+  }
+  display: none;
+`;
+const HeaderMap = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-5"
+})`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    left: 174.29px;
+    top: 9.5px;
+  }
+  display: none;
+`;
+const HeaderCommunity = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-6"
+})`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    left: 241.29px;
+    top: 9.55px;
+  }
+  display: none;
+`;
+const HeaderMyInfoBox = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-7"
+})`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    left: 312.58px;
+    top: 9.55px;
+  }
+  display: none;
+`;
+const HeaderRecoBox = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-8"
+})`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
+  position: absolute;
+  width: 101px;
+  height: 23px;
+  left: 637px;
+  top: 18px;
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  cursor: pointer;
+  color: ${(props)=>`${props.activeBtn === "/Recommend" ? "#F16341" : "#343232"}`};
+`;
+const HeaderMapBox = external_styled_components_default()(HeaderRecoBox).withConfig({
+    componentId: "sc-27f1c06-9"
+})`
+  left: 824px;
+  width: 120px;
+  color: ${(props)=>`${props.activeBtn === "/Buildingmap" ? "#F16341" : "#343232"}`};
+`;
+const HeaderMyProduct = external_styled_components_default()(HeaderRecoBox).withConfig({
+    componentId: "sc-27f1c06-10"
+})`
+  left: 1027px;
+  color: ${(props)=>`${props.activeBtn === "/Mybuilding" ? "#F16341" : "#343232"}`};
+`;
+const HeaderCommunityBox = external_styled_components_default()(HeaderRecoBox).withConfig({
+    componentId: "sc-27f1c06-11"
+})`
+  left: 1198px;
+  color: ${(props)=>`${props.activeBtn === "/Community" ? "#F16341" : "#343232"}`};
+`;
+const HeaderLogin = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-12"
+})`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  position: absolute;
+  left: 1600px;
+  top: 20px;
+
+  width: 44px;
+  height: 20px;
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #848484;
+  cursor: pointer;
+`;
+const HeaderRegister = external_styled_components_default()(HeaderLogin).withConfig({
+    componentId: "sc-27f1c06-13"
+})`
+  left: 1670px;
+  width: 60px;
+`;
+const Bar = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-14"
+})`
+  @media screen and (max-width: 768px) {
+      display: none;
+  }
+  position: absolute;
+  left: 1650px;
+  top: 26px;
+  width: 12px;
+  height: 0px;
+
+  border: 1px solid #CECECE;
+  transform: rotate(90deg);
+`;
+const JonggaeBox = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-15"
+})`
+  @media screen and (max-width: 768px) {
+        display: none;
+  }
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 10px;
+  left: 1732px;
+  top: 16px;
+
+  width: 95px;
+  height: 28px;
+
+  background: #D5D5D5;
+  border-radius: 50px;
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #3A3A3A;
+  cursor: pointer;
+`;
+const Submenu = external_styled_components_default().div.withConfig({
+    componentId: "sc-27f1c06-16"
+})`
+  @media screen and (max-width: 768px) {
+          display: none;
+    }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 1855px;
+  top: calc(50% - 32px/2);
+`;
+
+;// CONCATENATED MODULE: ./src/components/header/HeaderText.tsx
+
+const HomeText = external_styled_components_default().span.withConfig({
+    componentId: "sc-2a6c73e5-0"
+})`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    width: 10px;
+    height: 13px;
+    left: 37px;
+    top: 28px;
+
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #C1C1C1;
+  }
+  display: none;
+`;
+const Recommend = external_styled_components_default()(HomeText).withConfig({
+    componentId: "sc-2a6c73e5-1"
+})`
+  left: 93px;
+  width: 41px;
+`;
+const Map = external_styled_components_default()(HomeText).withConfig({
+    componentId: "sc-2a6c73e5-2"
+})`
+  left: 172px;
+  width: 35px;
+`;
+const HeaderCommu = external_styled_components_default()(HomeText).withConfig({
+    componentId: "sc-2a6c73e5-3"
+})`
+  left: 231px;
+  width: 41px;
+`;
+const HeaderMyInfo = external_styled_components_default()(HomeText).withConfig({
+    componentId: "sc-2a6c73e5-4"
+})`
+  left: 303.5px;
+  width: 37px;
+`;
+
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__(5675);
+var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
+;// CONCATENATED MODULE: ./src/components/Header.tsx
+
+
+
 
 
 
 
 function Header() {
-    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_3__.useRouter)();
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
-            bg: "#FFFFFF",
-            position: "absolute",
-            width: {
-                base: "100%",
-                md: "1920px"
-            },
-            height: "4.75%",
-            left: "0px",
-            top: "0px",
-            w: "100%",
+    const router = (0,router_namespaceObject.useRouter)();
+    const [activeBtn, setActiveBtn] = (0,external_react_.useState)("");
+    (0,external_react_.useEffect)(()=>{
+        setActiveBtn(router.pathname);
+    }, [
+        activeBtn
+    ]);
+    console.log(router.pathname);
+    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(HeaderBox, {
             children: [
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Container, {
-                    maxW: 1900,
-                    children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.SimpleGrid, {
-                        templateColumns: "repeat(3, 1fr)",
-                        children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                href: "/",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Image, {
-                                    src: "/Logo.png",
-                                    alt: "Logo",
-                                    position: "absolute",
-                                    left: "2.290%",
-                                    right: "90.99%",
-                                    top: "15px",
-                                    width: "120px",
-                                    height: "39px",
-                                    cursor: "pointer"
-                                })
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Flex, {
-                                alignItems: "center",
-                                gap: "20px",
-                                color: "black",
-                                fontSize: "20px",
-                                fontWeight: "semibold",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                        href: "/Recommend",
-                                        style: {
-                                            textDecoration: "none",
-                                            color: router.pathname === "/Recommend" ? "#F16341" : "#333333",
-                                            letterSpacing: "-0.03em",
-                                            fontFamily: "Spoqa Han Sans Neo",
-                                            fontStyle: "normal",
-                                            fontWeight: "500",
-                                            fontSize: "20px",
-                                            lineHeight: "25px",
-                                            position: "absolute",
-                                            left: "627px",
-                                            top: "20px",
-                                            bottom: "22px"
-                                        },
-                                        children: "추천 분양현장"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                        href: "/Buildingmap",
-                                        style: {
-                                            textDecoration: "none",
-                                            color: router.pathname === "/Buildingmap" ? "#F16341" : "#333333",
-                                            letterSpacing: "-0.03em",
-                                            fontFamily: "Spoqa Han Sans Neo",
-                                            fontStyle: "normal",
-                                            fontWeight: "500",
-                                            fontSize: "20px",
-                                            lineHeight: "25px",
-                                            position: "absolute",
-                                            left: "825px",
-                                            top: "20px",
-                                            bottom: "22px"
-                                        },
-                                        children: "실시간 매물지도"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                        href: "/Mybuilding",
-                                        style: {
-                                            textDecoration: "none",
-                                            color: router.pathname === "/Mybuilding" ? "#F16341" : "#333333",
-                                            letterSpacing: "-0.03em",
-                                            fontFamily: "Spoqa Han Sans Neo",
-                                            fontStyle: "normal",
-                                            fontWeight: "500",
-                                            fontSize: "20px",
-                                            lineHeight: "25px",
-                                            position: "absolute",
-                                            left: "1041px",
-                                            top: "20px",
-                                            bottom: "22px"
-                                        },
-                                        children: "내 매물관리"
-                                    }),
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                        href: "/Community",
-                                        style: {
-                                            textDecoration: "none",
-                                            color: router.pathname === "/Community" ? "#F16341" : "#333333",
-                                            letterSpacing: "-0.03em",
-                                            fontFamily: "Spoqa Han Sans Neo",
-                                            fontStyle: "normal",
-                                            fontWeight: "500",
-                                            fontSize: "20px",
-                                            lineHeight: "25px",
-                                            position: "absolute",
-                                            left: "1221px",
-                                            top: "20px",
-                                            bottom: "22px"
-                                        },
-                                        children: "커뮤니티"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                    href: "/Sign-in",
-                                    style: {
-                                        color: "#848484",
-                                        width: "41px",
-                                        position: "absolute",
-                                        height: "19px",
-                                        alignItems: "center",
-                                        border: "none",
-                                        background: "#FFFFFF",
-                                        cursor: "pointer",
-                                        left: "1654px",
-                                        top: "24px",
-                                        bottom: "23px",
-                                        fontStyle: "normal",
-                                        fontFamily: "Spoqa Han Sans Neo",
-                                        fontWeight: "500",
-                                        fontSize: "15px",
-                                        lineHeight: "19px",
-                                        letterSpacing: "-0.03em"
-                                    },
-                                    children: "로그인"
-                                })
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
-                                style: {
-                                    width: "12px",
-                                    height: "0px",
-                                    border: "1px solid #CECECE",
-                                    transform: "rotate(90deg)",
-                                    flex: "none",
-                                    position: "absolute",
-                                    left: "1700px",
-                                    top: "32px"
-                                }
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                href: "/Sign-up",
-                                style: {
-                                    position: "absolute",
-                                    width: "54px",
-                                    height: "19px",
-                                    fontSize: "15px",
-                                    lineHeight: "19px",
-                                    fontWeight: "500",
-                                    letterSpacing: "-0.03em",
-                                    color: "#848484",
-                                    border: "none",
-                                    left: "1720px",
-                                    background: "#FFFFFF",
-                                    top: "24px",
-                                    bottom: "23px",
-                                    fontStyle: "normal",
-                                    fontFamily: "Spoqa Han Sans Neo",
-                                    cursor: "pointer"
-                                },
-                                children: "회원가입"
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {
-                                href: "/mana-login",
-                                style: {
-                                    position: "absolute",
-                                    width: "100px",
-                                    height: "27px",
-                                    left: "1785px",
-                                    top: "20px",
-                                    background: "#D5D5D5",
-                                    borderRadius: "50px",
-                                    flex: "none",
-                                    flexGrow: "0",
-                                    border: "none",
-                                    padding: "4px 15px",
-                                    fontStyle: "normal",
-                                    fontFamily: "Spoqa Han Sans Neo",
-                                    cursor: "pointer",
-                                    fontSize: "14px",
-                                    display: "flex"
-                                },
-                                children: "중개사 가입"
-                            })
-                        ]
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderLogo, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        href: "/",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                            src: "/Logo.png",
+                            alt: "Logo",
+                            width: 100,
+                            height: 30
+                        })
                     })
                 }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_chakra_ui_react__WEBPACK_IMPORTED_MODULE_1__.Box, {
-                    style: {
-                        position: "absolute",
-                        width: "1920px",
-                        height: "0px",
-                        border: "1px solid #D5D5D5",
-                        top: "70px"
-                    }
-                })
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderHome, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        href: "/",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("svg", {
+                            width: "18",
+                            height: "16",
+                            viewBox: "0 0 18 16",
+                            fill: "none",
+                            xmlns: "http://www.w3.org/2000/svg",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
+                                d: "M7.2 16V10.3529H10.8V16H15.3V8.47059H18L9 0L0 8.47059H2.7V16H7.2Z",
+                                fill: "#C1C1C1"
+                            })
+                        })
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(FHeaderProduct, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("svg", {
+                        width: "13",
+                        height: "14",
+                        viewBox: "0 0 13 14",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
+                            d: "M6.28679 0.476562L0 4.66776V13.8919H4.38409V6.87734H7.89137V13.8919H12.2755V4.46609L6.28679 0.476562Z",
+                            fill: "#C1C1C1"
+                        })
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(SHeaderProduct, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("svg", {
+                        width: "13",
+                        height: "16",
+                        viewBox: "0 0 13 16",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
+                            d: "M0.890625 0.109375V1.43337L2.64426 2.59954L4.16116 3.61665H5.27472V4.36195L7.02836 5.53688V7.12393H8.782V8.87756H7.02836V10.6312H8.782V12.3848H7.02836V15.8921H12.2893V0.109375H0.890625ZM8.782 5.37029H7.02836V3.61665H8.782V5.37029Z",
+                            fill: "#C1C1C1"
+                        })
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderMap, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("svg", {
+                        width: "16",
+                        height: "16",
+                        viewBox: "0 0 16 16",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
+                            d: "M14.8724 0.5L14.7391 0.525L10.2891 2.25L5.28906 0.5L0.589062 2.08333C0.414062 2.14167 0.289062 2.29167 0.289062 2.48333V15.0833C0.289062 15.3167 0.472396 15.5 0.705729 15.5L0.839063 15.475L5.28906 13.75L10.2891 15.5L14.9891 13.9167C15.1641 13.8583 15.2891 13.7083 15.2891 13.5167V0.916667C15.2891 0.683333 15.1057 0.5 14.8724 0.5ZM10.2891 13.8333L5.28906 12.075V2.16667L10.2891 3.925V13.8333Z",
+                            fill: "#C1C1C1"
+                        })
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderCommunity, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        href: "/Community",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("svg", {
+                            width: "16",
+                            height: "16",
+                            viewBox: "0 0 16 16",
+                            fill: "none",
+                            xmlns: "http://www.w3.org/2000/svg",
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
+                                d: "M14.7566 0.546875C13.0468 0.546875 11.2055 0.897603 9.93407 1.8621C8.66268 0.897603 6.82136 0.546875 5.11157 0.546875C3.40177 0.546875 1.56045 0.897603 0.289062 1.8621V14.7075C0.289062 15.2774 0.92914 15.1021 0.946677 15.1021C2.13038 14.5321 3.84018 14.1376 5.11157 14.1376C6.82136 14.1376 8.66268 14.4883 9.93407 15.4528C11.1178 14.7075 13.266 14.1376 14.7566 14.1376C16.2033 14.1376 17.6939 14.4006 18.9215 15.0582C19.281 15.2424 19.5791 14.8916 19.5791 14.6637V1.8621C18.2726 0.880066 16.3962 0.546875 14.7566 0.546875ZM17.8254 12.8223C16.8609 12.5155 15.8088 12.3839 14.7566 12.3839C13.266 12.3839 11.1178 12.9539 9.93407 13.6992V3.61574C11.1178 2.87045 13.266 2.30051 14.7566 2.30051C15.8088 2.30051 16.8609 2.43204 17.8254 2.73892V12.8223Z",
+                                fill: "#C1C1C1"
+                            })
+                        })
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderMyInfoBox, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("svg", {
+                        width: "17",
+                        height: "16",
+                        viewBox: "0 0 17 16",
+                        fill: "none",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
+                            d: "M8.57812 1.9C9.73812 1.9 10.6781 2.84 10.6781 4C10.6781 5.16 9.73812 6.1 8.57812 6.1C7.41813 6.1 6.47812 5.16 6.47812 4C6.47812 2.84 7.41813 1.9 8.57812 1.9ZM8.57812 10.9C11.5481 10.9 14.6781 12.36 14.6781 13V14.1H2.47813V13C2.47813 12.36 5.60812 10.9 8.57812 10.9ZM8.57812 0C6.36812 0 4.57812 1.79 4.57812 4C4.57812 6.21 6.36812 8 8.57812 8C10.7881 8 12.5781 6.21 12.5781 4C12.5781 1.79 10.7881 0 8.57812 0ZM8.57812 9C5.90812 9 0.578125 10.34 0.578125 13V16H16.5781V13C16.5781 10.34 11.2481 9 8.57812 9Z",
+                            fill: "#C1C1C1"
+                        })
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(HomeText, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        href: "/",
+                        children: "홈"
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(Recommend, {
+                    children: "추천분양"
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(Map, {
+                    children: "지도"
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderCommu, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        href: "/Community",
+                        children: "커뮤니티"
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderMyInfo, {
+                    children: "My메뉴"
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderRecoBox, {
+                    activeBtn: router.pathname,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        href: "/Recommend",
+                        onClick: ()=>{
+                            setActiveBtn(router.pathname);
+                        },
+                        children: "추천 분양현장"
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderMapBox, {
+                    activeBtn: router.pathname,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        href: "/Buildingmap",
+                        onClick: ()=>{
+                            setActiveBtn(router.pathname);
+                        },
+                        children: "실시간 매물지도"
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderMyProduct, {
+                    activeBtn: router.pathname,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        href: "/Mybuilding",
+                        onClick: ()=>{
+                            setActiveBtn(router.pathname);
+                        },
+                        children: "내 매물관리"
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderCommunityBox, {
+                    activeBtn: router.pathname,
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        href: "/Community",
+                        onClick: ()=>{
+                            setActiveBtn(router.pathname);
+                        },
+                        children: "커뮤니티"
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderLogin, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        href: "/Sign-in",
+                        children: "로그인"
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(Bar, {}),
+                /*#__PURE__*/ jsx_runtime_.jsx(HeaderRegister, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        href: "/Sign-up",
+                        children: "회원가입"
+                    })
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(JonggaeBox, {
+                    children: "중개사 가입"
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(Submenu, {})
             ]
         })
     });
 }
 
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
-
-/***/ }),
-
-/***/ 4763:
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (/* binding */ Layout)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2119);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Header__WEBPACK_IMPORTED_MODULE_2__]);
-_Header__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+;// CONCATENATED MODULE: ./src/components/Layout.tsx
 
 
 
 function Layout({ children  }) {
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Header__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {}),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+            /*#__PURE__*/ jsx_runtime_.jsx(Header, {}),
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 children: children
             })
         ]
     });
 }
 
-__webpack_async_result__();
-} catch(e) { __webpack_async_result__(e); } });
 
 /***/ }),
 
@@ -286,12 +553,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4763);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3239);
 /* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2210);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7518);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_3__);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_Layout__WEBPACK_IMPORTED_MODULE_1__, _chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__]);
-([_components_Layout__WEBPACK_IMPORTED_MODULE_1__, _chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__]);
+_chakra_ui_react__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
 
 
 
@@ -317,10 +584,59 @@ __webpack_async_result__();
 
 /***/ }),
 
+/***/ 3918:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/amp-context.js");
+
+/***/ }),
+
+/***/ 5732:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/amp-mode.js");
+
+/***/ }),
+
 /***/ 3280:
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/app-router-context.js");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
+
+/***/ }),
+
+/***/ 4486:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/image-blur-svg.js");
+
+/***/ }),
+
+/***/ 744:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/image-config-context.js");
+
+/***/ }),
+
+/***/ 5843:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/image-config.js");
+
+/***/ }),
+
+/***/ 9552:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/image-loader");
 
 /***/ }),
 
@@ -373,6 +689,13 @@ module.exports = require("next/dist/shared/lib/router/utils/resolve-href.js");
 
 /***/ }),
 
+/***/ 2470:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/side-effect.js");
+
+/***/ }),
+
 /***/ 9232:
 /***/ ((module) => {
 
@@ -380,10 +703,10 @@ module.exports = require("next/dist/shared/lib/utils.js");
 
 /***/ }),
 
-/***/ 1853:
+/***/ 618:
 /***/ ((module) => {
 
-module.exports = require("next/router");
+module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 
 /***/ }),
 
@@ -422,7 +745,7 @@ module.exports = import("@chakra-ui/react");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [373,664], () => (__webpack_exec__(9212)));
+var __webpack_exports__ = __webpack_require__.X(0, [636,675,664], () => (__webpack_exec__(9212)));
 module.exports = __webpack_exports__;
 
 })();

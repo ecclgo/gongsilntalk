@@ -127,7 +127,7 @@ const ACheckBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().input
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const Form = styled_components__WEBPACK_IMPORTED_MODULE_0___default().form.withConfig({
-    componentId: "sc-9828b2f0-0"
+    componentId: "sc-5f296df4-0"
 })`
   position: absolute;
   top: 299px;
@@ -142,9 +142,24 @@ const Form = styled_components__WEBPACK_IMPORTED_MODULE_0___default().form.withC
   background-color: #ffffff;
   border: 1px solid #f0f0f0;
   border-radius: 10px;
+
+  @media(max-width: 768px) {
+    position: absolute;
+    top: 202px;
+    left: 20px;
+    width: 320px;
+
+    box-sizing: border-box;
+    width: 578px;
+    height: 488px;
+
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+  }
 `;
 const SignUpForm = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Form).withConfig({
-    componentId: "sc-9828b2f0-1"
+    componentId: "sc-5f296df4-1"
 })`
   height: ${(props)=>`${props.emailRegi ? "946px" : "488px"}`};
 `;

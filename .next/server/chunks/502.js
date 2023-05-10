@@ -187,7 +187,7 @@ const community = [
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const NoticeBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-d545d98-0"
+    componentId: "sc-4bbae600-0"
 })`
   display: flex;
   flex-direction: column;
@@ -203,18 +203,18 @@ const NoticeBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.w
   bottom: 797px;
 `;
 const EmptyBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-d545d98-1"
+    componentId: "sc-4bbae600-1"
 })`
   position: absolute;
   width: 778px;
   height: 1px;
   left: 38px;
-  top: 306px;
+  top: 216px;
 
   background: #f7f7f7;
 `;
 const Line = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-d545d98-2"
+    componentId: "sc-4bbae600-2"
 })`
   width: 755px;
   height: 0px;
@@ -306,7 +306,7 @@ function Notice() {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(NoticeBox/* NoticeBox */.f7, {
-                children: NoticeDummy/* NoticeData */.kY?.map((a, i)=>{
+                children: NoticeDummy/* NoticeData */.kY?.slice(0, 2).map((a, i)=>{
                     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                         children: [
                             /*#__PURE__*/ jsx_runtime_.jsx(NoticeTag, {

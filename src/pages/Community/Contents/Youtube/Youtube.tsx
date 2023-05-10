@@ -24,18 +24,18 @@ export default function Youtube({ post, yPosts, setCurrentPage }: Props) {
     <>
       <Notice />
       <OrderBox>
-          <Updated clickedOrder={clickedOrder === 0} onClick={() => {handleClick(0)}}>
-            <ClickedOrder clickedOrder={clickedOrder === 0} onClick={() => {handleClick(0)}} />
-            최신순
-          </Updated>
-          <Recommend clickedOrder={clickedOrder === 1} onClick={() => {handleClick(1)}}>
-            <ClickedOrder clickedOrder={clickedOrder === 1} onClick={() => {handleClick(1)}} />
-            추천순
-          </Recommend>
-          <Repl clickedOrder={clickedOrder === 2} onClick={() => {handleClick(2)}}>
-            <ClickedOrder clickedOrder={clickedOrder === 2} onClick={() => {handleClick(2)}} />
-            댓글순
-          </Repl>
+        <Updated clickedOrder={clickedOrder === 0} onClick={() => {handleClick(0)}}>
+          <ClickedOrder clickedOrder={clickedOrder === 0} onClick={() => {handleClick(0)}} />
+          최신순
+        </Updated>
+        <Recommend clickedOrder={clickedOrder === 1} onClick={() => {handleClick(1)}}>
+          <ClickedOrder clickedOrder={clickedOrder === 1} onClick={() => {handleClick(1)}} />
+          추천순
+        </Recommend>
+        <Repl clickedOrder={clickedOrder === 2} onClick={() => {handleClick(2)}}>
+          <ClickedOrder clickedOrder={clickedOrder === 2} onClick={() => {handleClick(2)}} />
+          댓글순
+        </Repl>
       </OrderBox>
       <ContentsBox>
         {post?.map((a: any, i: number) => {

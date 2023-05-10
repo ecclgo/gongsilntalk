@@ -18,6 +18,21 @@ export const Form = styled.form`
   background-color: #ffffff;
   border: 1px solid #f0f0f0;
   border-radius: 10px;
+
+  @media(max-width: 768px) {
+    position: absolute;
+    top: 202px;
+    left: 20px;
+    width: 320px;
+
+    box-sizing: border-box;
+    width: 578px;
+    height: 488px;
+
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+  }
 `;
 
 export const SignUpForm = styled(Form)<Props>`

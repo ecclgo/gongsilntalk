@@ -20,7 +20,7 @@ export const EmptyBox = styled.div`
   width: 778px;
   height: 1px;
   left: 38px;
-  top: 306px;
+  top: 216px;
 
   background: #f7f7f7;
 `;

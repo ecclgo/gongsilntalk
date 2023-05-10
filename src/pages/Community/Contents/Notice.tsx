@@ -7,7 +7,7 @@ export default function Notice() {
     <>
       <NoticeBox>
         {
-          NoticeData?.map((a, i) => {
+          NoticeData?.slice(0, 2).map((a, i) => {
             return (
               <div key={i}>
                 <NoticeTag>공지</NoticeTag>

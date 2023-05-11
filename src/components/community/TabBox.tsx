@@ -1,21 +1,48 @@
 import styled from 'styled-components';
 
 type Props = {
-  innerTab: number;
+  innerTab?: number;
+  open?: boolean
 };
 
 export const TabBox = styled.div`
+  @media screen and (max-width: 768px) {
+      display: none;
+    };
   width: 778px;
-  height: 100px;
+  height: 218px;
 
   position: absolute;
   left: 371px;
-  top: 72px;
+  top: 60px;
 
   background-color: #ffffff;
 `;
 
 export const YoutubeTab = styled.span<Props>`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    background: #FFFFFF;
+
+    border: 1px solid #D5D5D5;
+    border-radius: 6px;
+    
+    position: absolute;
+    width: 81px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 700;
+    align-items: center;
+    top: 0px;
+    letter-spacing: -0.03em;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    flex-direction: row;
+    padding: 8px 10px;
+    left: 0px;
+  };
+
   box-sizing: border-box;
 
   display: flex;
@@ -54,6 +81,10 @@ export const YoutubeTab = styled.span<Props>`
 `;
 
 export const MegazineTab = styled(YoutubeTab)<Props>`
+  @media screen and (max-width: 768px) {
+    left: 91px;
+  }
+
   left: 153px;
   color: ${(props) => `${props.innerTab === 1 ? '#F16341' : '#9B9B9B'}`};
   background-color: ${(props) =>
@@ -61,3 +92,55 @@ export const MegazineTab = styled(YoutubeTab)<Props>`
   border: ${(props) =>
     `${props.innerTab === 1 ? '1px solid #F16431' : '1px solid #D5D5D5'}`};
 `;
+
+export const MTabBox = styled.div`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    height: 189px;
+    width: 100vw;
+    top: 0px;
+    background-color: #FFFFFF;
+  }
+  display: none;
+`;
+
+export const MContents = styled.div`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 6px;
+
+    position: absolute;
+    width: 100vw;
+    height: 23px;
+    top: 21px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    color: #000000;
+  }
+
+  display: none;
+`;
+
+export const MTabContents = styled.div`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+  display: none;
+`;
+

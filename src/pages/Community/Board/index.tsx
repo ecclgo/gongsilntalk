@@ -5,6 +5,7 @@ import QnA from './QnA';
 import FreeBoard from './FreeBoard';
 import KnowHow from './KnowHow';
 import Review from './Review';
+import Notice from '../Contents/Notice';
 
 type Props = {
   tabClicked: number;
@@ -52,6 +53,7 @@ export default function Board({ tabClicked, setTabClicked }: Props) {
                 <Review />
               )
             }
+            <Notice />
           </>
         )
         :

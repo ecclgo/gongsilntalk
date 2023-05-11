@@ -187,8 +187,19 @@ const community = [
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const NoticeBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-4bbae600-0"
+    componentId: "sc-a212480a-0"
 })`
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    padding: 8px 0px;
+
+    position: absolute;
+    width: 100vw;
+    height: 78px;
+    left: 0px;
+    top: 90px;
+    background-color: #FFFFFF;
+};
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -203,7 +214,7 @@ const NoticeBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.w
   bottom: 797px;
 `;
 const EmptyBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-4bbae600-1"
+    componentId: "sc-a212480a-1"
 })`
   position: absolute;
   width: 778px;
@@ -214,15 +225,16 @@ const EmptyBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.wi
   background: #f7f7f7;
 `;
 const Line = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-4bbae600-2"
+    componentId: "sc-a212480a-2"
 })`
-  width: 755px;
+  width: 704px;
   height: 0px;
   opacity: 0.6;
   border: 1px solid #d5d5d5;
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin-left: 38px;
 `;
 
 
@@ -247,8 +259,26 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/components/community/Notice.tsx
 
 const NoticeTag = external_styled_components_default().span.withConfig({
-    componentId: "sc-3956ab03-0"
+    componentId: "sc-bf512677-0"
 })`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+    left: 18px;
+    width: 40px;
+    height: 25px;
+    
+    padding: 5px 8px;
+    background-color: #F0F0F0;
+    border-radius: 6px;
+
+    color: #666666;
+  }
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -276,8 +306,29 @@ const NoticeTag = external_styled_components_default().span.withConfig({
   margin-bottom: 8px;
 `;
 const NoticeTitle = external_styled_components_default().span.withConfig({
-    componentId: "sc-3956ab03-1"
+    componentId: "sc-bf512677-1"
 })`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    width: 274px;
+    height: 18px;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    padding: 2px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+
+    letter-spacing: -0.03em;
+
+    color: #343232;
+
+  }
   width: 646px;
   height: 18px;
   margin-left: 56px;
@@ -288,6 +339,7 @@ const NoticeTitle = external_styled_components_default().span.withConfig({
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
+
 
   letter-spacing: -0.03em;
   cursor: pointer;

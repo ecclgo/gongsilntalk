@@ -1,16 +1,19 @@
+import Link from "next/link";
 import styled from "styled-components";
 
 type Props = {
-  activeBtn: string,
+  activeBtn?: string,
+  isOpen?: boolean
 }
 
 export const HeaderBox = styled.header`
   @media screen and (max-width: 768px) {
-    position: absolute;
-    width: 100%;
+    display: flex;
+    position: relative;
+    width: 100vw;
     height: 48px;
     left: 0px;
-    top: 800px;
+    top: 635px;
     background: #FFFFFF;
     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
     color: #333333;
@@ -212,20 +215,53 @@ export const JonggaeBox = styled.div`
   cursor: pointer;
 `;
 
-export const Submenu = styled.div`
-  @media screen and (max-width: 768px) {
-          display: none;
-    }
 
+export const NavLink = styled(Link)`
+  color: #000;
+  justify-self: flex-start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0px;
 
   position: absolute;
+  right: 10px;
+`;
+
+export const MenuIcon = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  display: flex;
+  position: absolute;
+  left: 1855px;
+  top: 20px;
   width: 32px;
   height: 32px;
-  left: 1855px;
-  top: calc(50% - 32px/2);
+  cursor: pointer;
+`;
+
+export const NavMenu = styled.ul<Props>`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.95;
+    transition: all 0.3s ease-in-out;
+  }
+`;
+
+export const NavItem = styled.li`
+  height: 80px;
 `;

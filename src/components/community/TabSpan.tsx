@@ -45,3 +45,4 @@ export const MovingSpan = styled.span`
   top: 28px;
   left: 30px;
 `;
+

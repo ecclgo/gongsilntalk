@@ -6,8 +6,8 @@ type Props = {
 
 export const OrderBox = styled.div`
   position: absolute;
-  top: 360px;
-  left: 576px;
+  top: 15px;
+  left: 550px;
   width: 200px;
   height: 20px;
 

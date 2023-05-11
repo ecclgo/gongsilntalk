@@ -1,6 +1,17 @@
 import styled from 'styled-components';
 
 export const NoticeBox = styled.div`
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    padding: 8px 0px;
+
+    position: absolute;
+    width: 100vw;
+    height: 78px;
+    left: 0px;
+    top: 90px;
+    background-color: #FFFFFF;
+};
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -26,11 +37,12 @@ export const EmptyBox = styled.div`
 `;
 
 export const Line = styled.div`
-  width: 755px;
+  width: 704px;
   height: 0px;
   opacity: 0.6;
   border: 1px solid #d5d5d5;
   flex: none;
   order: 1;
   flex-grow: 0;
+  margin-left: 38px;
 `;

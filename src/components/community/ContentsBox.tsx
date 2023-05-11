@@ -1,17 +1,27 @@
 import styled from 'styled-components';
 
 export const ContentsBox = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  };
+
   position: absolute;
-  width: 770px;
-  height: 1000px;
-  left: 38px;
-  top: 380px;
+  width: 778px;
+  height: 1200px;
+  left: 0px;
+  top: 230px;
   border: none;
+  background-color: #FFFFFF;
 `;
 
 export const Ytitle = styled.div`
+  @media screen and (max-width: 768px) {
+      display: none;
+    };
+
   width: 532px;
   height: 25px;
+  margin-left: 38px;
   cursor: pointer;
 
   font-family: 'Spoqa Han Sans Neo';
@@ -26,9 +36,14 @@ export const Ytitle = styled.div`
 `;
 
 export const YContents = styled.div`
+  @media screen and (max-width: 768px) {
+      display: none;
+    };
+
   width: 520px;
   height: 44px;
 
+  margin-left: 38px;
   margin-top: 8px;
 
   overflow: hidden;
@@ -49,21 +64,26 @@ export const YContents = styled.div`
 `;
 
 export const YFooter = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   font-family: 'Spoqa Han Sans Neo';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-
+  margin-left: 38px;
   letter-spacing: -0.02em;
 
   color: #9b9b9b;
-  margin-left: 1px;
   margin-top: 16px;
   margin-bottom: 22px;
 `;
 
 export const YUsername = styled.span`
+  @media screen and (max-width: 768px) {
+      display: none;
+    };
   font-family: 'Spoqa Han Sans Neo';
   font-style: normal;
   font-weight: 500;
@@ -78,12 +98,19 @@ export const YUsername = styled.span`
 `;
 
 export const ProfileBox = styled.div`
+  @media screen and (max-width: 768px) {
+      display: none;
+    };
   display: flex;
   flex-direction: row;
-  margin-top: 22px;
+  margin-top: 50px;
+  margin-left: 38px;
 `;
 
 export const Line = styled.div`
+  @media screen and (max-width: 768px) {
+      display: none;
+    };
   width: 702px;
   height: 0px;
 
@@ -98,10 +125,13 @@ export const Line = styled.div`
 
 
 export const MovingBox = styled.div`
-  position: fixed;
+  @media screen and (max-width: 768px) {
+      display: none;
+    };
+  display: none;
   width: 379px;
   height: 319px;
-  left: 70%;
+  left: 62%;
   top: 40%;
 
   background-color: #FFFFFF;

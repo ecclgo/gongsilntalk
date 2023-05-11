@@ -22,7 +22,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/components/community/PagingStyle.tsx
 
 const PageUl = external_styled_components_default().ul.withConfig({
-    componentId: "sc-9fb9f1c3-0"
+    componentId: "sc-7f8b9952-0"
 })`
   position: absolute;
   
@@ -32,11 +32,11 @@ const PageUl = external_styled_components_default().ul.withConfig({
   color: black;
   padding: 1px;
   
-  top: 1030px;
+  top: 1170px;
   left: 330px;
 `;
 const PageLi = external_styled_components_default().li.withConfig({
-    componentId: "sc-9fb9f1c3-1"
+    componentId: "sc-7f8b9952-1"
 })`
   display: inline-block;
   align-items: flex-start;
@@ -54,7 +54,7 @@ const PageLi = external_styled_components_default().li.withConfig({
   color: #9B9B9B;
 `;
 const PageSpan = external_styled_components_default().button.withConfig({
-    componentId: "sc-9fb9f1c3-2"
+    componentId: "sc-7f8b9952-2"
 })`
   width: 25px;
   border-radius: 5px;

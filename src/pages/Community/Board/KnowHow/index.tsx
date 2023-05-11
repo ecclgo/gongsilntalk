@@ -1,7 +1,11 @@
+import { ContentsBox } from "@/components/community/CommunityBox";
+
 export default function KnowHow() {
   return (
     <>
-      노하우
+      <ContentsBox>
+        
+      </ContentsBox>
     </>
   );
 };

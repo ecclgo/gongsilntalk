@@ -1,7 +1,11 @@
+import { ContentsBox } from "@/components/community/CommunityBox";
+
 export default function Review() {
   return (
     <>
-      후기
+      <ContentsBox>
+        
+      </ContentsBox>
     </>
   )
 }

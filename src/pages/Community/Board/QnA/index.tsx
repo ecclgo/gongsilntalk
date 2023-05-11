@@ -1,9 +1,11 @@
-import Notice from "../../Contents/Notice";
+import { ContentsBox } from "@/components/community/CommunityBox";
 
 export default function QnA() {
   return (
     <>
-      <Notice />
+      <ContentsBox>
+
+      </ContentsBox>
     </>
   )
 };

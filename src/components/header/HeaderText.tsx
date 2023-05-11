@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const HomeText = styled.span`
+type Props = {
+  clicked?: number
+};
+
+export const HomeText = styled.span<Props>`
   @media screen and (max-width: 768px) {
     position: absolute;
     width: 10px;
@@ -19,7 +23,7 @@ export const HomeText = styled.span`
     text-align: center;
     letter-spacing: -0.03em;
 
-    color: #C1C1C1;
+    color: ${(props) => `${props.clicked === 0 ? '#F16341' : '#C1C1C1'}`};
   }
   display: none;
 `;
@@ -27,19 +31,23 @@ export const HomeText = styled.span`
 export const Recommend = styled(HomeText)`
   left: 93px;
   width: 41px;
+  color: ${(props) => `${props.clicked === 1 ? '#F16341' : '#C1C1C1'}`};
 `;
 
 export const Map = styled(HomeText)`
   left: 172px;
   width: 35px;
+  color: ${(props) => `${props.clicked === 2 ? '#F16341' : '#C1C1C1'}`};
 `;
 
 export const HeaderCommu = styled(HomeText)`
   left: 231px;
   width: 41px;
+  color: ${(props) => `${props.clicked === 3 ? '#F16341' : '#C1C1C1'}`};
 `;
 
 export const HeaderMyInfo = styled(HomeText)`
   left: 303.5px;
   width: 37px;
+  color: ${(props) => `${props.clicked === 4 ? '#F16341' : '#C1C1C1'}`};
 `;

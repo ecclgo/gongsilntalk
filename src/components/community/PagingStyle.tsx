@@ -13,7 +13,7 @@ export const PageUl = styled.ul`
   color: black;
   padding: 1px;
   
-  top: 1030px;
+  top: 1170px;
   left: 330px;
 `;
 

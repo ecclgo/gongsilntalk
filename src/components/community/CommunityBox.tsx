@@ -71,3 +71,13 @@ export const ReviewTab = styled(QnABoxTab)`
   color: ${(props) => `${props.innerTab == 3 ? '#F16341' : '#9B9B9B'}`};
   border: ${(props) => `${props.innerTab == 3 ? '1px solid #F16341' : '1px solid #D5D5D5'}`};
 `;
+
+export const ContentsBox = styled.div`
+  position: absolute;
+  width: 778px;
+  height: 1200px;
+  left: 0px;
+  top: 230px;
+
+  background-color: #FFFFFF;
+`;

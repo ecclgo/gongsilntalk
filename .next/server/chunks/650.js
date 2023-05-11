@@ -15,7 +15,7 @@ exports.modules = {
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const FirstContent = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-6035c393-0"
+    componentId: "sc-afc8f377-0"
 })`
   position: absolute;
   top: 19.5px;
@@ -37,13 +37,13 @@ const FirstContent = styled_components__WEBPACK_IMPORTED_MODULE_0___default().sp
   color: ${(props)=>`${props.tabClicked === 0 ? "#000000" : "#D5D5D5"}`};
 `;
 const SecondContent = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(FirstContent).withConfig({
-    componentId: "sc-6035c393-1"
+    componentId: "sc-afc8f377-1"
 })`
   left: 547.5px;
   color: ${(props)=>`${props.tabClicked === 1 ? "#000000" : "#D5D5D5"}`};
 `;
 const MovingSpan = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-6035c393-2"
+    componentId: "sc-afc8f377-2"
 })`
   font-family: 'Spoqa Han Sans Neo';
   font-style: normal;
@@ -91,11 +91,11 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/components/community/OrderBy.tsx
 
 const OrderBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-8c7e9a7d-0"
+    componentId: "sc-46cdc40a-0"
 })`
   position: absolute;
-  top: 360px;
-  left: 576px;
+  top: 15px;
+  left: 550px;
   width: 200px;
   height: 20px;
 
@@ -104,7 +104,7 @@ const OrderBox = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const Updated = external_styled_components_default().div.withConfig({
-    componentId: "sc-8c7e9a7d-1"
+    componentId: "sc-46cdc40a-1"
 })`
   position: absolute;
   left: 60px;
@@ -126,7 +126,7 @@ const Updated = external_styled_components_default().div.withConfig({
   color: ${(props)=>`${props.clickedOrder ? "#666666" : "#BFBFBF"}`}; 
 `;
 const Recommend = external_styled_components_default().div.withConfig({
-    componentId: "sc-8c7e9a7d-2"
+    componentId: "sc-46cdc40a-2"
 })`
   position: absolute;
   left: 110px;
@@ -147,7 +147,7 @@ const Recommend = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const Repl = external_styled_components_default().div.withConfig({
-    componentId: "sc-8c7e9a7d-3"
+    componentId: "sc-46cdc40a-3"
 })`
   position: absolute;
   left: 160px;
@@ -168,7 +168,7 @@ const Repl = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const ClickedOrder = external_styled_components_default().div.withConfig({
-    componentId: "sc-8c7e9a7d-4"
+    componentId: "sc-46cdc40a-4"
 })`
   position: absolute;
   top: 5px;
@@ -209,57 +209,57 @@ function Youtube({ post , yPosts , setCurrentPage  }) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(Notice["default"], {}),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(OrderBox, {
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(ContentsBox/* ContentsBox */.Kh, {
                 children: [
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Updated, {
-                        clickedOrder: clickedOrder === 0,
-                        onClick: ()=>{
-                            handleClick(0);
-                        },
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(OrderBox, {
                         children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(ClickedOrder, {
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Updated, {
                                 clickedOrder: clickedOrder === 0,
                                 onClick: ()=>{
                                     handleClick(0);
-                                }
+                                },
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx(ClickedOrder, {
+                                        clickedOrder: clickedOrder === 0,
+                                        onClick: ()=>{
+                                            handleClick(0);
+                                        }
+                                    }),
+                                    "최신순"
+                                ]
                             }),
-                            "최신순"
-                        ]
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Recommend, {
-                        clickedOrder: clickedOrder === 1,
-                        onClick: ()=>{
-                            handleClick(1);
-                        },
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(ClickedOrder, {
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Recommend, {
                                 clickedOrder: clickedOrder === 1,
                                 onClick: ()=>{
                                     handleClick(1);
-                                }
+                                },
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx(ClickedOrder, {
+                                        clickedOrder: clickedOrder === 1,
+                                        onClick: ()=>{
+                                            handleClick(1);
+                                        }
+                                    }),
+                                    "추천순"
+                                ]
                             }),
-                            "추천순"
-                        ]
-                    }),
-                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Repl, {
-                        clickedOrder: clickedOrder === 2,
-                        onClick: ()=>{
-                            handleClick(2);
-                        },
-                        children: [
-                            /*#__PURE__*/ jsx_runtime_.jsx(ClickedOrder, {
+                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Repl, {
                                 clickedOrder: clickedOrder === 2,
                                 onClick: ()=>{
                                     handleClick(2);
-                                }
-                            }),
-                            "댓글순"
+                                },
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx(ClickedOrder, {
+                                        clickedOrder: clickedOrder === 2,
+                                        onClick: ()=>{
+                                            handleClick(2);
+                                        }
+                                    }),
+                                    "댓글순"
+                                ]
+                            })
                         ]
-                    })
-                ]
-            }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(ContentsBox/* ContentsBox */.Kh, {
-                children: [
+                    }),
                     post?.map((a, i)=>{
                         return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                             children: [

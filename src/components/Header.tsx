@@ -23,8 +23,6 @@ export default function Header() {
     setActiveBtn(router.pathname);
   }, [activeBtn]);
 
-  console.log(router.pathname)
-
   return (
     <>
       <HeaderBox>

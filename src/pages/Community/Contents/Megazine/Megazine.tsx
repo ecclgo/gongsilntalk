@@ -1,6 +1,6 @@
 import { ContentsBox, ProfileBox, YContents, YFooter, YUsername, Ytitle } from "@/components/community/ContentsBox";
 import { EmptyBox, Line, NoticeBox } from "@/components/community/NoticeBox";
-import Notice from "../Notice";
+import Notice from "../../Notice";
 import Image from "next/image";
 import Paging from "../../Paging";
 import Link from "next/link";
@@ -11,7 +11,7 @@ type Props = {
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function Magazine({ post, mPosts, setCurrentPage }: Props) {
+export default function Megazine({ post, mPosts, setCurrentPage }: Props) {
   return (
     <>
       <Notice />
@@ -47,7 +47,7 @@ export default function Magazine({ post, mPosts, setCurrentPage }: Props) {
                   />
                 </div>
                 <Link
-                  href={`/posts/${a.id}`}
+                  href={`/Community/Contents/Megazine/posts/${a.id}`}
                 >
                   <Ytitle>
                     {a.title}

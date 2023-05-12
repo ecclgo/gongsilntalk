@@ -4,6 +4,7 @@ import Contents from './Contents';
 import Board from './Board';
 import { Label, Option, SelectBox, SelectOptions } from '@/components/community/SelectBox';
 import MTabContentsComponent from './Contents/MTabContents';
+import MTabBoardComponent from './Board/MTabBoard';
 
 export default function Community() {
   const [tabClicked, setTabClicked] = useState<number>(0);
@@ -33,9 +34,9 @@ export default function Community() {
         </MContents>
         {
           currentValue == '공톡컨텐츠' ?
-          (<MTabContentsComponent />)
+          (<MTabContentsComponent tabClicked={tabClicked} setTabClicked={setTabClicked} />)
           :
-          null
+          (<MTabBoardComponent />)
         }
       </MTabBox>
     </>

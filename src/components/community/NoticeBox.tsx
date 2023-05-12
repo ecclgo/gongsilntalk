@@ -2,15 +2,7 @@ import styled from 'styled-components';
 
 export const NoticeBox = styled.div`
   @media screen and (max-width: 768px) {
-    align-items: center;
-    padding: 8px 0px;
-
-    position: absolute;
-    width: 100vw;
-    height: 78px;
-    left: 0px;
-    top: 90px;
-    background-color: #FFFFFF;
+    display: none;
 };
   display: flex;
   flex-direction: column;

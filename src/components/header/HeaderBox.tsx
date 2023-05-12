@@ -10,13 +10,14 @@ export const HeaderBox = styled.header`
   @media screen and (max-width: 768px) {
     display: flex;
     position: relative;
-    width: 100vw;
+    width: 360px;
     height: 48px;
     left: 0px;
-    top: 635px;
+    top: 622px;
     background: #FFFFFF;
     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
     color: #333333;
+    z-index: 99999;
   }
 
   position: absolute;

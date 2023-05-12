@@ -1,8 +1,8 @@
 "use strict";
 (() => {
 var exports = {};
-exports.id = 888;
-exports.ids = [888,436,848,751,844,821];
+exports.id = 2888;
+exports.ids = [2888,4846,436,6587,1751,3844,1918,4821,5192];
 exports.modules = {
 
 /***/ 9321:
@@ -30,18 +30,19 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 
 
 const HeaderBox = external_styled_components_default().header.withConfig({
-    componentId: "sc-6939369f-0"
+    componentId: "sc-519ed0bc-0"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
     position: relative;
-    width: 100vw;
+    width: 360px;
     height: 48px;
     left: 0px;
-    top: 635px;
+    top: 622px;
     background: #FFFFFF;
     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
     color: #333333;
+    z-index: 99999;
   }
 
   position: absolute;
@@ -54,7 +55,7 @@ const HeaderBox = external_styled_components_default().header.withConfig({
   border-bottom: 1px solid #D5D5D5;
 `;
 const HeaderLogo = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-1"
+    componentId: "sc-519ed0bc-1"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -64,7 +65,7 @@ const HeaderLogo = external_styled_components_default().div.withConfig({
   left: 40px;
 `;
 const HeaderHome = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-2"
+    componentId: "sc-519ed0bc-2"
 })`
   @media (max-width: 700px) {
     display: flex;
@@ -75,7 +76,7 @@ const HeaderHome = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const FHeaderProduct = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-3"
+    componentId: "sc-519ed0bc-3"
 })`
   @media screen and (max-width: 768px) {    
     display: flex;
@@ -86,7 +87,7 @@ const FHeaderProduct = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const SHeaderProduct = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-4"
+    componentId: "sc-519ed0bc-4"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -97,7 +98,7 @@ const SHeaderProduct = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderMap = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-5"
+    componentId: "sc-519ed0bc-5"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -108,7 +109,7 @@ const HeaderMap = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderCommunity = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-6"
+    componentId: "sc-519ed0bc-6"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -119,7 +120,7 @@ const HeaderCommunity = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderMyInfoBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-7"
+    componentId: "sc-519ed0bc-7"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -130,7 +131,7 @@ const HeaderMyInfoBox = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderRecoBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-8"
+    componentId: "sc-519ed0bc-8"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -156,26 +157,26 @@ const HeaderRecoBox = external_styled_components_default().div.withConfig({
   color: ${(props)=>`${props.activeBtn === "/Recommend" ? "#F16341" : "#343232"}`};
 `;
 const HeaderMapBox = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-6939369f-9"
+    componentId: "sc-519ed0bc-9"
 })`
   left: 824px;
   width: 120px;
   color: ${(props)=>`${props.activeBtn === "/Buildingmap" ? "#F16341" : "#343232"}`};
 `;
 const HeaderMyProduct = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-6939369f-10"
+    componentId: "sc-519ed0bc-10"
 })`
   left: 1027px;
   color: ${(props)=>`${props.activeBtn === "/Mybuilding" ? "#F16341" : "#343232"}`};
 `;
 const HeaderCommunityBox = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-6939369f-11"
+    componentId: "sc-519ed0bc-11"
 })`
   left: 1198px;
   color: ${(props)=>`${props.activeBtn === "/Community" ? "#F16341" : "#343232"}`};
 `;
 const HeaderLogin = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-12"
+    componentId: "sc-519ed0bc-12"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -201,13 +202,13 @@ const HeaderLogin = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const HeaderRegister = external_styled_components_default()(HeaderLogin).withConfig({
-    componentId: "sc-6939369f-13"
+    componentId: "sc-519ed0bc-13"
 })`
   left: 1670px;
   width: 60px;
 `;
 const Bar = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-14"
+    componentId: "sc-519ed0bc-14"
 })`
   @media screen and (max-width: 768px) {
       display: none;
@@ -222,7 +223,7 @@ const Bar = external_styled_components_default().div.withConfig({
   transform: rotate(90deg);
 `;
 const JonggaeBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-15"
+    componentId: "sc-519ed0bc-15"
 })`
   @media screen and (max-width: 768px) {
         display: none;
@@ -255,7 +256,7 @@ const JonggaeBox = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const NavLink = external_styled_components_default()((link_default())).withConfig({
-    componentId: "sc-6939369f-16"
+    componentId: "sc-519ed0bc-16"
 })`
   color: #000;
   justify-self: flex-start;
@@ -269,7 +270,7 @@ const NavLink = external_styled_components_default()((link_default())).withConfi
   right: 10px;
 `;
 const MenuIcon = external_styled_components_default().div.withConfig({
-    componentId: "sc-6939369f-17"
+    componentId: "sc-519ed0bc-17"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -283,7 +284,7 @@ const MenuIcon = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const NavMenu = external_styled_components_default().ul.withConfig({
-    componentId: "sc-6939369f-18"
+    componentId: "sc-519ed0bc-18"
 })`
   display: flex;
   align-items: center;
@@ -304,7 +305,7 @@ const NavMenu = external_styled_components_default().ul.withConfig({
   }
 `;
 const NavItem = external_styled_components_default().li.withConfig({
-    componentId: "sc-6939369f-19"
+    componentId: "sc-519ed0bc-19"
 })`
   height: 80px;
 `;
@@ -392,7 +393,6 @@ function Header() {
     }, [
         activeBtn
     ]);
-    console.log(router.pathname);
     return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(HeaderBox, {
             children: [
@@ -822,7 +822,7 @@ module.exports = import("@chakra-ui/react");;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [636,675,664], () => (__webpack_exec__(9212)));
+var __webpack_exports__ = __webpack_require__.X(0, [2636,5675,1664], () => (__webpack_exec__(9212)));
 module.exports = __webpack_exports__;
 
 })();

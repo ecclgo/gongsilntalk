@@ -2,21 +2,7 @@ import styled from 'styled-components';
 
 export const NoticeTag = styled.span`
   @media screen and (max-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    
-    gap: 10px;
-    left: 18px;
-    width: 40px;
-    height: 25px;
-    
-    padding: 5px 8px;
-    background-color: #F0F0F0;
-    border-radius: 6px;
-
-    color: #666666;
+    display: none;
   }
 
   display: flex;
@@ -48,24 +34,7 @@ export const NoticeTag = styled.span`
 
 export const NoticeTitle = styled.span`
   @media screen and (max-width: 768px) {
-    display: flex;
-    width: 274px;
-    height: 18px;
-
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    
-    padding: 2px;
-    font-family: 'Spoqa Han Sans Neo';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-
-    letter-spacing: -0.03em;
-
-    color: #343232;
+    display: none;
 
   }
   width: 646px;

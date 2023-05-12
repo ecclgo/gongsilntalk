@@ -22,9 +22,11 @@ export const TabBox = styled.div`
 export const YoutubeTab = styled.span<Props>`
   @media screen and (max-width: 768px) {
     display: flex;
-    background: #FFFFFF;
+    background-color: ${(props) =>
+    `${props.innerTab === 0 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}`};
 
-    border: 1px solid #D5D5D5;
+    border: ${(props) =>
+    `${props.innerTab === 0 ? '1px solid #F16431' : '1px solid #D5D5D5'}`};
     border-radius: 6px;
     
     position: absolute;
@@ -97,8 +99,8 @@ export const MTabBox = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
     position: absolute;
-    height: 189px;
-    width: 100vw;
+    height: 170px;
+    width: 360px;
     top: 0px;
     background-color: #FFFFFF;
   }
@@ -139,7 +141,10 @@ export const MTabContents = styled.div`
     display: flex;
     position: absolute;
     top: 50px;
-    left: 20px;
+    left: 0px;
+    width: 359px;
+    margin-left: 16px;
+    
   }
   display: none;
 `;

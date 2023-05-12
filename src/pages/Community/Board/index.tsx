@@ -5,7 +5,7 @@ import QnA from './QnA';
 import FreeBoard from './FreeBoard';
 import KnowHow from './KnowHow';
 import Review from './Review';
-import Notice from '../Contents/Notice';
+import Notice from '../Notice';
 
 type Props = {
   tabClicked: number;

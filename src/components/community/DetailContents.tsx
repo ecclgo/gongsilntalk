@@ -7,7 +7,7 @@ export const DetailBox = styled.div`
   background-color: #FFFFFF;
   left: 21%;
   right: 40%;
-  margin-top: 3.8%;
+  margin-top: 3.0%;
 
   border: 1px solid #333333;
 `;
@@ -64,7 +64,7 @@ export const EndLine = styled.div`
   border: 1px solid #F0F0F0;
 `;
 
-export const Repl = styled.div`
+export const Repl = styled.input`
   position: absolute;
   left: 52px;
   bottom: 46px;

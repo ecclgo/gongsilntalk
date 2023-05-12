@@ -5,7 +5,8 @@ import Paging from "../../Paging";
 import { OrderBox, Updated, Recommend, Repl, ClickedOrder } from "@/components/community/OrderBy";
 import { useState } from "react";
 import { MovingSpan } from "@/components/community/TabSpan";
-import Notice from "../Notice";
+import Notice from "../../Notice";
+import Link from "next/link";
 
 type Props = {
   post: any,
@@ -66,11 +67,13 @@ export default function Youtube({ post, yPosts, setCurrentPage }: Props) {
                   }}
                 />
               </div>
-              <Ytitle>{a.title}</Ytitle>
-              <YContents>{a.contents}</YContents>
-              <YFooter>
-                {a.date + ' '} {'추천 ' + a.reco + ' '} {'댓글 ' + a.repl}
-              </YFooter>
+              <Link href={`/Community/Contents/Youtube/posts/${a.id}`}>
+                <Ytitle>{a.title}</Ytitle>
+                <YContents>{a.contents}</YContents>
+                <YFooter>
+                  {a.date + ' '} {'추천 ' + a.reco + ' '} {'댓글 ' + a.repl}
+                </YFooter>
+              </Link>
               <Line />
             </div>
           );

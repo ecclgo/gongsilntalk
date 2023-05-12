@@ -1,10 +1,10 @@
-import Link from "next/link";
-import styled from "styled-components";
+import Link from 'next/link';
+import styled from 'styled-components';
 
 type Props = {
-  activeBtn?: string,
-  isOpen?: boolean
-}
+  activeBtn?: string;
+  isOpen?: boolean;
+};
 
 export const HeaderBox = styled.header`
   @media screen and (max-width: 768px) {
@@ -14,7 +14,7 @@ export const HeaderBox = styled.header`
     height: 48px;
     left: 0px;
     top: 622px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
     color: #333333;
     z-index: 99999;
@@ -26,8 +26,8 @@ export const HeaderBox = styled.header`
   left: 0px;
   top: 0px;
 
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #D5D5D5;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d5d5d5;
 `;
 
 export const HeaderLogo = styled.div`
@@ -50,7 +50,7 @@ export const HeaderHome = styled.div`
 `;
 
 export const FHeaderProduct = styled.div`
-  @media screen and (max-width: 768px) {    
+  @media screen and (max-width: 768px) {
     display: flex;
     position: absolute;
     left: 103px;
@@ -121,23 +121,27 @@ export const HeaderRecoBox = styled.div<Props>`
   letter-spacing: -0.03em;
 
   cursor: pointer;
-  color: ${(props) => `${props.activeBtn === '/Recommend' ? '#F16341' : '#343232' }`};
+  color: ${(props) =>
+    `${props.activeBtn === '/Recommend' ? '#F16341' : '#343232'}`};
 `;
 
 export const HeaderMapBox = styled(HeaderRecoBox)`
   left: 824px;
   width: 120px;
-  color: ${(props) => `${props.activeBtn === '/Buildingmap' ? '#F16341' : '#343232' }`};
+  color: ${(props) =>
+    `${props.activeBtn === '/Buildingmap' ? '#F16341' : '#343232'}`};
 `;
 
 export const HeaderMyProduct = styled(HeaderRecoBox)`
   left: 1027px;
-  color: ${(props) => `${props.activeBtn === '/Mybuilding' ? '#F16341' : '#343232' }`};
+  color: ${(props) =>
+    `${props.activeBtn === '/Mybuilding' ? '#F16341' : '#343232'}`};
 `;
 
 export const HeaderCommunityBox = styled(HeaderRecoBox)`
   left: 1198px;
-  color: ${(props) => `${props.activeBtn === '/Community' ? '#F16341' : '#343232' }`};
+  color: ${(props) =>
+    `${props.activeBtn === '/Community' ? '#F16341' : '#343232'}`};
 `;
 
 export const HeaderLogin = styled.div`
@@ -172,7 +176,7 @@ export const HeaderRegister = styled(HeaderLogin)`
 
 export const Bar = styled.div`
   @media screen and (max-width: 768px) {
-      display: none;
+    display: none;
   }
   position: absolute;
   left: 1650px;
@@ -180,13 +184,13 @@ export const Bar = styled.div`
   width: 12px;
   height: 0px;
 
-  border: 1px solid #CECECE;
+  border: 1px solid #cecece;
   transform: rotate(90deg);
 `;
 
 export const JonggaeBox = styled.div`
   @media screen and (max-width: 768px) {
-        display: none;
+    display: none;
   }
   position: absolute;
   display: flex;
@@ -199,7 +203,7 @@ export const JonggaeBox = styled.div`
   width: 95px;
   height: 28px;
 
-  background: #D5D5D5;
+  background: #d5d5d5;
   border-radius: 50px;
 
   font-family: 'Spoqa Han Sans Neo';
@@ -212,10 +216,9 @@ export const JonggaeBox = styled.div`
   align-items: center;
   letter-spacing: -0.03em;
 
-  color: #3A3A3A;
+  color: #3a3a3a;
   cursor: pointer;
 `;
-
 
 export const NavLink = styled(Link)`
   color: #000;

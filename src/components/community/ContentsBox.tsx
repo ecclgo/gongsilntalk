@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContentsBox = styled.div`
   @media screen and (max-width: 768px) {
     display: none;
-  };
+  }
 
   position: absolute;
   width: 778px;
@@ -11,13 +11,13 @@ export const ContentsBox = styled.div`
   left: 0px;
   top: 230px;
   border: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 `;
 
 export const Ytitle = styled.div`
   @media screen and (max-width: 768px) {
-      display: none;
-    };
+    display: none;
+  }
 
   width: 532px;
   height: 25px;
@@ -37,8 +37,8 @@ export const Ytitle = styled.div`
 
 export const YContents = styled.div`
   @media screen and (max-width: 768px) {
-      display: none;
-    };
+    display: none;
+  }
 
   width: 520px;
   height: 44px;
@@ -82,8 +82,8 @@ export const YFooter = styled.div`
 
 export const YUsername = styled.span`
   @media screen and (max-width: 768px) {
-      display: none;
-    };
+    display: none;
+  }
   font-family: 'Spoqa Han Sans Neo';
   font-style: normal;
   font-weight: 500;
@@ -99,8 +99,8 @@ export const YUsername = styled.span`
 
 export const ProfileBox = styled.div`
   @media screen and (max-width: 768px) {
-      display: none;
-    };
+    display: none;
+  }
   display: flex;
   flex-direction: row;
   margin-top: 50px;
@@ -109,8 +109,8 @@ export const ProfileBox = styled.div`
 
 export const Line = styled.div`
   @media screen and (max-width: 768px) {
-      display: none;
-    };
+    display: none;
+  }
   width: 702px;
   height: 0px;
 
@@ -123,17 +123,16 @@ export const Line = styled.div`
   flex-grow: 0;
 `;
 
-
 export const MovingBox = styled.div`
   @media screen and (max-width: 768px) {
-      display: none;
-    };
+    display: none;
+  }
   display: none;
   width: 379px;
   height: 319px;
   left: 62%;
   top: 40%;
 
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
 `;

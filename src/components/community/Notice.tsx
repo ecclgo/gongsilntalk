@@ -35,7 +35,6 @@ export const NoticeTag = styled.span`
 export const NoticeTitle = styled.span`
   @media screen and (max-width: 768px) {
     display: none;
-
   }
   width: 646px;
   height: 18px;
@@ -47,7 +46,6 @@ export const NoticeTitle = styled.span`
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-
 
   letter-spacing: -0.03em;
   cursor: pointer;

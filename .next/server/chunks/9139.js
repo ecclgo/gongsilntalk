@@ -17,7 +17,7 @@ exports.modules = {
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const QnABoxTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-b5be8382-0"
+    componentId: "sc-215082c5-0"
 })`
   position: absolute;
   box-sizing: border-box;
@@ -52,7 +52,7 @@ const QnABoxTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.w
   padding: 18px;
 `;
 const FreeBoardTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(QnABoxTab).withConfig({
-    componentId: "sc-b5be8382-1"
+    componentId: "sc-215082c5-1"
 })`
   width: 74px;
   height: 40px;
@@ -62,10 +62,9 @@ const FreeBoardTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(Qn
   background: ${(props)=>`${props.innerTab == 1 ? "rgba(241, 99, 65, 0.1)" : "#FFFFFF"}`};
   color: ${(props)=>`${props.innerTab == 1 ? "#F16341" : "#9B9B9B"}`};
   border: ${(props)=>`${props.innerTab == 1 ? "1px solid #F16341" : "1px solid #D5D5D5"}`};
-  
-  `;
+`;
 const KnowHowTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(QnABoxTab).withConfig({
-    componentId: "sc-b5be8382-2"
+    componentId: "sc-215082c5-2"
 })`
   width: 74px;
   height: 40px;
@@ -77,7 +76,7 @@ const KnowHowTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(QnAB
   left: 235px;
 `;
 const ReviewTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(QnABoxTab).withConfig({
-    componentId: "sc-b5be8382-3"
+    componentId: "sc-215082c5-3"
 })`
   left: 320px;
   width: 59px;
@@ -89,7 +88,7 @@ const ReviewTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(QnABo
   border: ${(props)=>`${props.innerTab == 3 ? "1px solid #F16341" : "1px solid #D5D5D5"}`};
 `;
 const ContentsBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-b5be8382-4"
+    componentId: "sc-215082c5-4"
 })`
   position: absolute;
   width: 778px;
@@ -97,7 +96,7 @@ const ContentsBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div
   left: 0px;
   top: 230px;
 
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 `;
 
 

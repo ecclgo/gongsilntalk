@@ -15,11 +15,11 @@ exports.modules = {
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const NoticeBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-4c2c52cd-0"
+    componentId: "sc-5d45f49b-0"
 })`
   @media screen and (max-width: 768px) {
     display: none;
-};
+  }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -34,7 +34,7 @@ const NoticeBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.w
   bottom: 797px;
 `;
 const EmptyBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-4c2c52cd-1"
+    componentId: "sc-5d45f49b-1"
 })`
   position: absolute;
   width: 778px;
@@ -45,7 +45,7 @@ const EmptyBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.wi
   background: #f7f7f7;
 `;
 const Line = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-4c2c52cd-2"
+    componentId: "sc-5d45f49b-2"
 })`
   width: 704px;
   height: 0px;
@@ -79,7 +79,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/components/community/Notice.tsx
 
 const NoticeTag = external_styled_components_default().span.withConfig({
-    componentId: "sc-2168d418-0"
+    componentId: "sc-b3fc2d1b-0"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -112,11 +112,10 @@ const NoticeTag = external_styled_components_default().span.withConfig({
   margin-bottom: 8px;
 `;
 const NoticeTitle = external_styled_components_default().span.withConfig({
-    componentId: "sc-2168d418-1"
+    componentId: "sc-b3fc2d1b-1"
 })`
   @media screen and (max-width: 768px) {
     display: none;
-
   }
   width: 646px;
   height: 18px;
@@ -128,7 +127,6 @@ const NoticeTitle = external_styled_components_default().span.withConfig({
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-
 
   letter-spacing: -0.03em;
   cursor: pointer;

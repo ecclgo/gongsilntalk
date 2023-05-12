@@ -1,15 +1,22 @@
-import { MTabContents, MegazineTab, YoutubeTab } from "@/components/community/TabBox";
-import MNotice from "../MNotice";
-import { useEffect, useState } from "react";
-import { Youtubes, community } from "../../../../NoticeDummy";
-import MYoutube from "./Youtube/MYoutube";
+import {
+  MTabContents,
+  MegazineTab,
+  YoutubeTab,
+} from '@/components/community/TabBox';
+import MNotice from '../MNotice';
+import { useEffect, useState } from 'react';
+import { Youtubes, community } from '../../../../NoticeDummy';
+import MYoutube from './Youtube/MYoutube';
 
 type Props = {
-  tabClicked: number
+  tabClicked: number;
   setTabClicked: React.Dispatch<React.SetStateAction<number>>;
 };
 
-export default function MTabContentsComponent({ tabClicked, setTabClicked }: Props) {
+export default function MTabContentsComponent({
+  tabClicked,
+  setTabClicked,
+}: Props) {
   const [innerTab, setInnerTab] = useState<number>(0);
   const [post, setPost] = useState<any>([]);
   const [yPosts, setYposts] = useState<any>(Youtubes);
@@ -25,16 +32,15 @@ export default function MTabContentsComponent({ tabClicked, setTabClicked }: Pro
     currentPosts = posts?.slice(indexOfFirst, indexOfLast);
     return currentPosts;
   };
-  
 
   //  API 생성시 수정
   useEffect(() => {
     const fetchData = () => {
-      if(innerTab === 0) {
+      if (innerTab === 0) {
         setPost(currentPosts(yPosts));
-      }else {
+      } else {
         setPost(currentPosts(mPosts));
-      };
+      }
     };
     fetchData();
   }, [currentPage, innerTab]);
@@ -48,33 +54,27 @@ export default function MTabContentsComponent({ tabClicked, setTabClicked }: Pro
   return (
     <>
       <MTabContents>
-        {
-          tabClicked === 0 ? 
-          (
-            <>
-              <YoutubeTab innerTab={innerTab} onClick={() => setInnerTab(0)}>
-                공톡 유튜브
-              </YoutubeTab>
-              <MegazineTab innerTab={innerTab} onClick={() => setInnerTab(1)}>
-                공톡 매거진
-              </MegazineTab>
-              {
-                innerTab === 0 ?
-                (
-                  <MYoutube post={post} yPosts={yPosts} setCurrentPage={setCurrentPage} />
-                )
-                :
-                (
-                  <>
-                  </>
-                )
-              }
-            </>
-          )
-          : null
-        }
+        {tabClicked === 0 ? (
+          <>
+            <YoutubeTab innerTab={innerTab} onClick={() => setInnerTab(0)}>
+              공톡 유튜브
+            </YoutubeTab>
+            <MegazineTab innerTab={innerTab} onClick={() => setInnerTab(1)}>
+              공톡 매거진
+            </MegazineTab>
+            {innerTab === 0 ? (
+              <MYoutube
+                post={post}
+                yPosts={yPosts}
+                setCurrentPage={setCurrentPage}
+              />
+            ) : (
+              <></>
+            )}
+          </>
+        ) : null}
         <MNotice />
       </MTabContents>
     </>
-  )
-};
+  );
+}

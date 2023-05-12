@@ -1,8 +1,8 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 type Props = {
-  show: boolean
-}
+  show: boolean;
+};
 
 export const slideIn = keyframes`
   from {

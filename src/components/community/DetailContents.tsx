@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const DetailBox = styled.div`
   position: absolute;
   width: 778px;
   height: 1600px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   left: 21%;
   right: 40%;
-  margin-top: 3.0%;
+  margin-top: 3%;
 
   border: 1px solid #333333;
 `;
@@ -37,7 +37,7 @@ export const DetailLine = styled.div`
   left: 38px;
 
   width: 702px;
-  border: 1px solid #F0F0F0;
+  border: 1px solid #f0f0f0;
 `;
 
 export const DetailContent = styled.div`
@@ -61,7 +61,7 @@ export const EndLine = styled.div`
   left: 38px;
 
   width: 702px;
-  border: 1px solid #F0F0F0;
+  border: 1px solid #f0f0f0;
 `;
 
 export const Repl = styled.input`
@@ -69,8 +69,8 @@ export const Repl = styled.input`
   left: 52px;
   bottom: 46px;
   width: 674px;
-  background-color: #FFFFFF;
-  border: 1px solid #F0F0F0;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;
   height: 80px;
 
   color: #333333;

@@ -22,7 +22,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/components/community/MNotice.tsx
 
 const MNoticeBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-cd36efbe-0"
+    componentId: "sc-61f1c9a5-0"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -39,7 +39,7 @@ const MNoticeBox = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const MNoticeTag = external_styled_components_default().div.withConfig({
-    componentId: "sc-cd36efbe-1"
+    componentId: "sc-61f1c9a5-1"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -51,9 +51,8 @@ const MNoticeTag = external_styled_components_default().div.withConfig({
 
     width: 40px;
     height: 25px;
-    
 
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     border-radius: 6px;
 
     font-family: 'Spoqa Han Sans Neo';
@@ -64,12 +63,11 @@ const MNoticeTag = external_styled_components_default().div.withConfig({
     text-align: center;
     letter-spacing: -0.03em;
     color: #666666;
-
   }
   display: none;
 `;
 const MNoticeTitle = external_styled_components_default().span.withConfig({
-    componentId: "sc-cd36efbe-2"
+    componentId: "sc-61f1c9a5-2"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -79,20 +77,19 @@ const MNoticeTitle = external_styled_components_default().span.withConfig({
     height: 18px;
     left: 55px;
     margin-top: -22px;
-    
+
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    
     font-family: 'Spoqa Han Sans Neo';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-  
+
     letter-spacing: -0.03em;
-  
+
     color: #343232;
   }
   display: none;

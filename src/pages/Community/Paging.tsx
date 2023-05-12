@@ -1,8 +1,8 @@
-import { PageLi, PageSpan, PageUl } from "@/components/community/PagingStyle";
-import { useState } from "react";
+import { PageLi, PageSpan, PageUl } from '@/components/community/PagingStyle';
+import { useState } from 'react';
 
 type Props = {
-  totalPosts: number,
+  totalPosts: number;
   paginate: React.Dispatch<React.SetStateAction<number>>;
 };
 
@@ -16,7 +16,7 @@ export default function Paging({ totalPosts, paginate }: Props) {
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalPosts / 5); i++) {
     pageNumbers.push(i);
-  };
+  }
 
   return (
     <>
@@ -25,7 +25,13 @@ export default function Paging({ totalPosts, paginate }: Props) {
           <PageUl>
             {pageNumbers.map((number: number) => (
               <PageLi key={number}>
-                <PageSpan activeBtn={activeBtn === number} onClick={() => {paginate(number); handleClick(number);}}>
+                <PageSpan
+                  activeBtn={activeBtn === number}
+                  onClick={() => {
+                    paginate(number);
+                    handleClick(number);
+                  }}
+                >
                   {number}
                 </PageSpan>
               </PageLi>

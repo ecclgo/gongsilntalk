@@ -19,7 +19,7 @@ export const Form = styled.form`
   border: 1px solid #f0f0f0;
   border-radius: 10px;
 
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
     position: absolute;
     top: 202px;
     left: 20px;

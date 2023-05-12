@@ -1,7 +1,3 @@
 export default function MTabBoardComponent() {
-  return (
-    <>
-      ddaksldla
-    </>
-  )
+  return <>ddaksldla</>;
 }

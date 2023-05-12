@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 2888;
-exports.ids = [2888,4846,436,6587,1751,3844,1918,4821,5192];
+exports.ids = [2888,4846,436,1751,6587,3844,1918,5192,4821];
 exports.modules = {
 
 /***/ 9321:
@@ -30,7 +30,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 
 
 const HeaderBox = external_styled_components_default().header.withConfig({
-    componentId: "sc-519ed0bc-0"
+    componentId: "sc-ca043a6c-0"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -39,7 +39,7 @@ const HeaderBox = external_styled_components_default().header.withConfig({
     height: 48px;
     left: 0px;
     top: 622px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.1);
     color: #333333;
     z-index: 99999;
@@ -51,11 +51,11 @@ const HeaderBox = external_styled_components_default().header.withConfig({
   left: 0px;
   top: 0px;
 
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #D5D5D5;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d5d5d5;
 `;
 const HeaderLogo = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-1"
+    componentId: "sc-ca043a6c-1"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -65,7 +65,7 @@ const HeaderLogo = external_styled_components_default().div.withConfig({
   left: 40px;
 `;
 const HeaderHome = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-2"
+    componentId: "sc-ca043a6c-2"
 })`
   @media (max-width: 700px) {
     display: flex;
@@ -76,9 +76,9 @@ const HeaderHome = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const FHeaderProduct = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-3"
+    componentId: "sc-ca043a6c-3"
 })`
-  @media screen and (max-width: 768px) {    
+  @media screen and (max-width: 768px) {
     display: flex;
     position: absolute;
     left: 103px;
@@ -87,7 +87,7 @@ const FHeaderProduct = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const SHeaderProduct = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-4"
+    componentId: "sc-ca043a6c-4"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -98,7 +98,7 @@ const SHeaderProduct = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderMap = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-5"
+    componentId: "sc-ca043a6c-5"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -109,7 +109,7 @@ const HeaderMap = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderCommunity = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-6"
+    componentId: "sc-ca043a6c-6"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -120,7 +120,7 @@ const HeaderCommunity = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderMyInfoBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-7"
+    componentId: "sc-ca043a6c-7"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -131,7 +131,7 @@ const HeaderMyInfoBox = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderRecoBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-8"
+    componentId: "sc-ca043a6c-8"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -157,26 +157,26 @@ const HeaderRecoBox = external_styled_components_default().div.withConfig({
   color: ${(props)=>`${props.activeBtn === "/Recommend" ? "#F16341" : "#343232"}`};
 `;
 const HeaderMapBox = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-519ed0bc-9"
+    componentId: "sc-ca043a6c-9"
 })`
   left: 824px;
   width: 120px;
   color: ${(props)=>`${props.activeBtn === "/Buildingmap" ? "#F16341" : "#343232"}`};
 `;
 const HeaderMyProduct = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-519ed0bc-10"
+    componentId: "sc-ca043a6c-10"
 })`
   left: 1027px;
   color: ${(props)=>`${props.activeBtn === "/Mybuilding" ? "#F16341" : "#343232"}`};
 `;
 const HeaderCommunityBox = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-519ed0bc-11"
+    componentId: "sc-ca043a6c-11"
 })`
   left: 1198px;
   color: ${(props)=>`${props.activeBtn === "/Community" ? "#F16341" : "#343232"}`};
 `;
 const HeaderLogin = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-12"
+    componentId: "sc-ca043a6c-12"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -202,16 +202,16 @@ const HeaderLogin = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const HeaderRegister = external_styled_components_default()(HeaderLogin).withConfig({
-    componentId: "sc-519ed0bc-13"
+    componentId: "sc-ca043a6c-13"
 })`
   left: 1670px;
   width: 60px;
 `;
 const Bar = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-14"
+    componentId: "sc-ca043a6c-14"
 })`
   @media screen and (max-width: 768px) {
-      display: none;
+    display: none;
   }
   position: absolute;
   left: 1650px;
@@ -219,14 +219,14 @@ const Bar = external_styled_components_default().div.withConfig({
   width: 12px;
   height: 0px;
 
-  border: 1px solid #CECECE;
+  border: 1px solid #cecece;
   transform: rotate(90deg);
 `;
 const JonggaeBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-15"
+    componentId: "sc-ca043a6c-15"
 })`
   @media screen and (max-width: 768px) {
-        display: none;
+    display: none;
   }
   position: absolute;
   display: flex;
@@ -239,7 +239,7 @@ const JonggaeBox = external_styled_components_default().div.withConfig({
   width: 95px;
   height: 28px;
 
-  background: #D5D5D5;
+  background: #d5d5d5;
   border-radius: 50px;
 
   font-family: 'Spoqa Han Sans Neo';
@@ -252,11 +252,11 @@ const JonggaeBox = external_styled_components_default().div.withConfig({
   align-items: center;
   letter-spacing: -0.03em;
 
-  color: #3A3A3A;
+  color: #3a3a3a;
   cursor: pointer;
 `;
 const NavLink = external_styled_components_default()((link_default())).withConfig({
-    componentId: "sc-519ed0bc-16"
+    componentId: "sc-ca043a6c-16"
 })`
   color: #000;
   justify-self: flex-start;
@@ -270,7 +270,7 @@ const NavLink = external_styled_components_default()((link_default())).withConfi
   right: 10px;
 `;
 const MenuIcon = external_styled_components_default().div.withConfig({
-    componentId: "sc-519ed0bc-17"
+    componentId: "sc-ca043a6c-17"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -284,7 +284,7 @@ const MenuIcon = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const NavMenu = external_styled_components_default().ul.withConfig({
-    componentId: "sc-519ed0bc-18"
+    componentId: "sc-ca043a6c-18"
 })`
   display: flex;
   align-items: center;
@@ -305,7 +305,7 @@ const NavMenu = external_styled_components_default().ul.withConfig({
   }
 `;
 const NavItem = external_styled_components_default().li.withConfig({
-    componentId: "sc-519ed0bc-19"
+    componentId: "sc-ca043a6c-19"
 })`
   height: 80px;
 `;
@@ -313,7 +313,7 @@ const NavItem = external_styled_components_default().li.withConfig({
 ;// CONCATENATED MODULE: ./src/components/header/HeaderText.tsx
 
 const HomeText = external_styled_components_default().span.withConfig({
-    componentId: "sc-1620c940-0"
+    componentId: "sc-96a3ae84-0"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -338,28 +338,28 @@ const HomeText = external_styled_components_default().span.withConfig({
   display: none;
 `;
 const Recommend = external_styled_components_default()(HomeText).withConfig({
-    componentId: "sc-1620c940-1"
+    componentId: "sc-96a3ae84-1"
 })`
   left: 93px;
   width: 41px;
   color: ${(props)=>`${props.clicked === 1 ? "#F16341" : "#C1C1C1"}`};
 `;
 const Map = external_styled_components_default()(HomeText).withConfig({
-    componentId: "sc-1620c940-2"
+    componentId: "sc-96a3ae84-2"
 })`
   left: 172px;
   width: 35px;
   color: ${(props)=>`${props.clicked === 2 ? "#F16341" : "#C1C1C1"}`};
 `;
 const HeaderCommu = external_styled_components_default()(HomeText).withConfig({
-    componentId: "sc-1620c940-3"
+    componentId: "sc-96a3ae84-3"
 })`
   left: 231px;
   width: 41px;
   color: ${(props)=>`${props.clicked === 3 ? "#F16341" : "#C1C1C1"}`};
 `;
 const HeaderMyInfo = external_styled_components_default()(HomeText).withConfig({
-    componentId: "sc-1620c940-4"
+    componentId: "sc-96a3ae84-4"
 })`
   left: 303.5px;
   width: 37px;

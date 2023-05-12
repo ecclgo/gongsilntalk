@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const NoticeBox = styled.div`
   @media screen and (max-width: 768px) {
     display: none;
-};
+  }
   display: flex;
   flex-direction: column;
   align-items: flex-start;

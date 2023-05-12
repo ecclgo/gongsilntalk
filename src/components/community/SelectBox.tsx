@@ -1,18 +1,18 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 type Props = {
-  show?: boolean
-}
+  show?: boolean;
+};
 
 export const SelectBox = styled.div`
   position: relative;
   width: 120px;
   border-radius: 12px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   align-self: center;
   cursor: pointer;
   &::before {
-    content: "⌵";
+    content: '⌵';
     position: absolute;
     top: 1px;
     right: 8px;
@@ -37,9 +37,9 @@ export const SelectOptions = styled.ul<Props>`
   height: 90px;
   padding: 0;
   border-radius: 8px;
-  max-height: ${(props) => (props.show ? "none" : "0")};
+  max-height: ${(props) => (props.show ? 'none' : '0')};
   z-index: 99999;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   color: #333333;
 `;
 
@@ -49,6 +49,6 @@ export const Option = styled.li`
   transition: background-color 0.2s ease-in;
   z-index: 99999;
   &:hover {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 `;

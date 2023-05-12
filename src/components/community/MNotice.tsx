@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MNoticeBox = styled.div`
   @media screen and (max-width: 768px) {
@@ -16,7 +16,6 @@ export const MNoticeBox = styled.div`
   display: none;
 `;
 
-
 export const MNoticeTag = styled.div`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -28,9 +27,8 @@ export const MNoticeTag = styled.div`
 
     width: 40px;
     height: 25px;
-    
 
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     border-radius: 6px;
 
     font-family: 'Spoqa Han Sans Neo';
@@ -41,7 +39,6 @@ export const MNoticeTag = styled.div`
     text-align: center;
     letter-spacing: -0.03em;
     color: #666666;
-
   }
   display: none;
 `;
@@ -55,20 +52,19 @@ export const MNoticeTitle = styled.span`
     height: 18px;
     left: 55px;
     margin-top: -22px;
-    
+
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    
     font-family: 'Spoqa Han Sans Neo';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
-  
+
     letter-spacing: -0.03em;
-  
+
     color: #343232;
   }
   display: none;

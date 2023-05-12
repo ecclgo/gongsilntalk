@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 type Props = {
-  innerTab: number
-}
+  innerTab: number;
+};
 
 export const QnABoxTab = styled.div<Props>`
   position: absolute;
@@ -19,9 +19,11 @@ export const QnABoxTab = styled.div<Props>`
   top: 86px;
   left: 38px;
 
-  background: ${(props) => `${props.innerTab == 0 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}`};
+  background: ${(props) =>
+    `${props.innerTab == 0 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}`};
   color: ${(props) => `${props.innerTab == 0 ? '#F16341' : '#9B9B9B'}`};
-  border: ${(props) => `${props.innerTab == 0 ? '1px solid #F16341' : '1px solid #D5D5D5'}`};
+  border: ${(props) =>
+    `${props.innerTab == 0 ? '1px solid #F16341' : '1px solid #D5D5D5'}`};
   border-radius: 6px;
 
   font-family: 'Spoqa Han Sans Neo';
@@ -44,18 +46,21 @@ export const FreeBoardTab = styled(QnABoxTab)`
   left: 150px;
   padding: 15px;
 
-  background: ${(props) => `${props.innerTab == 1 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}`};
+  background: ${(props) =>
+    `${props.innerTab == 1 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}`};
   color: ${(props) => `${props.innerTab == 1 ? '#F16341' : '#9B9B9B'}`};
-  border: ${(props) => `${props.innerTab == 1 ? '1px solid #F16341' : '1px solid #D5D5D5'}`};
-  
-  `;
+  border: ${(props) =>
+    `${props.innerTab == 1 ? '1px solid #F16341' : '1px solid #D5D5D5'}`};
+`;
 
 export const KnowHowTab = styled(QnABoxTab)`
   width: 74px;
   height: 40px;
-  background: ${(props) => `${props.innerTab == 2 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}`};
+  background: ${(props) =>
+    `${props.innerTab == 2 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}`};
   color: ${(props) => `${props.innerTab == 2 ? '#F16341' : '#9B9B9B'}`};
-  border: ${(props) => `${props.innerTab == 2 ? '1px solid #F16341' : '1px solid #D5D5D5'}`};
+  border: ${(props) =>
+    `${props.innerTab == 2 ? '1px solid #F16341' : '1px solid #D5D5D5'}`};
   padding: 15px;
 
   left: 235px;
@@ -67,9 +72,11 @@ export const ReviewTab = styled(QnABoxTab)`
   height: 40px;
   padding: 15px;
 
-  background: ${(props) => `${props.innerTab == 3 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}`};
+  background: ${(props) =>
+    `${props.innerTab == 3 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}`};
   color: ${(props) => `${props.innerTab == 3 ? '#F16341' : '#9B9B9B'}`};
-  border: ${(props) => `${props.innerTab == 3 ? '1px solid #F16341' : '1px solid #D5D5D5'}`};
+  border: ${(props) =>
+    `${props.innerTab == 3 ? '1px solid #F16341' : '1px solid #D5D5D5'}`};
 `;
 
 export const ContentsBox = styled.div`
@@ -79,5 +86,5 @@ export const ContentsBox = styled.div`
   left: 0px;
   top: 230px;
 
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 `;

@@ -1,18 +1,32 @@
-import { Line } from "@/components/community/NoticeBox";
-import { ContentsBox, MovingBox, ProfileBox, YContents, YFooter, YUsername, Ytitle } from "@/components/community/ContentsBox";
-import Image from "next/image";
-import Paging from "../../Paging";
-import { OrderBox, Updated, Recommend, Repl, ClickedOrder } from "@/components/community/OrderBy";
-import { useState } from "react";
-import { MovingSpan } from "@/components/community/TabSpan";
-import Notice from "../../Notice";
-import Link from "next/link";
+import { Line } from '@/components/community/NoticeBox';
+import {
+  ContentsBox,
+  MovingBox,
+  ProfileBox,
+  YContents,
+  YFooter,
+  YUsername,
+  Ytitle,
+} from '@/components/community/ContentsBox';
+import Image from 'next/image';
+import Paging from '../../Paging';
+import {
+  OrderBox,
+  Updated,
+  Recommend,
+  Repl,
+  ClickedOrder,
+} from '@/components/community/OrderBy';
+import { useState } from 'react';
+import { MovingSpan } from '@/components/community/TabSpan';
+import Notice from '../../Notice';
+import Link from 'next/link';
 
 type Props = {
-  post: any,
-  yPosts: any,
+  post: any;
+  yPosts: any;
   setCurrentPage: React.Dispatch<React.SetStateAction<number>>;
-}
+};
 
 export default function Youtube({ post, yPosts, setCurrentPage }: Props) {
   const [clickedOrder, setClickedOrder] = useState<number>(0);
@@ -26,16 +40,46 @@ export default function Youtube({ post, yPosts, setCurrentPage }: Props) {
       <Notice />
       <ContentsBox>
         <OrderBox>
-          <Updated clickedOrder={clickedOrder === 0} onClick={() => {handleClick(0)}}>
-            <ClickedOrder clickedOrder={clickedOrder === 0} onClick={() => {handleClick(0)}} />
+          <Updated
+            clickedOrder={clickedOrder === 0}
+            onClick={() => {
+              handleClick(0);
+            }}
+          >
+            <ClickedOrder
+              clickedOrder={clickedOrder === 0}
+              onClick={() => {
+                handleClick(0);
+              }}
+            />
             최신순
           </Updated>
-          <Recommend clickedOrder={clickedOrder === 1} onClick={() => {handleClick(1)}}>
-            <ClickedOrder clickedOrder={clickedOrder === 1} onClick={() => {handleClick(1)}} />
+          <Recommend
+            clickedOrder={clickedOrder === 1}
+            onClick={() => {
+              handleClick(1);
+            }}
+          >
+            <ClickedOrder
+              clickedOrder={clickedOrder === 1}
+              onClick={() => {
+                handleClick(1);
+              }}
+            />
             추천순
           </Recommend>
-          <Repl clickedOrder={clickedOrder === 2} onClick={() => {handleClick(2)}}>
-            <ClickedOrder clickedOrder={clickedOrder === 2} onClick={() => {handleClick(2)}} />
+          <Repl
+            clickedOrder={clickedOrder === 2}
+            onClick={() => {
+              handleClick(2);
+            }}
+          >
+            <ClickedOrder
+              clickedOrder={clickedOrder === 2}
+              onClick={() => {
+                handleClick(2);
+              }}
+            />
             댓글순
           </Repl>
         </OrderBox>
@@ -78,13 +122,11 @@ export default function Youtube({ post, yPosts, setCurrentPage }: Props) {
             </div>
           );
         })}
-        <Paging totalPosts={yPosts?.length} paginate={setCurrentPage}/>
+        <Paging totalPosts={yPosts?.length} paginate={setCurrentPage} />
       </ContentsBox>
       <MovingBox>
-        <MovingSpan>
-          공톡 유튜브 추천글
-        </MovingSpan>
+        <MovingSpan>공톡 유튜브 추천글</MovingSpan>
       </MovingBox>
     </>
-  )
+  );
 }

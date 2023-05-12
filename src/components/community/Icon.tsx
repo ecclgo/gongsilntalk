@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const BackArrow = styled.div`
   position: absolute;
@@ -36,7 +36,7 @@ export const GongtalkBox = styled.div`
   background: rgba(241, 99, 65, 0.1);
   border-radius: 6px;
 
-  color: #F16341;
+  color: #f16341;
 
   cursor: pointer;
 `;

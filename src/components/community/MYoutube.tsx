@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MYoutubeBox = styled.div`
   @media screen and (max-width: 768px) {
@@ -8,8 +8,8 @@ export const MYoutubeBox = styled.div`
     left: -15px;
     top: 130px;
     overflow: scroll;
-  
-    background-color: #FFFFFF;
+
+    background-color: #ffffff;
   }
 `;
 
@@ -21,24 +21,24 @@ export const MYoutubeContents = styled.div`
     margin-left: 18px;
     right: 18px;
     bottom: 14px;
-  
-    background-color: #FFFFFF;
+
+    background-color: #ffffff;
   }
 `;
 
 export const MYoutubeProfileBox = styled.div`
   @media screen and (max-width: 768px) {
     box-sizing: border-box;
-  
+
     width: 30px;
     height: 30px;
     left: 0px;
     top: 0px;
     border-radius: 15px;
-  
-    background-color: #F0F0F0;
-  
-    border: 1px solid #9B9B9B;
+
+    background-color: #f0f0f0;
+
+    border: 1px solid #9b9b9b;
   }
 `;
 
@@ -49,7 +49,7 @@ export const MYoutubeProfileName = styled.span`
     height: 16px;
     left: 57px;
     margin-top: 8px;
-      
+
     font-family: 'Spoqa Han Sans Neo';
     font-style: normal;
     font-weight: 500;
@@ -58,7 +58,7 @@ export const MYoutubeProfileName = styled.span`
     display: flex;
     align-items: center;
     letter-spacing: -0.03em;
-  
+
     color: #282828;
   }
 `;
@@ -68,8 +68,8 @@ export const MYoutubeContentsBox = styled.div`
     width: 324px;
     height: 95px;
     top: 43px;
-  
-    background-color: #FFFFFF;
+
+    background-color: #ffffff;
   }
 `;
 
@@ -78,16 +78,16 @@ export const MYoutubeContentsTitle = styled.span`
     width: 216px;
     height: 20px;
     left: 0px;
-  
+
     font-family: 'Spoqa Han Sans Neo';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-  
+
     letter-spacing: -0.03em;
     color: #343232;
-  
+
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -129,7 +129,7 @@ export const MYoutubeFooter = styled.div`
 
   letter-spacing: -0.02em;
 
-  color: #9B9B9B;
+  color: #9b9b9b;
 `;
 
 export const MYoutubeImg = styled.div`
@@ -144,5 +144,5 @@ export const MYoutubeLine = styled.div`
   width: 359px;
   height: 0px;
   opacity: 0.6;
-  border: 1px solid #F0F0F0;
+  border: 1px solid #f0f0f0;
 `;

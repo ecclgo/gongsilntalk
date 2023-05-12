@@ -24,24 +24,24 @@ __webpack_require__.r(__webpack_exports__);
 
 const images = [
     {
-        "url": "https://m.post.naver.com/viewer/image.nhn?src=https%3A%2F%2Fpost-phinf.pstatic.net%2FMjAyMjA1MTJfMjYz%2FMDAxNjUyMjgyNDMxNTMx.eiksoWq4rbopryxGcA8kYLbbluZBGmlgAyIqk9IGt5Ig.I7z63dT0QXrlv2VPs1lgrGniY-mDD3T8_PwOwDcSyBEg.PNG%2F%25ED%2594%25BC%25EC%25B9%25B4%25EC%25B8%2584.png",
-        "id": "1",
-        "alt": "Picka"
+        url: "https://m.post.naver.com/viewer/image.nhn?src=https%3A%2F%2Fpost-phinf.pstatic.net%2FMjAyMjA1MTJfMjYz%2FMDAxNjUyMjgyNDMxNTMx.eiksoWq4rbopryxGcA8kYLbbluZBGmlgAyIqk9IGt5Ig.I7z63dT0QXrlv2VPs1lgrGniY-mDD3T8_PwOwDcSyBEg.PNG%2F%25ED%2594%25BC%25EC%25B9%25B4%25EC%25B8%2584.png",
+        id: "1",
+        alt: "Picka"
     },
     {
-        "url": "https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=hanee218&logNo=221028983538&view=img_4",
-        "id": "2",
-        "alt": "Raichu"
+        url: "https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=hanee218&logNo=221028983538&view=img_4",
+        id: "2",
+        alt: "Raichu"
     },
     {
-        "url": "https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=gkfngkfn414&logNo=220551095277&view=img_1",
-        "id": "3",
-        "alt": "Pairy"
+        url: "https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=gkfngkfn414&logNo=220551095277&view=img_1",
+        id: "3",
+        alt: "Pairy"
     },
     {
-        "url": "https://i2.ruliweb.com/ori/19/09/07/16d0b37ce61501ee9.jpg",
-        "id": "4",
-        "alt": "Kkobugi"
+        url: "https://i2.ruliweb.com/ori/19/09/07/16d0b37ce61501ee9.jpg",
+        id: "4",
+        alt: "Kkobugi"
     }
 ];
 const renderThumbs = ()=>images.map((image)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_1___default()), {

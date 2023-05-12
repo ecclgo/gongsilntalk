@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 type Props = {
-  clicked?: number
+  clicked?: number;
 };
 
 export const HomeText = styled.span<Props>`

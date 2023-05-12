@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 type Props = {
-  clickedOrder: boolean
-}
+  clickedOrder: boolean;
+};
 
 export const OrderBox = styled.div`
   position: absolute;
@@ -34,7 +34,7 @@ export const Updated = styled.div<Props>`
   align-items: center;
   letter-spacing: -0.03em;
 
-  color: ${(props) => `${props.clickedOrder ? '#666666' : '#BFBFBF'}`}; 
+  color: ${(props) => `${props.clickedOrder ? '#666666' : '#BFBFBF'}`};
 `;
 
 export const Recommend = styled.div<Props>`
@@ -53,7 +53,7 @@ export const Recommend = styled.div<Props>`
   align-items: center;
   letter-spacing: -0.03em;
 
-  color: ${(props) => `${props.clickedOrder ? '#666666' : '#BFBFBF'}`}; 
+  color: ${(props) => `${props.clickedOrder ? '#666666' : '#BFBFBF'}`};
   cursor: pointer;
 `;
 
@@ -73,7 +73,7 @@ export const Repl = styled.div<Props>`
   align-items: center;
   letter-spacing: -0.03em;
 
-  color: ${(props) => `${props.clickedOrder ? '#666666' : '#BFBFBF'}`}; 
+  color: ${(props) => `${props.clickedOrder ? '#666666' : '#BFBFBF'}`};
   cursor: pointer;
 `;
 
@@ -84,11 +84,10 @@ export const ClickedOrder = styled.div<Props>`
   width: 5px;
   height: 5px;
 
-  background-color: ${(props) => `${props.clickedOrder ? '#F16341' : '#FFFFFF'}`};
+  background-color: ${(props) =>
+    `${props.clickedOrder ? '#F16341' : '#FFFFFF'}`};
   border-radius: 150px;
   flex: none;
   order: 0;
   flex-grow: 0;
-
-  
 `;

@@ -15,7 +15,7 @@ exports.modules = {
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const FirstContent = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-afc8f377-0"
+    componentId: "sc-651b83a7-0"
 })`
   position: absolute;
   top: 19.5px;
@@ -37,13 +37,13 @@ const FirstContent = styled_components__WEBPACK_IMPORTED_MODULE_0___default().sp
   color: ${(props)=>`${props.tabClicked === 0 ? "#000000" : "#D5D5D5"}`};
 `;
 const SecondContent = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(FirstContent).withConfig({
-    componentId: "sc-afc8f377-1"
+    componentId: "sc-651b83a7-1"
 })`
   left: 547.5px;
   color: ${(props)=>`${props.tabClicked === 1 ? "#000000" : "#D5D5D5"}`};
 `;
 const MovingSpan = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-afc8f377-2"
+    componentId: "sc-651b83a7-2"
 })`
   font-family: 'Spoqa Han Sans Neo';
   font-style: normal;
@@ -91,7 +91,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/components/community/OrderBy.tsx
 
 const OrderBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-46cdc40a-0"
+    componentId: "sc-bac5ebbd-0"
 })`
   position: absolute;
   top: 15px;
@@ -104,7 +104,7 @@ const OrderBox = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const Updated = external_styled_components_default().div.withConfig({
-    componentId: "sc-46cdc40a-1"
+    componentId: "sc-bac5ebbd-1"
 })`
   position: absolute;
   left: 60px;
@@ -123,10 +123,10 @@ const Updated = external_styled_components_default().div.withConfig({
   align-items: center;
   letter-spacing: -0.03em;
 
-  color: ${(props)=>`${props.clickedOrder ? "#666666" : "#BFBFBF"}`}; 
+  color: ${(props)=>`${props.clickedOrder ? "#666666" : "#BFBFBF"}`};
 `;
 const Recommend = external_styled_components_default().div.withConfig({
-    componentId: "sc-46cdc40a-2"
+    componentId: "sc-bac5ebbd-2"
 })`
   position: absolute;
   left: 110px;
@@ -143,11 +143,11 @@ const Recommend = external_styled_components_default().div.withConfig({
   align-items: center;
   letter-spacing: -0.03em;
 
-  color: ${(props)=>`${props.clickedOrder ? "#666666" : "#BFBFBF"}`}; 
+  color: ${(props)=>`${props.clickedOrder ? "#666666" : "#BFBFBF"}`};
   cursor: pointer;
 `;
 const Repl = external_styled_components_default().div.withConfig({
-    componentId: "sc-46cdc40a-3"
+    componentId: "sc-bac5ebbd-3"
 })`
   position: absolute;
   left: 160px;
@@ -164,11 +164,11 @@ const Repl = external_styled_components_default().div.withConfig({
   align-items: center;
   letter-spacing: -0.03em;
 
-  color: ${(props)=>`${props.clickedOrder ? "#666666" : "#BFBFBF"}`}; 
+  color: ${(props)=>`${props.clickedOrder ? "#666666" : "#BFBFBF"}`};
   cursor: pointer;
 `;
 const ClickedOrder = external_styled_components_default().div.withConfig({
-    componentId: "sc-46cdc40a-4"
+    componentId: "sc-bac5ebbd-4"
 })`
   position: absolute;
   top: 5px;
@@ -181,8 +181,6 @@ const ClickedOrder = external_styled_components_default().div.withConfig({
   flex: none;
   order: 0;
   flex-grow: 0;
-
-  
 `;
 
 // EXTERNAL MODULE: external "react"

@@ -1,11 +1,15 @@
 import { MegazineTab, YoutubeTab } from '@/components/community/TabBox';
 import { FirstContent } from '@/components/community/TabSpan';
 import { useEffect, useState } from 'react';
-import { Youtubes, community  } from '../../../../NoticeDummy';
+import { Youtubes, community } from '../../../../NoticeDummy';
 import Youtube from './Youtube/Youtube';
 import Megazine from './Megazine/Megazine';
 import Image from 'next/image';
-import { SearchContainer, SearchIcon, SearchInput } from '@/components/community/SearchInput';
+import {
+  SearchContainer,
+  SearchIcon,
+  SearchInput,
+} from '@/components/community/SearchInput';
 
 type Props = {
   tabClicked: number;
@@ -21,7 +25,6 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [postPerPage, setPostPerPage] = useState<number>(5);
 
-
   const indexOfLast = currentPage * postPerPage;
   const indexOfFirst = indexOfLast - postPerPage;
 
@@ -34,11 +37,11 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
   //  API 생성시 수정
   useEffect(() => {
     const fetchData = () => {
-      if(innerTab === 0) {
+      if (innerTab === 0) {
         setPost(currentPosts(yPosts));
-      }else {
+      } else {
         setPost(currentPosts(mPosts));
-      };
+      }
     };
     fetchData();
   }, [currentPage, innerTab]);
@@ -64,38 +67,41 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
           </MegazineTab>
           <SearchContainer>
             <SearchIcon
-              className='fa fa-search'
+              className="fa fa-search"
               onClick={handleSearchClick}
               style={{
-                position: "absolute",
-                left: "750px",
-                top: "95px",
-                cursor: "pointer"
+                position: 'absolute',
+                left: '750px',
+                top: '95px',
+                cursor: 'pointer',
               }}
             >
-              <Image 
+              <Image
                 src={'/SearchIcon.png'}
-                alt='SearchIcon'
+                alt="SearchIcon"
                 width={20}
                 height={20}
               />
             </SearchIcon>
             <SearchInput
-              type='text'
-              placeholder='검색어를 입력하세요...'
+              type="text"
+              placeholder="검색어를 입력하세요..."
               show={showSearch}
             />
           </SearchContainer>
-          {
-            innerTab === 0 ? 
-            (
-              <Youtube post={post} yPosts={yPosts} setCurrentPage={setCurrentPage} />
-            )
-            :
-            (
-              <Megazine post={post} mPosts={mPosts} setCurrentPage={setCurrentPage} />
-            )
-          }
+          {innerTab === 0 ? (
+            <Youtube
+              post={post}
+              yPosts={yPosts}
+              setCurrentPage={setCurrentPage}
+            />
+          ) : (
+            <Megazine
+              post={post}
+              mPosts={mPosts}
+              setCurrentPage={setCurrentPage}
+            />
+          )}
         </>
       ) : null}
     </>

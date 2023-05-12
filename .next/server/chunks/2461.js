@@ -22,7 +22,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/components/community/MYoutube.tsx
 
 const MYoutubeBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-1be8e09-0"
+    componentId: "sc-141d6577-0"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -31,12 +31,12 @@ const MYoutubeBox = external_styled_components_default().div.withConfig({
     left: -15px;
     top: 130px;
     overflow: scroll;
-  
-    background-color: #FFFFFF;
+
+    background-color: #ffffff;
   }
 `;
 const MYoutubeContents = external_styled_components_default().div.withConfig({
-    componentId: "sc-1be8e09-1"
+    componentId: "sc-141d6577-1"
 })`
   @media screen and (max-width: 768px) {
     width: 324px;
@@ -45,29 +45,29 @@ const MYoutubeContents = external_styled_components_default().div.withConfig({
     margin-left: 18px;
     right: 18px;
     bottom: 14px;
-  
-    background-color: #FFFFFF;
+
+    background-color: #ffffff;
   }
 `;
 const MYoutubeProfileBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-1be8e09-2"
+    componentId: "sc-141d6577-2"
 })`
   @media screen and (max-width: 768px) {
     box-sizing: border-box;
-  
+
     width: 30px;
     height: 30px;
     left: 0px;
     top: 0px;
     border-radius: 15px;
-  
-    background-color: #F0F0F0;
-  
-    border: 1px solid #9B9B9B;
+
+    background-color: #f0f0f0;
+
+    border: 1px solid #9b9b9b;
   }
 `;
 const MYoutubeProfileName = external_styled_components_default().span.withConfig({
-    componentId: "sc-1be8e09-3"
+    componentId: "sc-141d6577-3"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -75,7 +75,7 @@ const MYoutubeProfileName = external_styled_components_default().span.withConfig
     height: 16px;
     left: 57px;
     margin-top: 8px;
-      
+
     font-family: 'Spoqa Han Sans Neo';
     font-style: normal;
     font-weight: 500;
@@ -84,45 +84,45 @@ const MYoutubeProfileName = external_styled_components_default().span.withConfig
     display: flex;
     align-items: center;
     letter-spacing: -0.03em;
-  
+
     color: #282828;
   }
 `;
 const MYoutubeContentsBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-1be8e09-4"
+    componentId: "sc-141d6577-4"
 })`
   @media screen and (max-width: 768px) {
     width: 324px;
     height: 95px;
     top: 43px;
-  
-    background-color: #FFFFFF;
+
+    background-color: #ffffff;
   }
 `;
 const MYoutubeContentsTitle = external_styled_components_default().span.withConfig({
-    componentId: "sc-1be8e09-5"
+    componentId: "sc-141d6577-5"
 })`
   @media screen and (max-width: 768px) {
     width: 216px;
     height: 20px;
     left: 0px;
-  
+
     font-family: 'Spoqa Han Sans Neo';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-  
+
     letter-spacing: -0.03em;
     color: #343232;
-  
+
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 `;
 const MYoutubeContentsDetail = external_styled_components_default().div.withConfig({
-    componentId: "sc-1be8e09-6"
+    componentId: "sc-141d6577-6"
 })`
   position: absolute;
   width: 216px;
@@ -143,7 +143,7 @@ const MYoutubeContentsDetail = external_styled_components_default().div.withConf
   white-space: nowrap;
 `;
 const MYoutubeFooter = external_styled_components_default().div.withConfig({
-    componentId: "sc-1be8e09-7"
+    componentId: "sc-141d6577-7"
 })`
   position: absolute;
   width: 163px;
@@ -159,10 +159,10 @@ const MYoutubeFooter = external_styled_components_default().div.withConfig({
 
   letter-spacing: -0.02em;
 
-  color: #9B9B9B;
+  color: #9b9b9b;
 `;
 const MYoutubeImg = external_styled_components_default().div.withConfig({
-    componentId: "sc-1be8e09-8"
+    componentId: "sc-141d6577-8"
 })`
   position: absolute;
   width: 92px;
@@ -171,12 +171,12 @@ const MYoutubeImg = external_styled_components_default().div.withConfig({
   margin-top: 40px;
 `;
 const MYoutubeLine = external_styled_components_default().div.withConfig({
-    componentId: "sc-1be8e09-9"
+    componentId: "sc-141d6577-9"
 })`
   width: 359px;
   height: 0px;
   opacity: 0.6;
-  border: 1px solid #F0F0F0;
+  border: 1px solid #f0f0f0;
 `;
 
 // EXTERNAL MODULE: ./node_modules/next/image.js

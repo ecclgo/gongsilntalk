@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 type Props = {
   innerTab?: number;
-  open?: boolean
+  open?: boolean;
 };
 
 export const TabBox = styled.div`
   @media screen and (max-width: 768px) {
-      display: none;
-    };
+    display: none;
+  }
   width: 778px;
   height: 218px;
 
@@ -23,12 +23,12 @@ export const YoutubeTab = styled.span<Props>`
   @media screen and (max-width: 768px) {
     display: flex;
     background-color: ${(props) =>
-    `${props.innerTab === 0 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}`};
+      `${props.innerTab === 0 ? 'rgba(241, 99, 65, 0.1)' : '#FFFFFF'}`};
 
     border: ${(props) =>
-    `${props.innerTab === 0 ? '1px solid #F16431' : '1px solid #D5D5D5'}`};
+      `${props.innerTab === 0 ? '1px solid #F16431' : '1px solid #D5D5D5'}`};
     border-radius: 6px;
-    
+
     position: absolute;
     width: 81px;
     height: 30px;
@@ -43,7 +43,7 @@ export const YoutubeTab = styled.span<Props>`
     flex-direction: row;
     padding: 8px 10px;
     left: 0px;
-  };
+  }
 
   box-sizing: border-box;
 
@@ -102,7 +102,7 @@ export const MTabBox = styled.div`
     height: 170px;
     width: 360px;
     top: 0px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
   display: none;
 `;
@@ -144,8 +144,6 @@ export const MTabContents = styled.div`
     left: 0px;
     width: 359px;
     margin-left: 16px;
-    
   }
   display: none;
 `;
-

@@ -55,12 +55,12 @@ const slideOut = external_styled_components_.keyframes`
   }
 `;
 const SearchContainer = external_styled_components_default().div.withConfig({
-    componentId: "sc-bf07f9ab-0"
+    componentId: "sc-c07cc42b-0"
 })`
   position: relative;
 `;
 const SearchIcon = external_styled_components_default().i.withConfig({
-    componentId: "sc-bf07f9ab-1"
+    componentId: "sc-c07cc42b-1"
 })`
   position: absolute;
   top: 50%;
@@ -74,7 +74,7 @@ const SearchIcon = external_styled_components_default().i.withConfig({
   }
 `;
 const SearchInput = external_styled_components_default().input.withConfig({
-    componentId: "sc-bf07f9ab-2"
+    componentId: "sc-c07cc42b-2"
 })`
   position: absolute;
   top: 98px;

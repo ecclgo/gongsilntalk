@@ -18,11 +18,11 @@ exports.modules = {
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const TabBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-2f422389-0"
+    componentId: "sc-7721b3d-0"
 })`
   @media screen and (max-width: 768px) {
-      display: none;
-    };
+    display: none;
+  }
   width: 778px;
   height: 218px;
 
@@ -33,7 +33,7 @@ const TabBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.with
   background-color: #ffffff;
 `;
 const YoutubeTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-2f422389-1"
+    componentId: "sc-7721b3d-1"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -41,7 +41,7 @@ const YoutubeTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span
 
     border: ${(props)=>`${props.innerTab === 0 ? "1px solid #F16431" : "1px solid #D5D5D5"}`};
     border-radius: 6px;
-    
+
     position: absolute;
     width: 81px;
     height: 30px;
@@ -56,7 +56,7 @@ const YoutubeTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span
     flex-direction: row;
     padding: 8px 10px;
     left: 0px;
-  };
+  }
 
   box-sizing: border-box;
 
@@ -93,7 +93,7 @@ const YoutubeTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span
   cursor: pointer;
 `;
 const MegazineTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(YoutubeTab).withConfig({
-    componentId: "sc-2f422389-2"
+    componentId: "sc-7721b3d-2"
 })`
   @media screen and (max-width: 768px) {
     left: 91px;
@@ -105,7 +105,7 @@ const MegazineTab = styled_components__WEBPACK_IMPORTED_MODULE_0___default()(You
   border: ${(props)=>`${props.innerTab === 1 ? "1px solid #F16431" : "1px solid #D5D5D5"}`};
 `;
 const MTabBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-2f422389-3"
+    componentId: "sc-7721b3d-3"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -113,12 +113,12 @@ const MTabBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.wit
     height: 170px;
     width: 360px;
     top: 0px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
   display: none;
 `;
 const MContents = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-2f422389-4"
+    componentId: "sc-7721b3d-4"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -148,7 +148,7 @@ const MContents = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.w
   display: none;
 `;
 const MTabContents = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-2f422389-5"
+    componentId: "sc-7721b3d-5"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -157,7 +157,6 @@ const MTabContents = styled_components__WEBPACK_IMPORTED_MODULE_0___default().di
     left: 0px;
     width: 359px;
     margin-left: 16px;
-    
   }
   display: none;
 `;

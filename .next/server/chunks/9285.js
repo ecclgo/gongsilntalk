@@ -18,6 +18,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _NoticeDummy__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(436);
 /* harmony import */ var _Youtube_MYoutube__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2461);
+/* harmony import */ var _Megazine_MMegazine__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1646);
+
 
 
 
@@ -71,11 +73,7 @@ function MTabContentsComponent({ tabClicked , setTabClicked  }) {
                             onClick: ()=>setInnerTab(1),
                             children: "공톡 매거진"
                         }),
-                        innerTab === 0 ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Youtube_MYoutube__WEBPACK_IMPORTED_MODULE_5__["default"], {
-                            post: post,
-                            yPosts: yPosts,
-                            setCurrentPage: setCurrentPage
-                        }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {})
+                        innerTab === 0 ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Youtube_MYoutube__WEBPACK_IMPORTED_MODULE_5__["default"], {}) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Megazine_MMegazine__WEBPACK_IMPORTED_MODULE_6__["default"], {})
                     ]
                 }) : null,
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_MNotice__WEBPACK_IMPORTED_MODULE_2__["default"], {})

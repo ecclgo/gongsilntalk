@@ -17,7 +17,6 @@ import {
   HeaderRegister,
   Bar,
   JonggaeBox,
-  NavLink,
   MenuIcon,
   NavMenu,
   NavItem,
@@ -35,8 +34,8 @@ import { FaTimes, FaBars } from 'react-icons/fa';
 
 export default function Header() {
   const router = useRouter();
+  
   const [activeBtn, setActiveBtn] = useState('');
-
   const [isOpen, setIsOpen] = useState(false);
 
   const handleToggle = () => {

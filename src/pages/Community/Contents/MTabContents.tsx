@@ -7,6 +7,7 @@ import MNotice from '../MNotice';
 import { useEffect, useState } from 'react';
 import { Youtubes, community } from '../../../../NoticeDummy';
 import MYoutube from './Youtube/MYoutube';
+import MMegazine from './Megazine/MMegazine';
 
 type Props = {
   tabClicked: number;
@@ -63,13 +64,9 @@ export default function MTabContentsComponent({
               공톡 매거진
             </MegazineTab>
             {innerTab === 0 ? (
-              <MYoutube
-                post={post}
-                yPosts={yPosts}
-                setCurrentPage={setCurrentPage}
-              />
+              <MYoutube />
             ) : (
-              <></>
+              <MMegazine />
             )}
           </>
         ) : null}

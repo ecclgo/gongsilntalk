@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 type Props = {
-  activeBtn?: string;
+  activeBtn?: any;
   isOpen?: boolean;
 };
 
@@ -138,10 +138,12 @@ export const HeaderMyProduct = styled(HeaderRecoBox)`
     `${props.activeBtn === '/Mybuilding' ? '#F16341' : '#343232'}`};
 `;
 
+const pattern = /^\/Community/
+
 export const HeaderCommunityBox = styled(HeaderRecoBox)`
   left: 1198px;
   color: ${(props) =>
-    `${props.activeBtn === '/Community' ? '#F16341' : '#343232'}`};
+    `${pattern.test(props.activeBtn) ? '#F16341' : '#343232'}`};
 `;
 
 export const HeaderLogin = styled.div`

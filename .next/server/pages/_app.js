@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 2888;
-exports.ids = [2888,4846,436,1751,6587,3844,1918,5192,4821];
+exports.ids = [2888,4846,4962,436,6587,1751,3844,4821,1918,5192];
 exports.modules = {
 
 /***/ 9321:
@@ -30,7 +30,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 
 
 const HeaderBox = external_styled_components_default().header.withConfig({
-    componentId: "sc-ca043a6c-0"
+    componentId: "sc-a6a28128-0"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -55,7 +55,7 @@ const HeaderBox = external_styled_components_default().header.withConfig({
   border-bottom: 1px solid #d5d5d5;
 `;
 const HeaderLogo = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-1"
+    componentId: "sc-a6a28128-1"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -65,7 +65,7 @@ const HeaderLogo = external_styled_components_default().div.withConfig({
   left: 40px;
 `;
 const HeaderHome = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-2"
+    componentId: "sc-a6a28128-2"
 })`
   @media (max-width: 700px) {
     display: flex;
@@ -76,7 +76,7 @@ const HeaderHome = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const FHeaderProduct = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-3"
+    componentId: "sc-a6a28128-3"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -87,7 +87,7 @@ const FHeaderProduct = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const SHeaderProduct = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-4"
+    componentId: "sc-a6a28128-4"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -98,7 +98,7 @@ const SHeaderProduct = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderMap = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-5"
+    componentId: "sc-a6a28128-5"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -109,7 +109,7 @@ const HeaderMap = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderCommunity = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-6"
+    componentId: "sc-a6a28128-6"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -120,7 +120,7 @@ const HeaderCommunity = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderMyInfoBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-7"
+    componentId: "sc-a6a28128-7"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -131,7 +131,7 @@ const HeaderMyInfoBox = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderRecoBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-8"
+    componentId: "sc-a6a28128-8"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -157,26 +157,27 @@ const HeaderRecoBox = external_styled_components_default().div.withConfig({
   color: ${(props)=>`${props.activeBtn === "/Recommend" ? "#F16341" : "#343232"}`};
 `;
 const HeaderMapBox = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-ca043a6c-9"
+    componentId: "sc-a6a28128-9"
 })`
   left: 824px;
   width: 120px;
   color: ${(props)=>`${props.activeBtn === "/Buildingmap" ? "#F16341" : "#343232"}`};
 `;
 const HeaderMyProduct = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-ca043a6c-10"
+    componentId: "sc-a6a28128-10"
 })`
   left: 1027px;
   color: ${(props)=>`${props.activeBtn === "/Mybuilding" ? "#F16341" : "#343232"}`};
 `;
+const pattern = /^\/Community/;
 const HeaderCommunityBox = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-ca043a6c-11"
+    componentId: "sc-a6a28128-11"
 })`
   left: 1198px;
-  color: ${(props)=>`${props.activeBtn === "/Community" ? "#F16341" : "#343232"}`};
+  color: ${(props)=>`${pattern.test(props.activeBtn) ? "#F16341" : "#343232"}`};
 `;
 const HeaderLogin = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-12"
+    componentId: "sc-a6a28128-12"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -202,13 +203,13 @@ const HeaderLogin = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const HeaderRegister = external_styled_components_default()(HeaderLogin).withConfig({
-    componentId: "sc-ca043a6c-13"
+    componentId: "sc-a6a28128-13"
 })`
   left: 1670px;
   width: 60px;
 `;
 const Bar = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-14"
+    componentId: "sc-a6a28128-14"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -223,7 +224,7 @@ const Bar = external_styled_components_default().div.withConfig({
   transform: rotate(90deg);
 `;
 const JonggaeBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-15"
+    componentId: "sc-a6a28128-15"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -256,7 +257,7 @@ const JonggaeBox = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const NavLink = external_styled_components_default()((link_default())).withConfig({
-    componentId: "sc-ca043a6c-16"
+    componentId: "sc-a6a28128-16"
 })`
   color: #000;
   justify-self: flex-start;
@@ -270,7 +271,7 @@ const NavLink = external_styled_components_default()((link_default())).withConfi
   right: 10px;
 `;
 const MenuIcon = external_styled_components_default().div.withConfig({
-    componentId: "sc-ca043a6c-17"
+    componentId: "sc-a6a28128-17"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -284,7 +285,7 @@ const MenuIcon = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const NavMenu = external_styled_components_default().ul.withConfig({
-    componentId: "sc-ca043a6c-18"
+    componentId: "sc-a6a28128-18"
 })`
   display: flex;
   align-items: center;
@@ -305,7 +306,7 @@ const NavMenu = external_styled_components_default().ul.withConfig({
   }
 `;
 const NavItem = external_styled_components_default().li.withConfig({
-    componentId: "sc-ca043a6c-19"
+    componentId: "sc-a6a28128-19"
 })`
   height: 80px;
 `;

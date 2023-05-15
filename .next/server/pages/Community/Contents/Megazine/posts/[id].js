@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 3868;
-exports.ids = [3868,8910,4846,6587,1918,5192,4821];
+exports.ids = [3868,8910,4962,4821,1918,5192];
 exports.modules = {
 
 /***/ 8624:
@@ -35,7 +35,7 @@ const MegazineDetail = ({ megazine  })=>{
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components_community_DetailContents__WEBPACK_IMPORTED_MODULE_1__/* .DetailBox */ .td, {
             children: [
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_community_Icon__WEBPACK_IMPORTED_MODULE_2__/* .BackArrow */ .D, {
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_community_Icon__WEBPACK_IMPORTED_MODULE_2__/* .BackArrow */ .D1, {
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
                         src: "/BackArrow.png",
                         alt: "BackArrow",
@@ -43,7 +43,7 @@ const MegazineDetail = ({ megazine  })=>{
                         height: 16
                     })
                 }),
-                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_community_Icon__WEBPACK_IMPORTED_MODULE_2__/* .GongtalkBox */ .N, {
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_community_Icon__WEBPACK_IMPORTED_MODULE_2__/* .GongtalkBox */ .N7, {
                     children: "공톡 매거진"
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_community_DetailText__WEBPACK_IMPORTED_MODULE_4__/* .TitleText */ .eN, {

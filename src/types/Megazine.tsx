@@ -15,3 +15,12 @@ export type Youtube = {
   reco: number;
   repl: number;
 };
+
+export type Reple = {
+  id: string;
+  postId: string;
+  username: string;
+  contents: string;
+  re: string | null;
+  to: string | null;
+}

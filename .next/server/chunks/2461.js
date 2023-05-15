@@ -22,7 +22,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/components/community/MYoutube.tsx
 
 const MYoutubeBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-141d6577-0"
+    componentId: "sc-740c9273-0"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -36,7 +36,7 @@ const MYoutubeBox = external_styled_components_default().div.withConfig({
   }
 `;
 const MYoutubeContents = external_styled_components_default().div.withConfig({
-    componentId: "sc-141d6577-1"
+    componentId: "sc-740c9273-1"
 })`
   @media screen and (max-width: 768px) {
     width: 324px;
@@ -50,7 +50,7 @@ const MYoutubeContents = external_styled_components_default().div.withConfig({
   }
 `;
 const MYoutubeProfileBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-141d6577-2"
+    componentId: "sc-740c9273-2"
 })`
   @media screen and (max-width: 768px) {
     box-sizing: border-box;
@@ -67,7 +67,7 @@ const MYoutubeProfileBox = external_styled_components_default().div.withConfig({
   }
 `;
 const MYoutubeProfileName = external_styled_components_default().span.withConfig({
-    componentId: "sc-141d6577-3"
+    componentId: "sc-740c9273-3"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -89,7 +89,7 @@ const MYoutubeProfileName = external_styled_components_default().span.withConfig
   }
 `;
 const MYoutubeContentsBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-141d6577-4"
+    componentId: "sc-740c9273-4"
 })`
   @media screen and (max-width: 768px) {
     width: 324px;
@@ -100,7 +100,7 @@ const MYoutubeContentsBox = external_styled_components_default().div.withConfig(
   }
 `;
 const MYoutubeContentsTitle = external_styled_components_default().span.withConfig({
-    componentId: "sc-141d6577-5"
+    componentId: "sc-740c9273-5"
 })`
   @media screen and (max-width: 768px) {
     width: 216px;
@@ -122,7 +122,7 @@ const MYoutubeContentsTitle = external_styled_components_default().span.withConf
   }
 `;
 const MYoutubeContentsDetail = external_styled_components_default().div.withConfig({
-    componentId: "sc-141d6577-6"
+    componentId: "sc-740c9273-6"
 })`
   position: absolute;
   width: 216px;
@@ -143,7 +143,7 @@ const MYoutubeContentsDetail = external_styled_components_default().div.withConf
   white-space: nowrap;
 `;
 const MYoutubeFooter = external_styled_components_default().div.withConfig({
-    componentId: "sc-141d6577-7"
+    componentId: "sc-740c9273-7"
 })`
   position: absolute;
   width: 163px;
@@ -162,7 +162,7 @@ const MYoutubeFooter = external_styled_components_default().div.withConfig({
   color: #9b9b9b;
 `;
 const MYoutubeImg = external_styled_components_default().div.withConfig({
-    componentId: "sc-141d6577-8"
+    componentId: "sc-740c9273-8"
 })`
   position: absolute;
   width: 92px;
@@ -171,25 +171,34 @@ const MYoutubeImg = external_styled_components_default().div.withConfig({
   margin-top: 40px;
 `;
 const MYoutubeLine = external_styled_components_default().div.withConfig({
-    componentId: "sc-141d6577-9"
+    componentId: "sc-740c9273-9"
 })`
+@media screen and (max-width: 768px) {
   width: 359px;
   height: 0px;
   opacity: 0.6;
   border: 1px solid #f0f0f0;
+}
 `;
 
 // EXTERNAL MODULE: ./node_modules/next/image.js
 var next_image = __webpack_require__(5675);
 var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
+// EXTERNAL MODULE: ./YoutubeDummy.json
+var YoutubeDummy = __webpack_require__(9357);
+// EXTERNAL MODULE: ./node_modules/next/link.js
+var next_link = __webpack_require__(1664);
+var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 ;// CONCATENATED MODULE: ./src/pages/Community/Contents/Youtube/MYoutube.tsx
 
 
 
-function MYoutube({ post , yPosts , setCurrentPage  }) {
+
+
+function MYoutube() {
     return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
         children: /*#__PURE__*/ jsx_runtime_.jsx(MYoutubeBox, {
-            children: post?.map((a, i)=>{
+            children: YoutubeDummy?.map((a, i)=>{
                 return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     children: [
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)(MYoutubeContents, {
@@ -201,19 +210,24 @@ function MYoutube({ post , yPosts , setCurrentPage  }) {
                                 }),
                                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)(MYoutubeContentsBox, {
                                     children: [
-                                        /*#__PURE__*/ jsx_runtime_.jsx(MYoutubeContentsTitle, {
-                                            children: a.title
-                                        }),
-                                        /*#__PURE__*/ jsx_runtime_.jsx(MYoutubeContentsDetail, {
-                                            children: a.contents
-                                        }),
-                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(MYoutubeFooter, {
+                                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)((link_default()), {
+                                            href: `/Community/Contents/Youtube/posts/${a.id}`,
                                             children: [
-                                                a.date + " ",
-                                                " ",
-                                                "추천 " + a.reco + " ",
-                                                " ",
-                                                "댓글 " + a.repl
+                                                /*#__PURE__*/ jsx_runtime_.jsx(MYoutubeContentsTitle, {
+                                                    children: a.title
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx(MYoutubeContentsDetail, {
+                                                    children: a.contents
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(MYoutubeFooter, {
+                                                    children: [
+                                                        a.date + " ",
+                                                        " ",
+                                                        "추천 " + a.reco + " ",
+                                                        " ",
+                                                        "댓글 " + a.repl
+                                                    ]
+                                                })
                                             ]
                                         }),
                                         /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {

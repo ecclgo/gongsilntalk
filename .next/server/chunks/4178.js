@@ -10,31 +10,59 @@ exports.modules = {
 /* harmony export */   "RA": () => (/* binding */ DetailProBox),
 /* harmony export */   "nS": () => (/* binding */ DetailLine),
 /* harmony export */   "ot": () => (/* binding */ UserInfoBox),
+/* harmony export */   "q0": () => (/* binding */ TopLine),
 /* harmony export */   "s7": () => (/* binding */ DetailContent),
 /* harmony export */   "tG": () => (/* binding */ ImgBox),
 /* harmony export */   "td": () => (/* binding */ DetailBox),
 /* harmony export */   "wE": () => (/* binding */ Repl),
+/* harmony export */   "wX": () => (/* binding */ DetailTopBox),
 /* harmony export */   "y9": () => (/* binding */ EndLine)
 /* harmony export */ });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7518);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
-const DetailBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-b38c2dd3-0"
+const DetailTopBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
+    componentId: "sc-7ebbb9e6-0"
 })`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    background-color: #FFFFFF;
+    width: 359px;
+    left: 0px;
+  }
+  display: none;
+`;
+const DetailBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
+    componentId: "sc-7ebbb9e6-1"
+})`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    width: 359px;
+    height: 620px;
+    background-color: #ffffff;
+    left: 0px;
+    top: -12px;
+  }
   position: absolute;
   width: 778px;
   height: 1600px;
   background-color: #ffffff;
   left: 21%;
   right: 40%;
-  margin-top: 3%;
-
-  border: 1px solid #333333;
+  margin-top: 3.2%;
+  
 `;
 const UserInfoBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-b38c2dd3-1"
+    componentId: "sc-7ebbb9e6-2"
 })`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    width: 205px;
+    top: 171px;
+    left: 19px;
+  }
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -47,15 +75,35 @@ const UserInfoBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div
   top: 173px;
 `;
 const DetailProBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-b38c2dd3-2"
+    componentId: "sc-7ebbb9e6-3"
 })`
   position: absolute;
   width: 40px;
   height: 40px;
 `;
-const DetailLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-b38c2dd3-3"
+const TopLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
+    componentId: "sc-7ebbb9e6-4"
 })`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    display: flex;
+    top: 70px;
+    left: 0px;
+    width: 359px;
+    border: 1px solid #f0f0f0;
+  }
+  display: none;
+`;
+const DetailLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
+    componentId: "sc-7ebbb9e6-5"
+})`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    display: flex;
+    top: 230px;
+    left: 0px;
+    width: 359px;
+  }
   position: absolute;
   top: 243px;
   left: 38px;
@@ -64,16 +112,42 @@ const DetailLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.
   border: 1px solid #f0f0f0;
 `;
 const DetailContent = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-b38c2dd3-4"
+    componentId: "sc-7ebbb9e6-6"
 })`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    display: flex;
+    width: 324px;
+    height: 42px;
+    left: 18px;
+    top: 247px;
+
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    letter-spacing: -0.03em;
+
+    color: #000000;
+  }
   position: absolute;
   top: 262px;
   width: 702px;
   left: 38px;
 `;
 const ImgBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-b38c2dd3-5"
+    componentId: "sc-7ebbb9e6-7"
 })`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    display: flex;
+    width: 324px;
+    height: 182px;
+    left: 18px;
+    top: 400px;
+  }
   position: absolute;
   width: 702px;
   height: 394px;
@@ -81,8 +155,15 @@ const ImgBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.with
   left: 38px;
 `;
 const EndLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-b38c2dd3-6"
+    componentId: "sc-7ebbb9e6-8"
 })`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    left: 0px;
+    top: 500px;
+    border: 1px solid #f0f0f0;
+    width: 359px;
+  }
   position: absolute;
   top: 1100px;
   left: 38px;
@@ -91,9 +172,13 @@ const EndLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.wit
   border: 1px solid #f0f0f0;
 `;
 const Repl = styled_components__WEBPACK_IMPORTED_MODULE_0___default().input.withConfig({
-    componentId: "sc-b38c2dd3-7"
+    componentId: "sc-7ebbb9e6-9"
 })`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   position: absolute;
+  display: flex;
   left: 52px;
   bottom: 46px;
   width: 674px;
@@ -113,14 +198,35 @@ const Repl = styled_components__WEBPACK_IMPORTED_MODULE_0___default().input.with
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "Vp": () => (/* binding */ RegiDate),
 /* harmony export */   "eN": () => (/* binding */ TitleText),
+/* harmony export */   "sb": () => (/* binding */ MRegiCount),
 /* harmony export */   "vx": () => (/* binding */ UserName)
 /* harmony export */ });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7518);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const TitleText = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-a6f0c63a-0"
+    componentId: "sc-7cb60300-0"
 })`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 132px;
+    left: 19px;
+
+    width: 236px;
+    height: 23px;
+
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
+
+    color: #000000;
+  }
   position: absolute;
   top: 124px;
   left: 38px;
@@ -141,7 +247,7 @@ const TitleText = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.
   color: #000000;
 `;
 const UserName = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-a6f0c63a-1"
+    componentId: "sc-7cb60300-1"
 })`
   position: absolute;
   left: 52px;
@@ -160,7 +266,7 @@ const UserName = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.w
   color: #282828;
 `;
 const RegiDate = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-a6f0c63a-2"
+    componentId: "sc-7cb60300-2"
 })`
   position: absolute;
   left: 52px;
@@ -177,6 +283,39 @@ const RegiDate = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.w
   letter-spacing: -0.02em;
   color: #9b9b9b;
 `;
+const MRegiCount = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
+    componentId: "sc-7cb60300-3"
+})`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    left: 18px;
+    top: 521px;
+    width: 49px;
+    height: 16px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+
+    color: #666666;
+  }
+  display: flex;
+  position: absolute;
+  top: 1130px;
+  left: 38px;
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  letter-spacing: -0.02em;
+
+  color: #666666;
+`;
 
 
 /***/ }),
@@ -185,26 +324,75 @@ const RegiDate = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.w
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "D": () => (/* binding */ BackArrow),
-/* harmony export */   "N": () => (/* binding */ GongtalkBox)
+/* harmony export */   "D1": () => (/* binding */ BackArrow),
+/* harmony export */   "N7": () => (/* binding */ GongtalkBox),
+/* harmony export */   "ZY": () => (/* binding */ MBackArrow)
 /* harmony export */ });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7518);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const BackArrow = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-ea509b72-0"
+    componentId: "sc-182cc92-0"
 })`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   position: absolute;
+  display: flex;
   width: 9px;
   height: 16px;
   top: 32px;
   left: 40px;
-
+  z-index: 99999;
   cursor: pointer;
 `;
-const GongtalkBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-ea509b72-1"
+const MBackArrow = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
+    componentId: "sc-182cc92-1"
 })`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    display: flex;
+    width: 8px;
+    height: 14px;
+    left: 20px;
+    top: 30px;
+    z-index: 99999;
+  }
+  display: none;
+`;
+const GongtalkBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
+    componentId: "sc-182cc92-2"
+})`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 8px;
+    gap: 10px;
+
+    position: absolute;
+    width: 74px;
+    height: 26px;
+    left: 19px;
+    top: 90px;
+
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+
+    text-align: center;
+    letter-spacing: -0.03em;
+
+    background: rgba(241, 99, 65, 0.1);
+    border-radius: 6px;
+
+    color: #f16341;
+
+    cursor: pointer;
+  }
   display: flex;
   flex-direction: row;
   justify-content: center;

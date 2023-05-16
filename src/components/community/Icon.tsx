@@ -23,6 +23,7 @@ export const MBackArrow = styled.div`
     left: 20px;
     top: 30px;
     z-index: 99999;
+    cursor: pointer;
   }
   display: none;
 `;

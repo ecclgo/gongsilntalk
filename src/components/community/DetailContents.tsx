@@ -5,7 +5,7 @@ export const DetailTopBox = styled.div`
     display: flex;
     position: absolute;
     top: 0px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 359px;
     left: 0px;
   }
@@ -28,7 +28,6 @@ export const DetailBox = styled.div`
   left: 21%;
   right: 40%;
   margin-top: 3.2%;
-  
 `;
 
 export const UserInfoBox = styled.div`

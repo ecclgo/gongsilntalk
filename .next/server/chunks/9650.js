@@ -192,6 +192,8 @@ var Notice = __webpack_require__(7061);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__(1853);
 ;// CONCATENATED MODULE: ./src/pages/Community/Contents/Youtube/Youtube.tsx
 
 
@@ -203,7 +205,10 @@ var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 
 
 
+
 function Youtube({ post , yPosts , setCurrentPage  }) {
+    const router = (0,router_.useRouter)();
+    console.log(router.pathname);
     const [clickedOrder, setClickedOrder] = (0,external_react_.useState)(0);
     const handleClick = (number)=>{
         setClickedOrder(number);

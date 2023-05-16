@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MMegazineBox = styled.div`
   @media screen and (max-width: 768px) {
@@ -9,7 +9,7 @@ export const MMegazineBox = styled.div`
     top: 130px;
     overflow: scroll;
 
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 `;
 
@@ -39,27 +39,27 @@ export const MMegazineProfileBox = styled.div`
     background-color: #f0f0f0;
 
     border: 1px solid #9b9b9b;
-  }  
+  }
 `;
 
 export const MMegazineProfileName = styled.span`
   @media screen and (max-width: 768px) {
-  position: absolute;
-  width: 47px;
-  height: 16px;
-  left: 57px;
-  margin-top: 8px;
+    position: absolute;
+    width: 47px;
+    height: 16px;
+    left: 57px;
+    margin-top: 8px;
 
-  font-family: 'Spoqa Han Sans Neo';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.03em;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
 
-  color: #282828;
+    color: #282828;
   }
 `;
 

@@ -28,10 +28,12 @@ export default function MYoutube() {
                 <MYoutubeContentsBox>
                   <Link href={`/Community/Contents/Youtube/posts/${a.id}`}>
                     <MYoutubeContentsTitle>{a.title}</MYoutubeContentsTitle>
-                    <MYoutubeContentsDetail>{a.contents}</MYoutubeContentsDetail>
+                    <MYoutubeContentsDetail>
+                      {a.contents}
+                    </MYoutubeContentsDetail>
                     <MYoutubeFooter>
                       {a.date + ' '} {'추천 ' + a.reco + ' '} {'댓글 ' + a.repl}
-                    </MYoutubeFooter>                  
+                    </MYoutubeFooter>
                   </Link>
                   <Image
                     src={'/YImage'}

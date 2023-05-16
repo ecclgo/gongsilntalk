@@ -63,11 +63,7 @@ export default function MTabContentsComponent({
             <MegazineTab innerTab={innerTab} onClick={() => setInnerTab(1)}>
               공톡 매거진
             </MegazineTab>
-            {innerTab === 0 ? (
-              <MYoutube />
-            ) : (
-              <MMegazine />
-            )}
+            {innerTab === 0 ? <MYoutube /> : <MMegazine />}
           </>
         ) : null}
         <MNotice />

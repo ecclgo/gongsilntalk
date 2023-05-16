@@ -22,7 +22,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/components/community/MMegazine.tsx
 
 const MMegazineBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-4a3a0cae-0"
+    componentId: "sc-b10626ff-0"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -32,11 +32,11 @@ const MMegazineBox = external_styled_components_default().div.withConfig({
     top: 130px;
     overflow: scroll;
 
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 `;
 const MMegazineContents = external_styled_components_default().div.withConfig({
-    componentId: "sc-4a3a0cae-1"
+    componentId: "sc-b10626ff-1"
 })`
   @media screen and (max-width: 768px) {
     width: 324px;
@@ -50,7 +50,7 @@ const MMegazineContents = external_styled_components_default().div.withConfig({
   }
 `;
 const MMegazineProfileBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-4a3a0cae-2"
+    componentId: "sc-b10626ff-2"
 })`
   @media screen and (max-width: 768px) {
     box-sizing: border-box;
@@ -64,32 +64,32 @@ const MMegazineProfileBox = external_styled_components_default().div.withConfig(
     background-color: #f0f0f0;
 
     border: 1px solid #9b9b9b;
-  }  
+  }
 `;
 const MMegazineProfileName = external_styled_components_default().span.withConfig({
-    componentId: "sc-4a3a0cae-3"
+    componentId: "sc-b10626ff-3"
 })`
   @media screen and (max-width: 768px) {
-  position: absolute;
-  width: 47px;
-  height: 16px;
-  left: 57px;
-  margin-top: 8px;
+    position: absolute;
+    width: 47px;
+    height: 16px;
+    left: 57px;
+    margin-top: 8px;
 
-  font-family: 'Spoqa Han Sans Neo';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.03em;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.03em;
 
-  color: #282828;
+    color: #282828;
   }
 `;
 const MMegazineContentsDetail = external_styled_components_default().div.withConfig({
-    componentId: "sc-4a3a0cae-4"
+    componentId: "sc-b10626ff-4"
 })`
   position: absolute;
   width: 216px;
@@ -110,7 +110,7 @@ const MMegazineContentsDetail = external_styled_components_default().div.withCon
   white-space: nowrap;
 `;
 const MMegazineContentsTitle = external_styled_components_default().span.withConfig({
-    componentId: "sc-4a3a0cae-5"
+    componentId: "sc-b10626ff-5"
 })`
   @media screen and (max-width: 768px) {
     width: 216px;
@@ -132,7 +132,7 @@ const MMegazineContentsTitle = external_styled_components_default().span.withCon
   }
 `;
 const MMegazineFooter = external_styled_components_default().div.withConfig({
-    componentId: "sc-4a3a0cae-6"
+    componentId: "sc-b10626ff-6"
 })`
   position: absolute;
   width: 163px;
@@ -151,7 +151,7 @@ const MMegazineFooter = external_styled_components_default().div.withConfig({
   color: #9b9b9b;
 `;
 const MMegazineLine = external_styled_components_default().div.withConfig({
-    componentId: "sc-4a3a0cae-7"
+    componentId: "sc-b10626ff-7"
 })`
   @media screen and (max-width: 768px) {
     width: 359px;
@@ -161,7 +161,7 @@ const MMegazineLine = external_styled_components_default().div.withConfig({
   }
 `;
 const MMegazineContentsBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-4a3a0cae-8"
+    componentId: "sc-b10626ff-8"
 })`
   @media screen and (max-width: 768px) {
     width: 324px;

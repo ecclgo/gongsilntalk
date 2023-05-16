@@ -2,10 +2,10 @@
 (() => {
 var exports = {};
 exports.id = 2888;
-exports.ids = [2888,4846,4962,436,6587,1751,3844,4821,1918,5192];
+exports.ids = [2888,4846,4962,436,1751,6587,3844,1918,5192,4821];
 exports.modules = {
 
-/***/ 9321:
+/***/ 4733:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 
@@ -21,8 +21,8 @@ var external_react_ = __webpack_require__(6689);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
-;// CONCATENATED MODULE: external "next/router"
-const router_namespaceObject = require("next/router");
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__(1853);
 // EXTERNAL MODULE: external "styled-components"
 var external_styled_components_ = __webpack_require__(7518);
 var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(external_styled_components_);
@@ -30,7 +30,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 
 
 const HeaderBox = external_styled_components_default().header.withConfig({
-    componentId: "sc-a6a28128-0"
+    componentId: "sc-5a488150-0"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -55,7 +55,7 @@ const HeaderBox = external_styled_components_default().header.withConfig({
   border-bottom: 1px solid #d5d5d5;
 `;
 const HeaderLogo = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-1"
+    componentId: "sc-5a488150-1"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -65,7 +65,7 @@ const HeaderLogo = external_styled_components_default().div.withConfig({
   left: 40px;
 `;
 const HeaderHome = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-2"
+    componentId: "sc-5a488150-2"
 })`
   @media (max-width: 700px) {
     display: flex;
@@ -76,7 +76,7 @@ const HeaderHome = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const FHeaderProduct = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-3"
+    componentId: "sc-5a488150-3"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -87,7 +87,7 @@ const FHeaderProduct = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const SHeaderProduct = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-4"
+    componentId: "sc-5a488150-4"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -98,7 +98,7 @@ const SHeaderProduct = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderMap = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-5"
+    componentId: "sc-5a488150-5"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -109,7 +109,7 @@ const HeaderMap = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderCommunity = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-6"
+    componentId: "sc-5a488150-6"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -120,7 +120,7 @@ const HeaderCommunity = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderMyInfoBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-7"
+    componentId: "sc-5a488150-7"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -131,7 +131,7 @@ const HeaderMyInfoBox = external_styled_components_default().div.withConfig({
   display: none;
 `;
 const HeaderRecoBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-8"
+    componentId: "sc-5a488150-8"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -157,27 +157,27 @@ const HeaderRecoBox = external_styled_components_default().div.withConfig({
   color: ${(props)=>`${props.activeBtn === "/Recommend" ? "#F16341" : "#343232"}`};
 `;
 const HeaderMapBox = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-a6a28128-9"
+    componentId: "sc-5a488150-9"
 })`
   left: 824px;
   width: 120px;
   color: ${(props)=>`${props.activeBtn === "/Buildingmap" ? "#F16341" : "#343232"}`};
 `;
 const HeaderMyProduct = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-a6a28128-10"
+    componentId: "sc-5a488150-10"
 })`
   left: 1027px;
   color: ${(props)=>`${props.activeBtn === "/Mybuilding" ? "#F16341" : "#343232"}`};
 `;
 const pattern = /^\/Community/;
 const HeaderCommunityBox = external_styled_components_default()(HeaderRecoBox).withConfig({
-    componentId: "sc-a6a28128-11"
+    componentId: "sc-5a488150-11"
 })`
   left: 1198px;
   color: ${(props)=>`${pattern.test(props.activeBtn) ? "#F16341" : "#343232"}`};
 `;
 const HeaderLogin = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-12"
+    componentId: "sc-5a488150-12"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -203,13 +203,13 @@ const HeaderLogin = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const HeaderRegister = external_styled_components_default()(HeaderLogin).withConfig({
-    componentId: "sc-a6a28128-13"
+    componentId: "sc-5a488150-13"
 })`
   left: 1670px;
   width: 60px;
 `;
 const Bar = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-14"
+    componentId: "sc-5a488150-14"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -224,7 +224,7 @@ const Bar = external_styled_components_default().div.withConfig({
   transform: rotate(90deg);
 `;
 const JonggaeBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-15"
+    componentId: "sc-5a488150-15"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -257,7 +257,7 @@ const JonggaeBox = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const NavLink = external_styled_components_default()((link_default())).withConfig({
-    componentId: "sc-a6a28128-16"
+    componentId: "sc-5a488150-16"
 })`
   color: #000;
   justify-self: flex-start;
@@ -271,7 +271,7 @@ const NavLink = external_styled_components_default()((link_default())).withConfi
   right: 10px;
 `;
 const MenuIcon = external_styled_components_default().div.withConfig({
-    componentId: "sc-a6a28128-17"
+    componentId: "sc-5a488150-17"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -285,7 +285,7 @@ const MenuIcon = external_styled_components_default().div.withConfig({
   cursor: pointer;
 `;
 const NavMenu = external_styled_components_default().ul.withConfig({
-    componentId: "sc-a6a28128-18"
+    componentId: "sc-5a488150-18"
 })`
   display: flex;
   align-items: center;
@@ -306,7 +306,7 @@ const NavMenu = external_styled_components_default().ul.withConfig({
   }
 `;
 const NavItem = external_styled_components_default().li.withConfig({
-    componentId: "sc-a6a28128-19"
+    componentId: "sc-5a488150-19"
 })`
   height: 80px;
 `;
@@ -372,6 +372,301 @@ var next_image = __webpack_require__(5675);
 var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 ;// CONCATENATED MODULE: external "react-icons/fa"
 const fa_namespaceObject = require("react-icons/fa");
+;// CONCATENATED MODULE: ./src/components/myPage/MyPageBar.tsx
+
+const MyPage = external_styled_components_default().div.withConfig({
+    componentId: "sc-919b2d64-0"
+})`
+@media screen and (max-width: 768px) {
+  display: none;
+}
+  position: absolute;
+  display: flex;
+  width: 361px;
+  
+  left: 1560px;
+  top: 9px;
+  background-color: #F0F0F0;
+  height: 100%;
+  transition: all .35s;
+`;
+const TopBar = external_styled_components_default().div.withConfig({
+    componentId: "sc-919b2d64-1"
+})`
+  position: absolute;
+  width: 360px;
+  height: 50px;
+  left: 0px;
+  top: 0px;
+  background-color: #ffffff;
+`;
+const TopBarText = external_styled_components_default().span.withConfig({
+    componentId: "sc-919b2d64-2"
+})`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+
+  position: absolute;
+  width: 50px;
+  height: 18px;
+  left: calc(50% - 47px/2 - 0px);
+  top: calc(50% - 18px/2);
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.03em;
+`;
+const CloseBtn = external_styled_components_default().div.withConfig({
+    componentId: "sc-919b2d64-3"
+})`
+  position: absolute;
+  display: flex;
+  left: 20px;
+  top: 30%;
+  cursor: pointer;
+`;
+const MyInfoBox = external_styled_components_default().div.withConfig({
+    componentId: "sc-919b2d64-4"
+})`
+  position: absolute;
+  width: 360px;
+  height: 154px;
+  left: 0px;
+  top: 51px;
+  background-color: #ffffff;
+`;
+const LoginInfo = external_styled_components_default().span.withConfig({
+    componentId: "sc-919b2d64-5"
+})`
+  position: absolute;
+  width: 184px;
+  height: 38px;
+  left: 68px;
+  top: 31px;
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #343232;
+`;
+const LoginBtn = external_styled_components_default().button.withConfig({
+    componentId: "sc-919b2d64-6"
+})`
+  position: absolute;
+  width: 155px;
+  height: 44px;
+  left: 20px;
+  bottom: 28px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  background-color: #F16341;
+  border-radius: 5px;
+  color: #FFFFFF;
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.03em;
+`;
+const RegiBtn = external_styled_components_default().button.withConfig({
+    componentId: "sc-919b2d64-7"
+})`
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 155px;
+  height: 44px;
+  left: 185px;
+  bottom: 28px;
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #F16341;
+  border: 1px solid #F16341;
+  border-radius: 5px;
+`;
+const SubBox = external_styled_components_default().div.withConfig({
+    componentId: "sc-919b2d64-8"
+})`
+  position: absolute;
+  width: 360px;
+  height: 866px;
+  left: 0px;
+  top: 214px;
+  background-color: #ffffff;
+`;
+const CenterCallBtn = external_styled_components_default().button.withConfig({
+    componentId: "sc-919b2d64-9"
+})`
+  position: absolute;
+  display: flex;
+  bottom: 38px;
+  left: 16px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 0px 0px;
+  gap: 6px;
+
+  width: 328px;
+  height: 50px;
+
+  border: 1px solid #F16341;
+  border-radius: 5px;
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #F16341;
+`;
+const PhoneLogo = external_styled_components_default().div.withConfig({
+    componentId: "sc-919b2d64-10"
+})`
+  width: 14.07px;
+  height: 14px;
+  position: absolute;
+  left: 70px;
+  top: 15px;
+`;
+
+;// CONCATENATED MODULE: ./src/components/MyPageBar.tsx
+
+
+
+
+
+function MyPageBar({ activeMyPage , setActiveMyPage  }) {
+    const [login, setLogin] = (0,external_react_.useState)(false);
+    const handleCloseBtn = ()=>{
+        setActiveMyPage(!activeMyPage);
+    };
+    return /*#__PURE__*/ jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(MyPage, {
+            children: [
+                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(TopBar, {
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx(CloseBtn, {
+                            onClick: handleCloseBtn,
+                            children: /*#__PURE__*/ jsx_runtime_.jsx("svg", {
+                                width: "14",
+                                height: "14",
+                                viewBox: "0 0 14 14",
+                                fill: "none",
+                                xmlns: "http://www.w3.org/2000/svg",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
+                                    d: "M13.295 2.115C13.6844 1.72564 13.6844 1.09436 13.295 0.705C12.9056 0.315639 12.2744 0.315639 11.885 0.705L7 5.59L2.115 0.705C1.72564 0.315639 1.09436 0.315639 0.705 0.705C0.315639 1.09436 0.315639 1.72564 0.705 2.115L5.59 7L0.705 11.885C0.315639 12.2744 0.315639 12.9056 0.705 13.295C1.09436 13.6844 1.72564 13.6844 2.115 13.295L7 8.41L11.885 13.295C12.2744 13.6844 12.9056 13.6844 13.295 13.295C13.6844 12.9056 13.6844 12.2744 13.295 11.885L8.41 7L13.295 2.115Z",
+                                    fill: "#9B9B9B"
+                                })
+                            })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx(TopBarText, {
+                            children: "My 메뉴"
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)(MyInfoBox, {
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                    src: "/LoginPic.png",
+                                    alt: "LoginPic",
+                                    width: 38,
+                                    height: 38,
+                                    style: {
+                                        marginTop: "30px",
+                                        marginLeft: "20px"
+                                    }
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    href: "/Sign-in",
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx(LoginBtn, {
+                                        onClick: handleCloseBtn,
+                                        children: "로그인"
+                                    })
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    href: "/Sign-up",
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx(RegiBtn, {
+                                        onClick: handleCloseBtn,
+                                        children: "회원가입"
+                                    })
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx(LoginInfo, {
+                                    children: login ? "님 환영합니다." : "로그인이 필요합니다."
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ jsx_runtime_.jsx(SubBox, {
+                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(CenterCallBtn, {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(PhoneLogo, {
+                                children: /*#__PURE__*/ jsx_runtime_.jsx("svg", {
+                                    width: "16",
+                                    height: "14",
+                                    viewBox: "0 0 16 14",
+                                    fill: "none",
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("path", {
+                                        d: "M4.84096 5.75333C5.31385 6.60636 5.85887 7.42504 6.56649 8.17159C7.27639 8.92271 8.15919 9.60628 9.30191 10.1902C9.38664 10.2315 9.46679 10.2315 9.53893 10.2028C9.6477 10.1616 9.75877 10.0712 9.86754 9.96238C9.95227 9.87765 10.0576 9.74254 10.1675 9.59483C10.6072 9.0166 11.1511 8.29868 11.9194 8.65822C11.9366 8.66623 11.9492 8.67539 11.9663 8.68226L14.5289 10.1559C14.5369 10.1605 14.546 10.1685 14.5529 10.1731C14.8907 10.4055 15.0304 10.7639 15.0338 11.1704C15.0338 11.5837 14.8815 12.0486 14.6583 12.4413C14.3628 12.96 13.9277 13.3035 13.4262 13.5302C12.9488 13.7501 12.4175 13.868 11.9068 13.9436C11.1053 14.0615 10.3542 13.9859 9.58587 13.7501C8.83475 13.5176 8.0779 13.134 7.2512 12.6234L7.19052 12.5844C6.81152 12.3474 6.40161 12.0944 5.99971 11.7955C4.52952 10.6849 3.03071 9.08072 2.05401 7.31512C1.23533 5.83348 0.788782 4.23391 1.03267 2.7099C1.16778 1.87405 1.52617 1.11376 2.15134 0.612252C2.69636 0.172569 3.43031 -0.0678826 4.38067 0.0168479C4.48944 0.0248629 4.58677 0.0878383 4.6383 0.181729L6.28138 2.95952C6.52183 3.27096 6.5516 3.58011 6.41993 3.88926C6.31115 4.14231 6.09131 4.37589 5.79132 4.59344C5.70315 4.66901 5.59781 4.74573 5.48675 4.82588C5.1192 5.09266 4.70127 5.40067 4.8444 5.76249L4.84096 5.75333Z",
+                                        fill: "#F16341"
+                                    })
+                                })
+                            }),
+                            "공실앤톡 고객센터 문의"
+                        ]
+                    })
+                })
+            ]
+        })
+    });
+}
+
 ;// CONCATENATED MODULE: ./src/components/Header.tsx
 
 
@@ -381,14 +676,19 @@ const fa_namespaceObject = require("react-icons/fa");
 
 
 
+
 function Header() {
-    const router = (0,router_namespaceObject.useRouter)();
+    const router = (0,router_.useRouter)();
     const [activeBtn, setActiveBtn] = (0,external_react_.useState)("");
     const [isOpen, setIsOpen] = (0,external_react_.useState)(false);
+    const [activeMyPage, setActiveMyPage] = (0,external_react_.useState)(false);
     const handleToggle = ()=>{
         setIsOpen(!isOpen);
     };
     const [clicked, setClicked] = (0,external_react_.useState)(0);
+    const handleMyPage = ()=>{
+        setActiveMyPage(!activeMyPage);
+    };
     (0,external_react_.useEffect)(()=>{
         setActiveBtn(router.pathname);
     }, [
@@ -581,13 +881,20 @@ function Header() {
                     children: "중개사 가입"
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx(MenuIcon, {
-                    onClick: handleToggle,
-                    children: isOpen ? /*#__PURE__*/ jsx_runtime_.jsx(fa_namespaceObject.FaTimes, {}) : /*#__PURE__*/ jsx_runtime_.jsx(fa_namespaceObject.FaBars, {})
+                    onClick: ()=>{
+                        handleToggle();
+                        handleMyPage();
+                    },
+                    children: isOpen ? /*#__PURE__*/ jsx_runtime_.jsx(fa_namespaceObject.FaBars, {}) : /*#__PURE__*/ jsx_runtime_.jsx(fa_namespaceObject.FaBars, {})
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx(NavMenu, {
                     isOpen: isOpen,
                     children: /*#__PURE__*/ jsx_runtime_.jsx(NavItem, {})
-                })
+                }),
+                activeMyPage === true ? /*#__PURE__*/ jsx_runtime_.jsx(MyPageBar, {
+                    activeMyPage: activeMyPage,
+                    setActiveMyPage: setActiveMyPage
+                }) : null
             ]
         })
     });
@@ -621,7 +928,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9321);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4733);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7518);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _chakra_ui_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2210);
@@ -785,6 +1092,13 @@ module.exports = require("next/dist/shared/lib/utils.js");
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/utils/warn-once.js");
+
+/***/ }),
+
+/***/ 1853:
+/***/ ((module) => {
+
+module.exports = require("next/router");
 
 /***/ }),
 

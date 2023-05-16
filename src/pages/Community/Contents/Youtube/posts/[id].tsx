@@ -12,7 +12,11 @@ import {
 } from '@/components/community/DetailContents';
 import { Megazine, Youtube } from '../../../../../types/Megazine';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
-import { BackArrow, GongtalkBox, MBackArrow } from '@/components/community/Icon';
+import {
+  BackArrow,
+  GongtalkBox,
+  MBackArrow,
+} from '@/components/community/Icon';
 import Image from 'next/image';
 import {
   MRegiCount,
@@ -21,7 +25,22 @@ import {
   UserName,
 } from '@/components/community/DetailText';
 import moment from 'moment';
-import { MainRepleBox, MainRepleUsername, RepleBox, RepleContents, RepleProfileBox, RepleUsername } from '@/components/community/ReplBox';
+import {
+  MainRepleBox,
+  MainRepleBtn,
+  MainRepleContents,
+  MainRepleFooter,
+  MainRepleProfileBox,
+  MainRepleUsername,
+  RepleBox,
+  RepleBtn,
+  RepleContents,
+  RepleFooter,
+  RepleProfileBox,
+  RepleUsername,
+} from '@/components/community/ReplBox';
+import { useRouter } from 'next/router';
+
 
 interface Props {
   megazine: Megazine;
@@ -29,15 +48,21 @@ interface Props {
 }
 
 const YoutubeDetail: NextPage<Props> = ({ youtube }) => {
+  const router = useRouter();
+
+  const handleGoBack = () => {
+    router.back();
+  };
+
   return (
     <>
       <DetailTopBox>
-        <MBackArrow>
+        <MBackArrow onClick={handleGoBack}>
           <Image src={'/BackArrow.png'} alt="BackArrow" width={9} height={16} />
         </MBackArrow>
       </DetailTopBox>
       <DetailBox>
-        <BackArrow>
+        <BackArrow onClick={handleGoBack}>
           <Image src={'/BackArrow.png'} alt="BackArrow" width={9} height={16} />
         </BackArrow>
         <TopLine />
@@ -58,24 +83,22 @@ const YoutubeDetail: NextPage<Props> = ({ youtube }) => {
           <Image src={'/YImage'} alt="YImage" width={324} height={182} />
         </ImgBox>
         <EndLine />
-        <MRegiCount>
-          {'댓글 ' + youtube?.repl}
-        </MRegiCount>
+        <MRegiCount>{'댓글 ' + youtube?.repl}</MRegiCount>
         <MainRepleBox>
-          <MainRepleUsername>
-            user123
-          </MainRepleUsername>
+          <MainRepleProfileBox />
+          <MainRepleUsername>user123</MainRepleUsername>
+          <MainRepleContents>유용한 정보네요~</MainRepleContents>
+          <MainRepleFooter>2023.04.02 - 16:23</MainRepleFooter>
+          <MainRepleBtn>답글쓰기</MainRepleBtn>
         </MainRepleBox>
         <Repl placeholder="댓글을 입력해보세요" />
       </DetailBox>
       <RepleBox>
-        <RepleUsername>
-          user123
-        </RepleUsername>
+        <RepleUsername>user123</RepleUsername>
         <RepleProfileBox />
-        <RepleContents>
-          유용한 정보네요!
-        </RepleContents>
+        <RepleContents>유용한 정보네요!</RepleContents>
+        <RepleFooter>2023.04.02 - 16:23</RepleFooter>
+        <RepleBtn>답글쓰기</RepleBtn>
       </RepleBox>
     </>
   );

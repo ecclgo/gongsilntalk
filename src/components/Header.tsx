@@ -31,18 +31,24 @@ import {
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { FaTimes, FaBars } from 'react-icons/fa';
+import MyPageBar from './MyPageBar';
 
 export default function Header() {
   const router = useRouter();
-  
+
   const [activeBtn, setActiveBtn] = useState('');
   const [isOpen, setIsOpen] = useState(false);
+  const [activeMyPage, setActiveMyPage] = useState(false);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
   const [clicked, setClicked] = useState(0);
+
+  const handleMyPage = () => {
+    setActiveMyPage(!activeMyPage);
+  }
 
   useEffect(() => {
     setActiveBtn(router.pathname);
@@ -201,12 +207,22 @@ export default function Header() {
           <Link href={'/Sign-up'}>회원가입</Link>
         </HeaderRegister>
         <JonggaeBox>중개사 가입</JonggaeBox>
-        <MenuIcon onClick={handleToggle}>
-          {isOpen ? <FaTimes /> : <FaBars />}
+        <MenuIcon onClick={() => {handleToggle(); handleMyPage();}}>
+          {isOpen ? <FaBars /> : <FaBars />}
         </MenuIcon>
         <NavMenu isOpen={isOpen}>
           <NavItem></NavItem>
         </NavMenu>
+        {
+        activeMyPage === true ? 
+        (
+          <MyPageBar activeMyPage={activeMyPage} setActiveMyPage={setActiveMyPage} />
+        )
+        :
+        (
+          null
+        )  
+        } 
       </HeaderBox>
     </>
   );

@@ -23,4 +23,4 @@ export type Reple = {
   contents: string;
   re: string | null;
   to: string | null;
-}
+};

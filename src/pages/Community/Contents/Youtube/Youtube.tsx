@@ -21,6 +21,7 @@ import { useState } from 'react';
 import { MovingSpan } from '@/components/community/TabSpan';
 import Notice from '../../Notice';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 type Props = {
   post: any;
@@ -29,6 +30,9 @@ type Props = {
 };
 
 export default function Youtube({ post, yPosts, setCurrentPage }: Props) {
+
+  const router = useRouter();
+  console.log(router.pathname);
   const [clickedOrder, setClickedOrder] = useState<number>(0);
 
   const handleClick = (number: number) => {

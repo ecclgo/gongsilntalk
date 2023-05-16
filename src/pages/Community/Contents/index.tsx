@@ -10,6 +10,7 @@ import {
   SearchIcon,
   SearchInput,
 } from '@/components/community/SearchInput';
+import Link from 'next/link';
 
 type Props = {
   tabClicked: number;

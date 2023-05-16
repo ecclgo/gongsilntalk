@@ -19,16 +19,24 @@ import {
 } from '@/components/community/DetailText';
 import moment from 'moment';
 import RenderCarousel from '../../Carousel';
+import { useRouter } from 'next/router';
 
 interface Props {
   megazine: Megazine;
 }
 
 const MegazineDetail: NextPage<Props> = ({ megazine }) => {
+  
+  const router = useRouter();
+
+  const handleGoBack = () => {
+    router.back();
+  };
+
   return (
     <>
       <DetailBox>
-        <BackArrow>
+        <BackArrow onClick={handleGoBack}>
           <Image src={'/BackArrow.png'} alt="BackArrow" width={9} height={16} />
         </BackArrow>
         <GongtalkBox>공톡 매거진</GongtalkBox>

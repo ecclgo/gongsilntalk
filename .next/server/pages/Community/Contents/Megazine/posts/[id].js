@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 3868;
-exports.ids = [3868,8910,4962,4821,1918,5192];
+exports.ids = [3868,8910,4962,1918,5192,4821];
 exports.modules = {
 
 /***/ 8624:
@@ -24,6 +24,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2245);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _Carousel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2322);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1853);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
+
 
 
 
@@ -32,10 +35,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const MegazineDetail = ({ megazine  })=>{
+    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_7__.useRouter)();
+    const handleGoBack = ()=>{
+        router.back();
+    };
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_components_community_DetailContents__WEBPACK_IMPORTED_MODULE_1__/* .DetailBox */ .td, {
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_community_Icon__WEBPACK_IMPORTED_MODULE_2__/* .BackArrow */ .D1, {
+                    onClick: handleGoBack,
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
                         src: "/BackArrow.png",
                         alt: "BackArrow",
@@ -175,6 +183,13 @@ module.exports = require("next/dist/shared/lib/side-effect.js");
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/utils/warn-once.js");
+
+/***/ }),
+
+/***/ 1853:
+/***/ ((module) => {
+
+module.exports = require("next/router");
 
 /***/ }),
 

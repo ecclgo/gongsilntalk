@@ -22,20 +22,20 @@ exports.modules = {
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const DetailTopBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-7ebbb9e6-0"
+    componentId: "sc-61d51d01-0"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
     position: absolute;
     top: 0px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     width: 359px;
     left: 0px;
   }
   display: none;
 `;
 const DetailBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-7ebbb9e6-1"
+    componentId: "sc-61d51d01-1"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -52,10 +52,9 @@ const DetailBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.w
   left: 21%;
   right: 40%;
   margin-top: 3.2%;
-  
 `;
 const UserInfoBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-7ebbb9e6-2"
+    componentId: "sc-61d51d01-2"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -75,14 +74,14 @@ const UserInfoBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div
   top: 173px;
 `;
 const DetailProBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-7ebbb9e6-3"
+    componentId: "sc-61d51d01-3"
 })`
   position: absolute;
   width: 40px;
   height: 40px;
 `;
 const TopLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-7ebbb9e6-4"
+    componentId: "sc-61d51d01-4"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -95,7 +94,7 @@ const TopLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.wit
   display: none;
 `;
 const DetailLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-7ebbb9e6-5"
+    componentId: "sc-61d51d01-5"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -112,7 +111,7 @@ const DetailLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.
   border: 1px solid #f0f0f0;
 `;
 const DetailContent = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-7ebbb9e6-6"
+    componentId: "sc-61d51d01-6"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -138,7 +137,7 @@ const DetailContent = styled_components__WEBPACK_IMPORTED_MODULE_0___default().d
   left: 38px;
 `;
 const ImgBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-7ebbb9e6-7"
+    componentId: "sc-61d51d01-7"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -155,7 +154,7 @@ const ImgBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.with
   left: 38px;
 `;
 const EndLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-7ebbb9e6-8"
+    componentId: "sc-61d51d01-8"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -172,7 +171,7 @@ const EndLine = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.wit
   border: 1px solid #f0f0f0;
 `;
 const Repl = styled_components__WEBPACK_IMPORTED_MODULE_0___default().input.withConfig({
-    componentId: "sc-7ebbb9e6-9"
+    componentId: "sc-61d51d01-9"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -205,7 +204,7 @@ const Repl = styled_components__WEBPACK_IMPORTED_MODULE_0___default().input.with
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const TitleText = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-7cb60300-0"
+    componentId: "sc-71a1b207-0"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -247,7 +246,7 @@ const TitleText = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.
   color: #000000;
 `;
 const UserName = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-7cb60300-1"
+    componentId: "sc-71a1b207-1"
 })`
   position: absolute;
   left: 52px;
@@ -266,7 +265,7 @@ const UserName = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.w
   color: #282828;
 `;
 const RegiDate = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
-    componentId: "sc-7cb60300-2"
+    componentId: "sc-71a1b207-2"
 })`
   position: absolute;
   left: 52px;
@@ -284,7 +283,7 @@ const RegiDate = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.w
   color: #9b9b9b;
 `;
 const MRegiCount = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-7cb60300-3"
+    componentId: "sc-71a1b207-3"
 })`
   @media screen and (max-width: 768px) {
     display: flex;
@@ -332,7 +331,7 @@ const MRegiCount = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
 const BackArrow = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-182cc92-0"
+    componentId: "sc-99d15f14-0"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -347,7 +346,7 @@ const BackArrow = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.w
   cursor: pointer;
 `;
 const MBackArrow = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-182cc92-1"
+    componentId: "sc-99d15f14-1"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -357,11 +356,12 @@ const MBackArrow = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.
     left: 20px;
     top: 30px;
     z-index: 99999;
+    cursor: pointer;
   }
   display: none;
 `;
 const GongtalkBox = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
-    componentId: "sc-182cc92-2"
+    componentId: "sc-99d15f14-2"
 })`
   @media screen and (max-width: 768px) {
     display: flex;

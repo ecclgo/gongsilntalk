@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 1087;
-exports.ids = [1087,4962,4821,1918,5192];
+exports.ids = [1087,4962,1918,5192,4821];
 exports.modules = {
 
 /***/ 8237:
@@ -38,7 +38,7 @@ var external_styled_components_default = /*#__PURE__*/__webpack_require__.n(exte
 ;// CONCATENATED MODULE: ./src/components/community/ReplBox.tsx
 
 const RepleBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-40dd67ed-0"
+    componentId: "sc-cd0b81a-0"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -47,11 +47,11 @@ const RepleBox = external_styled_components_default().div.withConfig({
     height: 54px;
     left: 18px;
     top: 560px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
   }
 `;
 const RepleUsername = external_styled_components_default().span.withConfig({
-    componentId: "sc-40dd67ed-1"
+    componentId: "sc-cd0b81a-1"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -59,24 +59,21 @@ const RepleUsername = external_styled_components_default().span.withConfig({
     width: 50px;
     height: 16px;
     left: 56px;
-  
+
     font-family: 'Spoqa Han Sans Neo';
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
-    display: flex;
     align-items: center;
     letter-spacing: -0.03em;
-  
+
     color: #666666;
   }
-  display: flex;
-  position: absolute;
-  left: 200px;
+  display: none;
 `;
 const RepleProfileBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-40dd67ed-2"
+    componentId: "sc-cd0b81a-2"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -84,15 +81,15 @@ const RepleProfileBox = external_styled_components_default().div.withConfig({
     width: 30px;
     height: 30px;
     left: 18px;
-    background: #F0F0F0;
-    border: 1px solid #9B9B9B;
+    background: #f0f0f0;
+    border: 1px solid #9b9b9b;
     box-sizing: border-box;
     border-radius: 15px;
   }
   display: none;
 `;
 const RepleContents = external_styled_components_default().div.withConfig({
-    componentId: "sc-40dd67ed-3"
+    componentId: "sc-cd0b81a-3"
 })`
   @media screen and (max-width: 768px) {
     position: absolute;
@@ -113,8 +110,52 @@ const RepleContents = external_styled_components_default().div.withConfig({
   }
   display: none;
 `;
+const RepleFooter = external_styled_components_default().div.withConfig({
+    componentId: "sc-cd0b81a-4"
+})`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    width: 111px;
+    height: 16px;
+    left: 56px;
+    margin-top: 45px;
+
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+
+    color: #9b9b9b;
+  }
+  display: none;
+`;
+const RepleBtn = external_styled_components_default().button.withConfig({
+    componentId: "sc-cd0b81a-5"
+})`
+  @media screen and (max-width: 768px) {
+    display: flex;
+    position: absolute;
+
+    left: 175px;
+    margin-top: 45px;
+    width: 50px;
+    height: 16px;
+    font-family: 'Spoqa Han Sans Neo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+
+    color: #666666;
+  }
+  display: none;
+`;
 const MainRepleBox = external_styled_components_default().div.withConfig({
-    componentId: "sc-40dd67ed-4"
+    componentId: "sc-cd0b81a-6"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -127,7 +168,7 @@ const MainRepleBox = external_styled_components_default().div.withConfig({
   background-color: #ffffff;
 `;
 const MainRepleUsername = external_styled_components_default().span.withConfig({
-    componentId: "sc-40dd67ed-5"
+    componentId: "sc-cd0b81a-7"
 })`
   @media screen and (max-width: 768px) {
     display: none;
@@ -147,7 +188,89 @@ const MainRepleUsername = external_styled_components_default().span.withConfig({
 
   color: #666666;
 `;
+const MainRepleProfileBox = external_styled_components_default().div.withConfig({
+    componentId: "sc-cd0b81a-8"
+})`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  display: flex;
+  position: absolute;
+  left: 0px;
+  margin-top: 21px;
+  width: 36px;
+  height: 36px;
+  margin-top: 0px;
 
+  background-color: #f0f0f0;
+  border-radius: 1px solid #9b9b9b;
+  border-radius: 15px;
+`;
+const MainRepleContents = external_styled_components_default().div.withConfig({
+    componentId: "sc-cd0b81a-9"
+})`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  display: flex;
+  position: absolute;
+  width: 616px;
+  left: 50px;
+  top: 24px;
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.03em;
+  color: #282828;
+`;
+const MainRepleFooter = external_styled_components_default().div.withConfig({
+    componentId: "sc-cd0b81a-10"
+})`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  position: absolute;
+  display: flex;
+
+  width: 111px;
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  left: 50px;
+  margin-top: 50px;
+
+  color: #9b9b9b;
+`;
+const MainRepleBtn = external_styled_components_default().button.withConfig({
+    componentId: "sc-cd0b81a-11"
+})`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  position: absolute;
+  display: flex;
+  width: 50px;
+  height: 16px;
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  left: 165px;
+  margin-top: 50px;
+
+  color: #666666;
+`;
+
+// EXTERNAL MODULE: external "next/router"
+var router_ = __webpack_require__(1853);
 ;// CONCATENATED MODULE: ./src/pages/Community/Contents/Youtube/posts/[id].tsx
 
 
@@ -156,11 +279,17 @@ const MainRepleUsername = external_styled_components_default().span.withConfig({
 
 
 
+
 const YoutubeDetail = ({ youtube  })=>{
+    const router = (0,router_.useRouter)();
+    const handleGoBack = ()=>{
+        router.back();
+    };
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(DetailContents/* DetailTopBox */.wX, {
                 children: /*#__PURE__*/ jsx_runtime_.jsx(Icon/* MBackArrow */.ZY, {
+                    onClick: handleGoBack,
                     children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                         src: "/BackArrow.png",
                         alt: "BackArrow",
@@ -172,6 +301,7 @@ const YoutubeDetail = ({ youtube  })=>{
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)(DetailContents/* DetailBox */.td, {
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx(Icon/* BackArrow */.D1, {
+                        onClick: handleGoBack,
                         children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                             src: "/BackArrow.png",
                             alt: "BackArrow",
@@ -220,10 +350,22 @@ const YoutubeDetail = ({ youtube  })=>{
                     /*#__PURE__*/ jsx_runtime_.jsx(DetailText/* MRegiCount */.sb, {
                         children: "댓글 " + youtube?.repl
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(MainRepleBox, {
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(MainRepleUsername, {
-                            children: "user123"
-                        })
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(MainRepleBox, {
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(MainRepleProfileBox, {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx(MainRepleUsername, {
+                                children: "user123"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(MainRepleContents, {
+                                children: "유용한 정보네요~"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(MainRepleFooter, {
+                                children: "2023.04.02 - 16:23"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(MainRepleBtn, {
+                                children: "답글쓰기"
+                            })
+                        ]
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx(DetailContents/* Repl */.wE, {
                         placeholder: "댓글을 입력해보세요"
@@ -238,6 +380,12 @@ const YoutubeDetail = ({ youtube  })=>{
                     /*#__PURE__*/ jsx_runtime_.jsx(RepleProfileBox, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx(RepleContents, {
                         children: "유용한 정보네요!"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx(RepleFooter, {
+                        children: "2023.04.02 - 16:23"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx(RepleBtn, {
+                        children: "답글쓰기"
                     })
                 ]
             })
@@ -337,6 +485,13 @@ module.exports = require("next/dist/shared/lib/side-effect.js");
 /***/ ((module) => {
 
 module.exports = require("next/dist/shared/lib/utils/warn-once.js");
+
+/***/ }),
+
+/***/ 1853:
+/***/ ((module) => {
+
+module.exports = require("next/router");
 
 /***/ }),
 

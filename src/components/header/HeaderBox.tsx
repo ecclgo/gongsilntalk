@@ -138,7 +138,7 @@ export const HeaderMyProduct = styled(HeaderRecoBox)`
     `${props.activeBtn === '/Mybuilding' ? '#F16341' : '#343232'}`};
 `;
 
-const pattern = /^\/Community/
+const pattern = /^\/Community/;
 
 export const HeaderCommunityBox = styled(HeaderRecoBox)`
   left: 1198px;

@@ -141,10 +141,10 @@ export const MYoutubeImg = styled.div`
 `;
 
 export const MYoutubeLine = styled.div`
-@media screen and (max-width: 768px) {
-  width: 359px;
-  height: 0px;
-  opacity: 0.6;
-  border: 1px solid #f0f0f0;
-}
+  @media screen and (max-width: 768px) {
+    width: 359px;
+    height: 0px;
+    opacity: 0.6;
+    border: 1px solid #f0f0f0;
+  }
 `;

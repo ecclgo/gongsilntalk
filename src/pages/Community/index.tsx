@@ -10,7 +10,6 @@ import {
 } from '@/components/community/SelectBox';
 import MTabContentsComponent from './Contents/MTabContents';
 import MTabBoardComponent from './Board/MTabBoard';
-import Link from 'next/link';
 
 export default function Community() {
   const [tabClicked, setTabClicked] = useState<number>(0);

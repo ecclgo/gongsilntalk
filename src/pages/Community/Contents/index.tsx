@@ -1,16 +1,15 @@
-import { MegazineTab, YoutubeTab } from '@/components/community/TabBox';
-import { FirstContent } from '@/components/community/TabSpan';
+import { MegazineTab, TabBox, YoutubeTab } from '@/components/community/TabBox';
+import { GongtalkContentsText } from '@/components/community/TabSpan';
 import { useEffect, useState } from 'react';
 import { Youtubes, community } from '../../../../NoticeDummy';
-import Youtube from './Youtube/Youtube';
-import Megazine from './Megazine/Megazine';
+import Youtube from './Youtube';
+import Megazine from './Megazine';
 import Image from 'next/image';
 import {
   SearchContainer,
   SearchIcon,
   SearchInput,
 } from '@/components/community/SearchInput';
-import Link from 'next/link';
 
 type Props = {
   tabClicked: number;
@@ -35,7 +34,7 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
     return currentPosts;
   };
 
-  //  API 생성시 수정
+  /** API 생성시 수정 */
   useEffect(() => {
     const fetchData = () => {
       if (innerTab === 0) {
@@ -55,9 +54,9 @@ export default function Contents({ tabClicked, setTabClicked }: Props) {
 
   return (
     <>
-      <FirstContent tabClicked={tabClicked} onClick={() => setTabClicked(0)}>
+      <GongtalkContentsText tabClicked={tabClicked} onClick={() => setTabClicked(0)}>
         공톡 컨텐츠
-      </FirstContent>
+      </GongtalkContentsText>
       {tabClicked === 0 ? (
         <>
           <YoutubeTab innerTab={innerTab} onClick={() => setInnerTab(0)}>

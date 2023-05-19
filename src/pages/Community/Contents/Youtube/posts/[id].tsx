@@ -10,7 +10,7 @@ import {
   TopLine,
   UserInfoBox,
 } from '@/components/community/DetailContents';
-import { Megazine, Youtube } from '../../../../../types/Megazine';
+import { Megazine, Youtube } from '../../../../../types/Contents';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import {
   BackArrow,
@@ -57,7 +57,7 @@ const YoutubeDetail: NextPage<Props> = ({ youtube }) => {
   return (
     <>
       <DetailTopBox>
-        <MBackArrow onClick={handleGoBack}>
+        <MBackArrow onClick={() => {handleGoBack();}}>
           <Image src={'/BackArrow.png'} alt="BackArrow" width={9} height={16} />
         </MBackArrow>
       </DetailTopBox>

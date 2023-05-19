@@ -8,7 +8,7 @@ import {
   Repl,
   UserInfoBox,
 } from '@/components/community/DetailContents';
-import { Megazine } from '../../../../../types/Megazine';
+import { Megazine } from '../../../../../types/Contents';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import { BackArrow, GongtalkBox } from '@/components/community/Icon';
 import Image from 'next/image';

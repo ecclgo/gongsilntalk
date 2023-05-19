@@ -9,7 +9,7 @@ import {
   MYoutubeProfileBox,
   MYoutubeProfileName,
 } from '@/components/community/MYoutube';
-import { Youtube } from '@/types/Megazine';
+import { Youtube } from '@/types/Contents';
 import Image from 'next/image';
 import YoutubeData from '../../../../../YoutubeDummy.json';
 import Link from 'next/link';

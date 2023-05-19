@@ -6,7 +6,7 @@ type Props = {
   isOpen?: boolean;
 };
 
-export const HeaderBox = styled.header`
+export const HeaderBox = styled('div')`
   @media screen and (max-width: 768px) {
     display: flex;
     position: relative;
@@ -30,7 +30,7 @@ export const HeaderBox = styled.header`
   border-bottom: 1px solid #d5d5d5;
 `;
 
-export const HeaderLogo = styled.div`
+export const HeaderLogo = styled('div')`
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -69,7 +69,7 @@ export const SHeaderProduct = styled.div`
   display: none;
 `;
 
-export const HeaderMap = styled.div`
+export const HeaderMap = styled('div')`
   @media screen and (max-width: 768px) {
     display: flex;
     position: absolute;
@@ -79,7 +79,7 @@ export const HeaderMap = styled.div`
   display: none;
 `;
 
-export const HeaderCommunity = styled.div`
+export const HeaderCommunity = styled('div')`
   @media screen and (max-width: 768px) {
     display: flex;
     position: absolute;
@@ -89,12 +89,13 @@ export const HeaderCommunity = styled.div`
   display: none;
 `;
 
-export const HeaderMyInfoBox = styled.div`
+export const HeaderMyInfoBox = styled('div')`
   @media screen and (max-width: 768px) {
     display: flex;
     position: absolute;
     left: 312.58px;
     top: 9.55px;
+    cursor: pointer;
   }
   display: none;
 `;
@@ -141,6 +142,10 @@ export const HeaderMyProduct = styled(HeaderRecoBox)`
 const pattern = /^\/Community/;
 
 export const HeaderCommunityBox = styled(HeaderRecoBox)`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  display: flex;
   left: 1198px;
   color: ${(props) =>
     `${pattern.test(props.activeBtn) ? '#F16341' : '#343232'}`};

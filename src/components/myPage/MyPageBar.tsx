@@ -1,17 +1,20 @@
 import styled from "styled-components";
 
 export const MyPage = styled.div`
-@media screen and (max-width: 768px) {
-  display: none;
-}
+  @media screen and (max-width: 768px) {
+    display: flex;
+    left: 0px;
+    top: 0px;
+    height: 500px;
+  }
   position: absolute;
   display: flex;
-  width: 361px;
+  width: 359px;
   
   left: 1560px;
   top: 9px;
   background-color: #F0F0F0;
-  height: 100%;
+  height: 866px;
   transition: all .35s;
 `;
 
@@ -50,6 +53,9 @@ export const TopBarText = styled.span`
 `;
 
 export const CloseBtn = styled.div`
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   position: absolute;
   display: flex;
   left: 20px;
@@ -142,6 +148,9 @@ export const RegiBtn = styled.button`
 `;
 
 export const SubBox = styled.div`
+  @media screen and (max-width: 768px) {
+    height: 410px;
+  }
   position: absolute;
   width: 360px;
   height: 866px;
@@ -188,4 +197,160 @@ export const PhoneLogo = styled.div`
   position: absolute;
   left: 70px;
   top: 15px;
+`;
+
+export const LoggedInUsername = styled.div`
+  position: absolute;
+  width: 65px;
+  height: 20px;
+  left: 68px;
+  top: 50px;
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+`;
+
+export const CorpName = styled.div`
+  position: absolute;
+  width: 150px;
+  height: 16px;
+  left: 68px;
+  top: 33px;
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #666666;
+`;
+
+export const MyBox = styled.div`
+  position: absolute;
+  width: 320px;
+  height: 85px;
+  left: 20px;
+  top: 90px;
+
+  box-sizing: border-box;
+  border: 1px solid #F0F0F0;
+  border-radius: 10px;
+`;
+
+export const MyLoggedInInfoBox = styled.div`
+  position: absolute;
+  width: 360px;
+  height: 311px;
+  left: 0px;
+  top: 51px;
+  background-color: #ffffff;
+`;
+
+export const MyProductBox = styled.div`
+  position: absolute;
+  display: flex;
+  width: 53px;
+  height: 48px;
+  left: 32px;
+  top: 19px;
+  cursor: pointer;
+
+`;
+
+export const LikedProduct = styled.div`
+  position: absolute;
+  width: 53px;
+  height: 47px;
+  left: 131px;
+  top: 20px;
+  cursor: pointer;
+`;
+
+export const ContractList = styled.div`
+  position: absolute;
+  width: 69px;
+  height: 48px;
+  left: 223px;
+  top: 19px;
+  cursor: pointer;
+`;
+
+export const SubMenuBox = styled.div`
+  position: absolute;
+  width: 320px;
+  height: 98px;
+  left: 0px;
+  top: 100px;
+`;
+
+export const SubMenu1 = styled.div`
+  position: absolute;
+  width: 320px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+
+  font-family: 'Spoqa Han Sans Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #000000;
+
+  cursor: pointer;
+`;
+
+export const SubMenu2 = styled(SubMenu1)`
+  margin-top: 40px;
+`;
+
+export const SubMenu3 = styled(SubMenu1)`
+  margin-top: 80px;
+`;
+
+export const NoticeBox = styled.div`
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    display: flex;
+    height: 260px;
+  }
+  position: absolute;
+  width: 360px;
+  height: 709px;
+  left: 0px;
+  top: 371px;
+
+  background-color: #ffffff;
+`;
+
+export const SubMenu4 = styled(SubMenu1)`
+  left: 20px;
+  top: 28px;
+`;
+
+export const AlarmBox = styled.div`
+  position: absolute;
+  width: 18px;
+  height: 22px;
+  left: 322px;
+  top: 14px;
+  cursor: pointer;
 `;

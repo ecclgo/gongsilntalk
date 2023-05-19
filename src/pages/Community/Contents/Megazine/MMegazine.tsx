@@ -10,7 +10,7 @@ import {
   MMegazineProfileName,
 } from '@/components/community/MMegazine';
 import MegazineData from '../../../../../MegazineDummy.json';
-import { Megazine } from '@/types/Megazine';
+import { Megazine } from '@/types/Contents';
 import Image from 'next/image';
 
 export default function MMegazine() {

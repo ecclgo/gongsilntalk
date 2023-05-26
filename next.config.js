@@ -21,7 +21,7 @@ const nextConfig = {
     });
     return config;
   },
-  reactStrictMode: true,
+  // reactStrictMode: true,
 };
 
 module.exports = nextConfig

@@ -12,7 +12,7 @@ import LoanCal from './LoanCal';
 
 export default function Profit() {
   const [SubTab, setSubTab] = useState(0);
-
+  
   return (
     <>
       <ProfitGlobal>

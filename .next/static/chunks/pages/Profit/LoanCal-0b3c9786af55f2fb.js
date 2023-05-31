@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[8292],{7214:function(n,_,u){(window.__NEXT_P=window.__NEXT_P||[]).push(["/Profit/LoanCal",function(){return u(3090)}])}},function(n){n.O(0,[3090,9774,2888,179],function(){return n(n.s=7214)}),_N_E=n.O()}]);

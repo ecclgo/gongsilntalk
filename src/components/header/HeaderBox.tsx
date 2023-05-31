@@ -130,7 +130,7 @@ export const HeaderMapBox = styled(HeaderRecoBox)`
   left: 824px;
   width: 120px;
   color: ${(props) =>
-    `${props.activeBtn === '/Buildingmap' ? '#F16341' : '#343232'}`};
+    `${props.activeBtn === '/Map' ? '#F16341' : '#343232'}`};
 `;
 
 export const HeaderMyProduct = styled(HeaderRecoBox)`

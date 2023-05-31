@@ -5,10 +5,10 @@ type Props = {
 };
 
 export const ProfitGlobal = styled.div`
-  position: absolute;
+  position: relative;
   top: 60px;
-  width: 1920px;
-  height: 930px;
+  width: 100vw;
+  height: 100vh;
   background-color: #ffffff;
 `;
 

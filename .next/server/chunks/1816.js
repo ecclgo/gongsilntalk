@@ -45,7 +45,7 @@ exports.modules = {
 const ProfitGlobal = styled_components__WEBPACK_IMPORTED_MODULE_0___default().div.withConfig({
   displayName: "Profit__ProfitGlobal",
   componentId: "sc-17amwsf-0"
-})(["position:absolute;top:60px;width:1920px;height:930px;background-color:#ffffff;"]);
+})(["position:relative;top:60px;width:100vw;height:100vh;background-color:#ffffff;"]);
 const ProfitText = styled_components__WEBPACK_IMPORTED_MODULE_0___default().span.withConfig({
   displayName: "Profit__ProfitText",
   componentId: "sc-17amwsf-1"
@@ -262,7 +262,6 @@ function ProfitCal({
     })]
   });
 }
-;
 
 /***/ })
 

@@ -2,7 +2,7 @@
 (() => {
 var exports = {};
 exports.id = 2888;
-exports.ids = [2888,2902,8958,3399,1584,3494,4846,4962,6587,3844,1918,5192,4821,6230,5340,2686,4188,907,4525];
+exports.ids = [2888,2902,8958,3399,1584,3494,4846,4962,6587,3844,1918,5192,4821,5866,6230,5340,2686,4188,907,8292,4525];
 exports.modules = {
 
 /***/ 4786:
@@ -66,7 +66,7 @@ const HeaderRecoBox = external_styled_components_default().div.withConfig({
 const HeaderMapBox = external_styled_components_default()(HeaderRecoBox).withConfig({
   displayName: "HeaderBox__HeaderMapBox",
   componentId: "sc-3nq4re-9"
-})(["left:824px;width:120px;color:", ";"], props => `${props.activeBtn === '/Buildingmap' ? '#F16341' : '#343232'}`);
+})(["left:824px;width:120px;color:", ";"], props => `${props.activeBtn === '/Map' ? '#F16341' : '#343232'}`);
 const HeaderMyProduct = external_styled_components_default()(HeaderRecoBox).withConfig({
   displayName: "HeaderBox__HeaderMyProduct",
   componentId: "sc-3nq4re-10"
@@ -328,7 +328,7 @@ function Header() {
         }), /*#__PURE__*/jsx_runtime_.jsx(HeaderMapBox, {
           activeBtn: router.pathname,
           children: /*#__PURE__*/jsx_runtime_.jsx((link_default()), {
-            href: '/Buildingmap',
+            href: '/Map',
             onClick: () => {
               setActiveBtn(router.pathname);
             },

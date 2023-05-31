@@ -177,7 +177,7 @@ export default function Header() {
           </HeaderRecoBox>
           <HeaderMapBox activeBtn={router.pathname}>
             <Link
-              href={'/Buildingmap'}
+              href={'/Map'}
               onClick={() => {
                 setActiveBtn(router.pathname);
               }}
